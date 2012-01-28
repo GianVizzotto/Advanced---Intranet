@@ -14,8 +14,8 @@ li		{list-style:none;}
 
 
 /*LAYOUT BEGE*/
-.bege #corpo	{ background:url(../images/bg_topo_bege.jpg) no-repeat #ededed;}
-.bege #rodape	{ background:url(../images/bg_rodape_bege.jpg) no-repeat;}
+.bege #corpo	{ background:url(/img/bg_topo_bege.jpg) no-repeat #ededed;}
+.bege #rodape	{ background:url(/img/bg_rodape_bege.jpg) no-repeat;}
 /*FINAL LAYOUT BEGE*/
  
 
@@ -57,13 +57,13 @@ div#logo, div#logo1, div#logo2, div#logo3	{ background:none; box-shadow:none;  }
 
 #colunaB a				{ color:#4D4D4F; width:370px !important; }
 #colunaB a span			{ display:block; font-weight:bold;}
-#colunaB a span.title	{ background:url(../images/bullet_bege.jpg) left center no-repeat; color:#6D6E71; padding-left:20px; margin-top:2px; font-weight:normal;}
+#colunaB a span.title	{ background:url(/img/bullet_bege.jpg) left center no-repeat; color:#6D6E71; padding-left:20px; margin-top:2px; font-weight:normal;}
 #colunaB .box			{ width:390px !important; padding:8px 10px;}
 #colunaB .conteudo		{ padding:20px;}
 
 #colunaD a				{ color:#4D4D4F;padding: 10px; display:block; margin:5px 10px; }
 #colunaD a span			{ display:block; font-weight:bold;}
-#colunaD a span.title	{ background:url(../images/bullet_bege.jpg) left center no-repeat; color:#6D6E71; padding-left:20px; margin-top:2px; font-weight:normal;}
+#colunaD a span.title	{ background:url(/img/bullet_bege.jpg) left center no-repeat; color:#6D6E71; padding-left:20px; margin-top:2px; font-weight:normal;}
 #colunaD a:hover		{ background:#eee;}
 #colunaD .conteudo		{padding:10px 0px;}
 

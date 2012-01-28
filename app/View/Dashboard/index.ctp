@@ -1,12 +1,3 @@
-<!--INICIO GERAL -->
-<div id="geral">
-    
-    <!-- INICIO CORPO -->
-<div id="corpo">
-
-        <!-- INICIO CENTRALIZAR -->
-        <div class="centralizar">               
-        
             <!-- INICIO MEIO -->
             <div id="meio">
             
@@ -119,13 +110,4 @@
 
             </div>
             <!-- FINAL MEIO -->
-
-        </div>
-      <!-- FINAL CENTRALIZAR -->
-
-    </div>
-    <!-- FINAL CORPO --> 
-
-</div>
-<!--FINAL GERAL -->
 
