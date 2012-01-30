@@ -1,0 +1,990 @@
+2012-01-29 19:58:21 Notice: Notice (8): Undefined index: Usuarios in [/www/advanced.local/app/Controller/usuarios_controller.php, line 15]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 15
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:03:34 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:03:34 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 22
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:04:40 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:04:40 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 22
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:05:47 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:05:47 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 22
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:07:17 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:07:29 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:08:37 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:08:54 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:09:43 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:10:04 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:10:08 Notice: Notice (8): Undefined index: notEmpty in [/www/advanced.local/lib/Cake/Utility/Validation.php, line 311]
+Trace:
+Validation::date() - CORE/Cake/Utility/Validation.php, line 311
+Model::invalidFields() - CORE/Cake/Model/Model.php, line 3008
+Model::validates() - CORE/Cake/Model/Model.php, line 2888
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 19
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:35:49 Notice: Notice (8): Indirect modification of overloaded property UsuariosController::$data has no effect in [/www/advanced.local/app/Controller/usuarios_controller.php, line 21]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 21
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:38:55 Notice: Notice (8): Indirect modification of overloaded property UsuariosController::$data has no effect in [/www/advanced.local/app/Controller/usuarios_controller.php, line 21]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 21
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:47:44 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 17
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:47:44 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 17
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:47:44 Notice: Notice (8): Indirect modification of overloaded property UsuariosController::$data has no effect in [/www/advanced.local/app/Controller/usuarios_controller.php, line 17]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 17
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:48:08 Notice: Notice (8): Indirect modification of overloaded property UsuariosController::$data has no effect in [/www/advanced.local/app/Controller/usuarios_controller.php, line 17]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 17
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 20:49:06 Notice: Notice (8): Indirect modification of overloaded property UsuariosController::$data has no effect in [/www/advanced.local/app/Controller/usuarios_controller.php, line 17]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 17
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:46:38 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:56:59 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:03 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:03 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:03 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:03 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:15 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:15 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:15 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:57:15 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:58:54 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:58:54 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:58:54 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:58:54 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:59:00 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:59:00 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:59:00 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 21:59:00 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:01 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:01 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:01 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:01 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:46 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:46 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:46 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:00:46 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:02:19 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:02:19 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:02:19 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:02:19 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:29 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:29 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:29 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:29 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:52 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:52 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:52 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:28:52 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:29:32 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:29:32 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:29:32 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:29:32 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:29:35 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:35:26 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:35:26 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:35:26 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:35:26 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:35:49 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:36:52 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:03 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:03 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:03 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:03 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:27 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:30 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:30 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:30 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:30 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:37:53 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:15 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:15 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:15 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:15 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:20 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:20 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:20 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:20 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:44 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 17]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 17
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:53 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:53 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:38:53 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:39:00 Notice: Notice (8): Undefined index: data_nascimento in [/www/advanced.local/app/Controller/usuarios_controller.php, line 34]
+Trace:
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:39:00 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:39:00 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 23]
+Trace:
+DateComponent::ReadToDB() - APP/Controller/Component/date.php, line 23
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 34
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:50:48 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 16]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 16
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 22:58:26 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 10]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 10
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 23:02:02 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 10]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 10
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-29 23:02:10 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 10]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 10
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
