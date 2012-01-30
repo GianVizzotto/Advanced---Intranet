@@ -81,7 +81,7 @@
 						                
 						                <!--INICIO BOTOES -->
 					<div id="botoes">
-						<a href="index.php"><img src="/img/bt_inicio.jpg" /></a>
+						<a href="/dashboard"><img src="/img/bt_inicio.jpg" /></a>
 						<a href="perfil.php"><img src="/img/bt_perfil.jpg" /></a>
 						<a href="avisos.php"><img src="/img/bt_avisos.jpg" /></a>
 						<a href="eventos.php"><img src="/img/bt_eventos.jpg" /></a>
