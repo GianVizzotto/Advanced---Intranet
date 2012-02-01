@@ -988,3 +988,477 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
 [main] - APP/webroot/index.php, line 96
 
+2012-01-31 21:46:43 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 10]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 10
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 21:56:13 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 10]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 10
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 21:56:45 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 10]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 10
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 21:57:25 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 10]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 10
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:02:03 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 11]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 11
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:04:45 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 11]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 11
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:05:42 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 11]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 11
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:06:03 Notice: Notice (8): Undefined variable: id in [/www/advanced.local/app/View/Usuarios/cadastro.ctp, line 11]
+Trace:
+include - APP/View/Usuarios/cadastro.ctp, line 11
+View::_render() - CORE/Cake/View/View.php, line 595
+View::render() - CORE/Cake/View/View.php, line 362
+Controller::render() - CORE/Cake/Controller/Controller.php, line 900
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 111
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:15:42 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:15:42 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:16:16 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:16:16 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:23:13 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:23:13 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:25:10 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:25:10 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:26:00 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 22:26:00 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:13:54 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:13:54 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:15:14 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:15:14 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:18:02 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:18:02 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:23:30 Notice: Notice (8): session_start() [http://php.net/function.session-start]: ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in [/www/advanced.local/lib/Cake/Model/Datasource/CakeSession.php, line 614]
+Trace:
+session_start - [internal], line ??
+CakeSession::_startSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 614
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 194
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 401
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+UsuariosController::excluir() - APP/Controller/usuarios_controller.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:23:30 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:23:30 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:25:05 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:25:05 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:25:35 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:25:35 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:26:25 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:26:25 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:26:43 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:26:43 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:28:02 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:28:02 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:28:05 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:28:05 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:32:12 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:32:12 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 55
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:40:23 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 56
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:40:23 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 56
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:40:25 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 56
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:40:25 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 56
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:40:38 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 56
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-01-31 23:40:38 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 56
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+

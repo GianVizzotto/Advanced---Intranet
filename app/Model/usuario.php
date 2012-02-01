@@ -59,6 +59,7 @@ class Usuario extends AppModel {
 							'conditions' => array ( 'Usuario.departamento_id = Departamento.id' )
 							)
 						),
+					'conditions' => array ( 'status_usuarios_id' => 1 ),	
 					'order' => array ( 'Usuario.id' => 'DESC' ),
 					'limit' => 8	
 				 	)
@@ -66,6 +67,12 @@ class Usuario extends AppModel {
 		
 		return $lasts;
 				 
+	}
+	
+	function invalidaLogin ($dados) {
+		
+	 	return $this->save($dados);
+		
 	}
 	
 }

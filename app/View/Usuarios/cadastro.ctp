@@ -5,11 +5,14 @@
 		<div class="conteudo">
 			<div class="formulario">
 			
- 				<?php echo $this->Form->create('Usuario' ); ?>
+ 				<?php echo $this->Form->create('Usuario' , array( 'options' => array ( 'action' => 'cadastro' , 'controller' => 'usuarios' ) ) ); ?>
+<!-- 				<form action="/usuarios/cadastro" id="UsuarioCadastroForm" method="post" name="Usuario">-->
  						
- 					<?php if($id):?>
- 						<?php echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
- 					<?php endif;?>		
+ 					<?php //if($id):?>
+ 						<?php //echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
+ 					<?php //endif;?>		
+ 					
+ 					<?php echo $this->Form->input('status_usuarios_id' , array ( 'type' => 'hidden' , 'value' => 1 ) ) ;?>
                                 
 					<label for="Nome">
 						Nome: <br />
@@ -54,8 +57,8 @@
 					                                                             
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>
 				
-				<?php echo $this->Form->end();?>
-                                
+				<?php //echo $this->Form->end();?>
+                 </form>               
 			</div>  
 		</div>
 	</div>
@@ -74,7 +77,8 @@
 				<tr>
 					<td><?php echo $ultimo_cadastrado['Usuario']['nome'];?></td>  
 					<td align="center"><?php echo $ultimo_cadastrado['Departamento']['nome'];?></td>
-					<td align="center"><a href="/usuarios/cadastro/<?php echo $ultimo_cadastrado['Usuario']['id'];?>"><img src="/img/edit_icon.png" /></a></td>
+					<td align="center"><a href="/usuarios/cadastro/<?php echo $ultimo_cadastrado['Usuario']['id'];?>"><img src="/img/edit_icon.png" /></a>
+					<a href="/usuarios/excluir/<?php echo $ultimo_cadastrado['Usuario']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
 			<?php endforeach;?>
 			</table>	
 		</div>
