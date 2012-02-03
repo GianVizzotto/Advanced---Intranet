@@ -4,9 +4,19 @@
 
 class UsuariosController extends AppController {
 	
-	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' ) ;
+	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario' ) ;
 	var $components = array ( 'Date' ) ;
 	var $helpers = array ( 'Paginator' ) ;
+	
+	public $paginate = array(
+        	'limit' => 1
+			);
+			
+	function index(){
+		
+		$this->redirect('/usuarios/listar'); 
+		
+	}		
 	
 	function cadastro( $id = null ) {
 		
@@ -64,9 +74,87 @@ class UsuariosController extends AppController {
 		
 	}
 	
-	function listar(){
+	function listar() {
 
-		//Under Construction
+		$status = $this->StatusUsuario->getStatus() ;
+		$status = array('' => 'Selecione') + (array)$status;
+		
+		$departamentos = $this->Departamento->getDepartamentos();
+		$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		
+		$this->set('status' , $status) ;
+		$this->set('departamentos' , $departamentos) ;
+		
+		$this->paginate = array(
+			'fields' => array(
+				'Usuario.id',
+				'Usuario.nome',
+				'Usuario.email',
+				'Departamento.nome',
+				'Status.nome'
+				),
+			'joins' => array(
+				array(
+					'table' => 'departamentos',
+					'alias' => 'Departamento',
+					'type' => 'INNER',
+					'conditions' => array ( 'Usuario.departamento_id = Departamento.id' )	
+				),
+				array(
+					'table' => 'status_usuarios',
+					'alias' => 'Status',
+					'type' => 'INNER',
+					'conditions' => array ( 'Usuario.status_usuario_id = Status.id' )
+					)
+				)
+		);
+		
+		if( $this->params['url'] ) {
+			
+			$filtros = $this->params['url'];
+			$x = 0 ;
+			
+			if ( !empty ( $filtros['nome'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					"lower(Usuario.nome) like lower('%".$filtros['nome']."%')" 
+				);
+				
+				$x++ ;
+				
+			}
+			if ( !empty ( $filtros['email'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					"lower(Usuario.email) like lower('".$filtros['email']."')" 
+				);
+				
+				$x++ ;
+				
+			}
+			if ( !empty ( $filtros['departamento_id'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					'Departamento.id = '. $filtros['departamento_id']
+				);
+				
+				$x++ ;
+				
+			}
+			if ( !empty ( $filtros['status_usuario_id'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					'Status.id = '. $filtros['status_usuario_id']
+				);
+				
+			}
+			
+		}
+		
+		$this->request->data['Usuarios'] = $filtros ;
+		
+		$dados = $this->paginate('Usuario') ;
+		$this->set('usuarios' , $dados) ;
 		
 	}
 	
@@ -76,7 +164,7 @@ class UsuariosController extends AppController {
 		
 		$this->Usuario->id = $id ;
 		
-		$dados['Usuario'] = array('status_usuarios_id' => 2) ;
+		$dados['Usuario'] = array('status_usuario_id' => 2) ;
 		
 		$result = $this->Usuario->invalidaLogin($dados) ;
 		

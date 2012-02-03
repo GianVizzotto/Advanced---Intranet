@@ -1462,3 +1462,1788 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
 [main] - APP/webroot/index.php, line 96
 
+2012-02-01 20:23:41 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 20:23:51 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:31:59 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:32:01 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:32:20 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:32:33 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:32:56 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:33:03 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:33:11 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:33:25 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:33:27 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:33:30 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:33:58 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:34:22 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:34:30 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:34:35 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:34:51 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 69
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:41:37 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:41:50 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:55:51 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:58:41 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:59:01 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 21:59:55 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 22:00:52 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 22:01:04 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 22:01:35 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 22:02:48 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-01 22:02:55 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:35:31 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:35:31 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 148]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 148
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:37:13 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:37:13 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 148]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 148
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:37:27 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:41:23 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:55:58 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 73
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:57:58 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 61
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:57:58 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 61
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:59:16 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 61
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 22:59:16 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 61
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:13:08 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:13:08 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:13:13 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:13:13 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:17:49 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:17:49 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:18:31 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:18:31 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:19:19 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:19:19 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:19:40 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:19:40 Notice: Notice (8): Undefined index: status_usuario_id in [/www/advanced.local/app/Controller/usuarios_controller.php, line 147]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:48 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:48 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:54 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:54 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:57 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:57 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:58 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:22:58 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:00 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:00 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:00 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:00 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:01 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:01 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:02 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:02 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:03 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:03 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:03 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:03 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:05 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:05 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:05 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:05 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:07 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:07 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:08 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:08 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:09 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:09 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:22 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:22 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:25 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:25 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:28 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:28 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:31 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:31 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:32 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:32 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:35 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:35 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:38 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:38 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:40 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:40 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:41 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:41 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:44 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:44 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:45 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:45 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:47 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:47 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:49 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:49 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:50 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:50 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:51 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:23:51 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:26:22 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:26:22 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:26:35 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:26:35 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:05 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:05 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:12 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:12 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:19 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:19 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:24 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:24 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:47 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:27:47 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:28:54 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:28:54 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:29:08 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:29:08 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:29:26 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:29:26 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:30:00 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:30:00 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:30:09 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:30:09 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:30:29 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:30:29 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:31:09 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:31:09 Notice: Notice (8): Undefined variable: filtros in [/www/advanced.local/app/Controller/usuarios_controller.php, line 154]
+Trace:
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 154
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:31:16 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:33:07 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:33:10 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:33:20 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:38:20 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:40:42 Notice: Notice (8): Use of undefined constant status_usuarios - assumed 'status_usuarios' in [/www/advanced.local/lib/Cake/Utility/ClassRegistry.php, line 141]
+Trace:
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 141
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 670
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 356
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 394
+UsuariosController::listar() - APP/Controller/usuarios_controller.php, line 79
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:41:43 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:41:43 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:41:52 Notice: Notice (8): Undefined offset: 2 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+
+2012-02-02 23:41:52 Notice: Notice (8): Undefined offset: 1 in [/www/advanced.local/app/Controller/Component/date.php, line 14]
+Trace:
+DateComponent::DBToRead() - APP/Controller/Component/date.php, line 14
+UsuariosController::cadastro() - APP/Controller/usuarios_controller.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 473
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 104
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 86
+[main] - APP/webroot/index.php, line 96
+

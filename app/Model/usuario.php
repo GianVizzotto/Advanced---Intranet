@@ -59,7 +59,7 @@ class Usuario extends AppModel {
 							'conditions' => array ( 'Usuario.departamento_id = Departamento.id' )
 							)
 						),
-					'conditions' => array ( 'status_usuarios_id' => 1 ),	
+					'conditions' => array ( 'status_usuario_id' => 1 ),	
 					'order' => array ( 'Usuario.id' => 'DESC' ),
 					'limit' => 8	
 				 	)

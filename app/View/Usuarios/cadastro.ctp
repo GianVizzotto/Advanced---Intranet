@@ -6,13 +6,12 @@
 			<div class="formulario">
 			
  				<?php echo $this->Form->create('Usuario' , array( 'options' => array ( 'action' => 'cadastro' , 'controller' => 'usuarios' ) ) ); ?>
-<!-- 				<form action="/usuarios/cadastro" id="UsuarioCadastroForm" method="post" name="Usuario">-->
  						
  					<?php //if($id):?>
  						<?php //echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
  					<?php //endif;?>		
  					
- 					<?php echo $this->Form->input('status_usuarios_id' , array ( 'type' => 'hidden' , 'value' => 1 ) ) ;?>
+ 					<?php echo $this->Form->input('status_usuario_id' , array ( 'type' => 'hidden' , 'value' => 1 ) ) ;?>
                                 
 					<label for="Nome">
 						Nome: <br />
@@ -57,9 +56,8 @@
 					                                                             
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>
 				
-				<?php //echo $this->Form->end();?>
-                 </form>               
-			</div>  
+				<?php echo $this->Form->end();?>
+           </div>  
 		</div>
 	</div>
 	
