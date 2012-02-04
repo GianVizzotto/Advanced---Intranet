@@ -75,4 +75,31 @@ class Usuario extends AppModel {
 		
 	}
 	
+	function getUsuarioDpto($departamento_id , $usuario_id) {
+		
+		$usuarios =	$this->find('list' , array(
+						'fields' => array(
+							'id',
+							'nome'
+							),
+						'conditions' => array ( 
+							'departamento_id ='. $departamento_id
+						)
+						)
+					);
+					
+		if ( $cidade_id ) {
+			
+			$this->find['conditions'] = array( 'id = '.$usuario_id ) ;
+			
+		} else {
+			
+			$usuarios = array(''=>'Selecione') + (array)$usuarios ;
+
+		}				
+		
+		return $usuarios ;
+		
+	}
+	
 }

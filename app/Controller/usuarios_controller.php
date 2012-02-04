@@ -9,7 +9,7 @@ class UsuariosController extends AppController {
 	var $helpers = array ( 'Paginator' ) ;
 	
 	public $paginate = array(
-        	'limit' => 1
+        	'limit' => 25
 			);
 			
 	function index(){

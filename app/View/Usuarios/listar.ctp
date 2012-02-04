@@ -1,4 +1,5 @@
-<?php echo $this->Html->script('cadastro');?>
+<?php echo $this->Html->script('cadastro'); ?>
+	
 <div id="meio">
 	<div id="colunaE" style=" width: 950px;">
 		<h1>Filtros</h1> 
@@ -31,12 +32,12 @@
 		<h1>Listagem de Usuários</h1> 
 			
 		<div class="conteudo" style=" width: 910px;">
-			<table>
+			<table width="100%">
 				<tr>
-					<th><?php echo $this->Paginator->sort('nome');?></th>
-					<th width="20%"><?php echo $this->Paginator->sort('email' , 'E-mail');?></th>
-					<th width="15%"><?php echo $this->Paginator->sort('departamento_id' , 'Dpto.');?></th>
-					<th width="15%"><?php echo $this->Paginator->sort('status_id' , 'Status');?></th>
+					<th style="text-align:left;"><?php echo $this->Paginator->sort('nome');?></th>
+					<th width="20%" style="text-align:left;"><?php echo $this->Paginator->sort('email' , 'E-mail');?></th>
+					<th width="15%" style="text-align:left;"><?php echo $this->Paginator->sort('departamento_id' , 'Dpto.');?></th>
+					<th width="15%" style="text-align:left;"><?php echo $this->Paginator->sort('status_id' , 'Status');?></th>
 				</tr>			
 			<?php foreach ($usuarios as $usuario):?>
 				<tr>
@@ -45,8 +46,12 @@
 					<td align="center"><?php echo $usuario['Departamento']['nome'];?></td>
 					<td align="center"><?php echo $usuario['Status']['nome'];?></td>
 			<?php endforeach;?>
-			</table>	
-			<?php echo $this->Paginator->numbers(); ?>
+			</table><br />
+			<div class="paginacao" style="text-align:center;">
+				<span><?php echo $this->Paginator->first('Primeira'); ?></span>	
+				<span><?php echo $this->Paginator->numbers(); ?></span>
+				<span><?php echo $this->Paginator->last('Última');	?></span>
+			</div>
 		</div>
 	</div>
 </div>
