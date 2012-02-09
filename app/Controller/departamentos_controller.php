@@ -3,12 +3,55 @@
 class DepartamentosController extends AppController {
 	
 	var $uses = array ( 'Departamento' ) ;
+	var $helpers = array ( 'Paginator' ) ;
 	
+	public $paginate = array(
+        	'limit' => 1
+			);
+
 	function index(){
-		$ultimos_departamentos = $this->Departamento->lastDptos() ;
-		$this->set('ultimos_departamentos' , $ultimos_departamentos);
-		// print_r ($ultimos_departamentos);
+
+		$this->paginate = array(
+			'fields' => array(
+				'Departamento.id',
+				'Departamento.nome',
+				'Departamento.descricao'
+				)
+			);
+				
+		if( $this->params['url'] ) {
+			
+			$filtros = $this->params['url'];
+			$x = 0 ;
+			
+			if ( !empty ( $filtros['nome'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					"lower(Departamento.nome) like lower('%".$filtros['nome']."%')" 
+				);
+				
+				$x++ ;
+				
+			}
+			if ( !empty ( $filtros['descricao'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					"lower(Departamento.descricao) like lower('%".$filtros['descricao']."%')" 
+				);
+				
+				$x++ ;
+				
+			}
+			
+		}
+		$this->paginate['limit'] = 1;
+		$this->paginate['paramType'] = 'querystring';
+		// print_r($this->paginate);
 		// die;
+		$this->request->data['Departamentos'] = $filtros ;
+		$dados = $this->paginate('Departamento') ;
+		$this->set('ultimos_departamentos' , $dados) ;
+		
 	}
 	
 	function add($id = null){
