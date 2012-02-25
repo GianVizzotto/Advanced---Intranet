@@ -1,3 +1,7 @@
+<?php
+	echo $this->Html->script('ckeditor/ckeditor.js');
+	//echo $this->Html->script('ckfinder/ckfinder.js');
+?> 
 <div id="meio">
 	<div id="colunaE" style=" width: 950px;">
 		<?php if($id):?>
@@ -21,7 +25,12 @@
 					
 					<label for="Conteudo">
 						Conte&uacute;do: <br />                                           
-						<?php echo $this->Form->input('conteudo' , array ( 'type' => 'textarea' , 'label' => false) ) ;?> 
+						<?php echo $this->Form->input('conteudo' , array ( 'type' => 'textarea' , 'label' => false, 'class' => $ckeditorClass )) ;?> 
+					</label>
+					
+					<label for="Imagem">
+						Imagem de contexto: <br />                                           
+						<?php echo $this->Form->input('imagem' , array ( 'type' => 'file' , 'label' => false )) ;?> 
 					</label>
 					
 					<label for="Tipos">
@@ -38,3 +47,14 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+  var ck_newsContent = CKEDITOR.replace( 'data[Evento][conteudo]', {toolbar : [
+			[ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ],
+			[ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ],
+			['Link', 'Unlink', '-', 'Maximize'],
+			'/',
+			['FontSize', 'Bold', 'Italic','Underline','StrikeThrough','Subscript','Superscript','RemoveFormat'],
+			[ 'NumberedList','BulletedList','-','Outdent','Indent','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ],
+			['TextColor', 'BGColor', '-','Table','HorizontalRule', '-', 'Smiley','SpecialChar']
+		] });
+</script>
