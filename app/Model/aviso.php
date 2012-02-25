@@ -27,9 +27,28 @@ class Aviso extends AppModel {
 		
 	}
 	
-	function ultimosAvisos($departamento_id = null) {
+	function filtraAvisos($tipo_filtro , $valor = null ,$departamento_id = null , $aviso_id = null) {
 		
-		$hoje = "'". date('Y-m-d')." 23:59:59" ."'" ;
+		if($tipo_filtro == 1){
+			
+			if($valor != 3){
+				$condição = 'Aviso.status_aviso_id ='.  $valor; 
+			} else {
+				$condição = array ( '1=1' );
+			}
+			
+		} elseif ( $tipo_filtro == 3 ) {
+			
+			$condição = array( 'Aviso.id = '.$aviso_id );
+			
+		} else {
+			
+			$fim = "'". date('Y-m-d')." 23:59:59" ."'";
+			$inicio = "'". date('Y-m-d')." 00:00:00" ."'";
+			
+			$condição = "Aviso.data_criacao >=  $inicio and Aviso.data_criacao <= $fim";
+						
+		}
 		
 		$avisos =	$this->find('all' , array ( 
 						'fields' => array(
@@ -37,8 +56,10 @@ class Aviso extends AppModel {
 							'Aviso.assunto',
 							'Aviso.mensagem',
 							'Aviso.data_criacao',
+							'Aviso.anexo',
 							'Usuario.nome',
-							'Departamento.nome'
+							'Departamento.nome',
+							'Cargo.nome'
 							),
 						'joins' => array(
 							array(
@@ -52,14 +73,20 @@ class Aviso extends AppModel {
 								'alias' => 'Departamento',
 								'type' => 'INNER',
 								'conditions' => array ( 'Aviso.departamento_id = Departamento.id' )
-								)
+								),
+							array(
+								'table' => 'cargos',
+								'alias' => 'Cargo',
+								'type' => 'INNER',
+								'conditions' => array ( 'Usuario.cargo_id = Cargo.id' )
+								)	
 							),
-						'conditions' => "Aviso.data_criacao <=  $hoje"
+						'conditions' => $condição
 						)							
 					);
 					
-		return $avisos;					
-				
+		return $avisos ;			
+			
 	}
 	
 }

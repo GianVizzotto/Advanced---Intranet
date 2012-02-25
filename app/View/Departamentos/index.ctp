@@ -1,6 +1,5 @@
 <?php
-	$this->Paginator->options(array('url' => array('controller' => 'departamentos', 'action' => 'index', '?' => array('nome' => $this->params['url'][nome], 'descricao' => $this->params['url'][descricao]) ) , 'paramType' => 'querystring'));
-	print_r($this->params['url']);
+	$this->Paginator->options(array('url' => array('controller' => 'departamentos', 'action' => 'index', '?' => array('nome' => $this->params['url']['nome'], 'descricao' => $this->params['url']['descricao']) ) , 'paramType' => 'querystring'));
 ?>
 <div id="meio">
 	<div id="colunaE" style=" width: 950px;">

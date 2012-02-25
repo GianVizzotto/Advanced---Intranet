@@ -151,6 +151,9 @@ class UsuariosController extends AppController {
 			
 		}
 		
+		$this->paginate['limit'] = 20;
+		$this->paginate['paramType'] = 'querystring';
+		
 		$this->request->data['Usuarios'] = $filtros ;
 		
 		$dados = $this->paginate('Usuario') ;
