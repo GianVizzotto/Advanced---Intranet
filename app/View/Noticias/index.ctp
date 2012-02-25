@@ -1,4 +1,25 @@
+<?php
+	$this->Paginator->options(array('url' => array('controller' => 'noticias', 'action' => 'index', '?' => array('nome' => $this->params['url'][nome], 'tipos_conteudo_id' => $this->params['url'][tipos_conteudo_id]) ) , 'paramType' => 'querystring'));
+?>
 <div id="meio">
+	<div id="colunaE" style=" width: 950px;">
+		<h1>Filtros</h1> 
+		<div class="conteudo" style=" width: 910px;margin-bottom:20px;">
+			<div class="formulario">
+				<?php echo $this->Form->create('Noticias' , array ( 'type' => 'get' , 'action' => 'index' ) ) ;?>
+					<label for="Nome">
+						Nome:<br />
+						<?php echo $this->Form->input('nome' , array ( 'type' => 'text' , 'label' => false , 'div' => false ) ) ;?>
+					</label>
+					<label for="Tipo">
+						Tipo:<br />
+						<?php echo $this->Form->input('tipos_conteudo_id' , array ( 'options' => $Tipos_conteudos , 'label' => false , 'div' => false ) ) ;?>
+					</label>
+					<?php echo $this->Form->submit('Pesquisar' , array ( 'class' => 'btForm' ) ) ;?>
+				<?php echo $this->Form->end();?>	
+			</div>  
+		</div>
+	</div><br />
 	<div id="colunaE" style=" width: 950px;">
 		<h1>ÚLTIMAS NOTÍCIAS CADASTRADAS<a style="float: right; text-decoration: none; color: white;" href="/noticias/add">CRIAR NOTÍCIA</a></h1> 
 			
@@ -17,7 +38,12 @@
 					<td align="center"><a href="/noticias/add/<?php echo $ultimos_noticia['Noticia']['id'];?>"><img src="/img/edit_icon.png" /></a></td>
 					<td align="center"><a href="/noticias/remove/<?php echo $ultimos_noticia['Noticia']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
 			<?php endforeach;?>
-			</table>	
+			</table>
+			<div class="paginacao" style="text-align:center;">
+				<span><?php echo $this->Paginator->first('Primeira'); ?></span>	
+				<span><?php echo $this->Paginator->numbers(); ?></span>
+				<span><?php echo $this->Paginator->last('Última');	?></span>
+			</div>	
 		</div>
 	</div>
 </div>
