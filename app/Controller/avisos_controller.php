@@ -2,9 +2,9 @@
 
 class AvisosController extends AppController {
 	
-	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario' , 'Aviso' , 'StatusAviso') ;
-	var $components = array ( 'Date' ) ;
-	
+	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario' , 'Aviso' , 'StatusAviso', 'AvisoDestinatario') ;
+	var $helpers = array('Time') ;
+		
 	function index ( ) {
 		
 		$departamentos = $this->Departamento->getDepartamentos();
@@ -17,8 +17,6 @@ class AvisosController extends AppController {
 		
 		$this->set('status_avisos' , $status_avisos);
 		
-		$avisos = $this->Aviso->ultimosAvisos();
-		
 		if($this->data){
 			
 			$this->Aviso->set($this->data);
@@ -28,6 +26,7 @@ class AvisosController extends AppController {
 				if($this->Aviso->salvaAviso($this->data['Aviso'])) {
 					
 					$this->Session->setFlash('Aviso cadastrado com sucesso.', 'confirm_message');
+					unset($this->data);
 					$this->redirect('/');
 					
 				} else {
@@ -50,8 +49,7 @@ class AvisosController extends AppController {
 			
 		}
 
-		$this->set('usuarios' , $usuarios);
-		$this->set('avisos' , $avisos);
+		$this->set('usuarios' , $usuarios);		
 		
 	}
 	
@@ -71,6 +69,35 @@ class AvisosController extends AppController {
 			$this->set('usuarios' , $usuarios);
 			
 		}
+		
+	}
+	
+	function filtraAvisos($tipo_filtro , $valor=null) {
+		
+		$this->layout = '' ;
+		
+		if ($valor != null){
+			$avisos = $this->Aviso->filtraAvisos($tipo_filtro , $valor);
+		} else {
+			$avisos = $this->Aviso->filtraAvisos($tipo_filtro);
+		}
+		
+		$this->set('avisos' , $avisos) ;
+		
+	}
+	
+	function aviso_detalhe(){
+		
+		$this->layout = '' ;
+		
+		$id = $this->params['url']['id'] ;
+		
+		$aviso = $this->Aviso->filtraAvisos(3,null,null,$id) ;
+		$destinatarios = $this->AvisoDestinatario->getDestinatarios($id);
+		
+		$this->set('aviso', $aviso);
+		$this->set('destinatarios', $destinatarios);
+		
 	}
 	
 }
