@@ -79,31 +79,22 @@
                 <!-- FINAL COLUNA B -->                
             
             	<!-- INICIO COLUNA C -->
-			                <div id="colunaA">
+			    <div id="colunaA">
                 
                 <h1>ÚLTIMAS NOTÍCIAS</h1>
                 
-                    <a href="lib/modalbox/detalhe_noticia.php" rel="prettyPopin" class="box">
-                    	<b>28/06 - 14h50</b>
-                    	<strong>TÍTULO DA NOTÍCIA</strong>
-                    	<span>Lorem iosum dolor sit amet, consectetur atap adipiscing elit. Maecenas venenatis alimen elementum neque...</span>                       	 
-                    </a>
-                    
-               
-                    <a href="lib/modalbox/detalhe_noticia.php" rel="prettyPopin" class="box">
-                    	<b>28/06 - 14h50</b>
-                    	<strong>TÍTULO DA NOTÍCIA</strong>
-                    	<span>Lorem iosum dolor sit amet, consectetur atap adipiscing elit. Maecenas venenatis alimen elementum neque...</span>                       	 
-                    </a>
-                    
-               
-                    <a href="lib/modalbox/detalhe_noticia.php" rel="prettyPopin" class="box">
-                    	<b>28/06 - 14h50</b>
-                    	<strong>TÍTULO DA NOTÍCIA</strong>
-                    	<span>Lorem iosum dolor sit amet, consectetur atap adipiscing elit. Maecenas venenatis alimen elementum neque...</span>                       	 
-                    </a>                                        
-
-                <a href="noticias.php" class="bt_padrao">+ NOTÍCIAS</a> 
+                
+                	<?php foreach ($noticias_direita as $noticia_direita):?>
+			
+				        <a href="/noticias/modalbox/<?php echo $noticia_direita['Noticia']['id'];?>" rel="prettyPopin" class="box">
+				        	<b><?php echo $noticia_direita['Noticia']['data_criacao'];?></b>
+				        	<strong><?php echo $noticia_direita['Noticia']['nome'];?></strong>
+				        	<span><?php echo substr(strip_tags($noticia_direita['Noticia']['conteudo']), 0, 100)."...";?></span>                       	 
+				        </a>
+						
+					<?php endforeach;?>
+					
+                <a href="/noticias/visualizar" class="bt_padrao">+ NOTÍCIAS</a> 
                                 
                 </div>
                 <!-- FINAL COLUNA C -->                
