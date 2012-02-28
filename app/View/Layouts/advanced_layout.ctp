@@ -57,8 +57,11 @@
 						                    
 						<!-- INICIO USUARIO -->
 						<div id="usuario">
-							Bem-vindo <strong> ADRIANO CARLOS DA SILVA </strong> <br />
-							Setor: <strong>WEB</strong>
+						
+						<?php $usuario = $this->Session->read('Usuario');?>
+							Bem-vindo <strong> <?php echo $usuario['Usuario']['nome'];?> </strong><br />
+							Setor: <strong><?php echo $usuario['Departamento']['nome'];?></strong><br />
+							<strong><a href="/login/logoff">Sair</a></strong>
 						</div>
 						<!-- FINAL USUARIO -->  
 						                    

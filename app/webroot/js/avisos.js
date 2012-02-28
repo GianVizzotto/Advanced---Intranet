@@ -71,3 +71,22 @@ function getAvisos(tipo_filtro , filtro){
 	});
 	
 }
+
+function gravaResposta(){
+	
+	data = $("#Resposta").serialize();
+	
+	$.ajax({		
+		url: '/avisos/salvaResposta/' + data,
+		dataType: 'html',
+		success: function(ret){
+			alert(ret);
+		},
+		error: function(err){
+			alert('Impossível salvar resposta.');
+		}
+	});		
+	
+	return false;
+	
+}
