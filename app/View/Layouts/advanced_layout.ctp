@@ -16,6 +16,7 @@
 <?php echo $this->Html->script('jquery.pngFix');?>
 <?php echo $this->Html->script('jquery.fancybox-1.3.4');?>
 <?php echo $this->Html->script('jquery.globals');?>
+<title>Sistema - Advanced</title>
 </head>
 
 <body class="bege">
@@ -87,11 +88,11 @@
 						<a href="/dashboard"><img src="/img/bt_inicio.jpg" /></a>
 						<a href="perfil.php"><img src="/img/bt_perfil.jpg" /></a>
 						<a href="avisos.php"><img src="/img/bt_avisos.jpg" /></a>
-						<a href="eventos.php"><img src="/img/bt_eventos.jpg" /></a>
+						<a href="/eventos/visualizar"><img src="/img/bt_eventos.jpg" /></a>
 						<a href="aniversariantes.php"><img src="/img/bt_aniversariantes.jpg" /></a>
 						<a href="ramais.php"><img src="/img/bt_ramais.jpg" /></a>
 						<a href="ajuda.php"><img src="/img/bt_ajuda.jpg" /></a>
-						<a href="noticias.php"><img src="/img/bt_noticias.jpg" /></a>
+						<a href="/noticias/visualizar"><img src="/img/bt_noticias.jpg" /></a>
 					</div>
 					<!-- FINAL BOTOES -->
 				

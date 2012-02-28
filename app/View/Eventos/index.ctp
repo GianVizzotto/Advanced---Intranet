@@ -16,7 +16,7 @@
 						<?php echo $this->Form->input('tipos_conteudo_id' , array ( 'options' => $Tipos_conteudos , 'label' => false , 'div' => false ) ) ;?>
 					</label>
 					<?php echo $this->Form->submit('Pesquisar' , array ( 'class' => 'btForm' ) ) ;?>
-				<?php echo $this->Form->end();?>	
+				<?php echo $this->Form->end();?>
 			</div>  
 		</div>
 	</div><br />

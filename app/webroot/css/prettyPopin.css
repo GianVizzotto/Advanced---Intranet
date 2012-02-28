@@ -24,7 +24,7 @@
 	width:41px;
 	height:9px;
 	text-indent:-10000px;
-	background:url(img/images/b_close.gif) bottom left no-repeat
+	background:url(/img/b_close.gif) bottom left no-repeat
 }
 .prettyPopin .prettyContent {
 	position:relative;

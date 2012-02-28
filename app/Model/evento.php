@@ -56,6 +56,34 @@ class Evento extends AppModel {
 		}
 	}
 	
+	function getUrlImagem($id){
+		$url_imagem =	$this->find('first' , array ( 
+										'fields' => array ( 
+											'imagem'
+											),
+										'conditions' => array ( 'id' => $id )
+										)
+									) ;
+							
+		return $url_imagem ;
+	}
+	
+	function getEvento($id){
+		$evento_unico =	$this->find('first' , array ( 
+										'fields' => array (
+											'id', 
+											'nome', 
+											'data_criacao', 
+											'conteudo', 
+											'imagem'
+											),
+										'conditions' => array ( 'id' => $id )
+										)
+									) ;
+							
+		return $evento_unico ;
+	}
+	
 }
 
 
