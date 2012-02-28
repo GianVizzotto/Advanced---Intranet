@@ -56,6 +56,34 @@ class Noticia extends AppModel {
 		}
 	}
 	
+	function getUrlImagem($id){
+		$url_imagem =	$this->find('first' , array ( 
+										'fields' => array ( 
+											'imagem'
+											),
+										'conditions' => array ( 'id' => $id )
+										)
+									) ;
+							
+		return $url_imagem ;
+	}
+	
+	function getNoticia($id){
+		$noticia_unico =	$this->find('first' , array ( 
+										'fields' => array (
+											'id', 
+											'nome', 
+											'fonte', 
+											'data_criacao', 
+											'conteudo', 
+											'imagem'
+											),
+										'conditions' => array ( 'id' => $id )
+										)
+									) ;
+							
+		return $noticia_unico ;
+	}
 }
 
 
