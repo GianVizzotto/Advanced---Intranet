@@ -88,7 +88,7 @@ class Usuario extends AppModel {
 						)
 					);
 					
-		if ( $cidade_id ) {
+		if ( $usuario_id ) {
 			
 			$this->find['conditions'] = array( 'id = '.$usuario_id ) ;
 			

@@ -7,10 +7,6 @@ class Aviso extends AppModel {
 				'rule' => 'notEmpty',
 				'message' => 'Este campo não pode ser vazio'
 				 ),
-			'usuario_id' => array (
-				 'rule' => 'notEmpty',
-				 'message' => 'Este campo não pode ser vazio'
-				 ),
 			'assunto' => array (
 				 'rule' => 'notEmpty',
 				 'message' => 'Este campo não pode ser vazio'
@@ -23,7 +19,7 @@ class Aviso extends AppModel {
 	
 	function salvaAviso($dados){
 		
-		$this->save($dados);
+		return $this->save($dados);
 		
 	}
 	
