@@ -5,40 +5,20 @@
                 <div id="colunaA">
                 
                 <h1>ANIVERSARIANTES DO MÊS</h1>
+                    <?php foreach ($usuarios_esquerda as $usuario_esquerda):?>
+	                    <a class="box" href="/aniversariantes">
+	
+	                        <img width="75" src="/img/img_perfil.jpg"  />	
+	                        
+	                            <strong><?php echo $usuario_esquerda['Usuario']['nome'];?></strong>
+	                            <span><?php echo $usuario_esquerda['Departamentos']['nome'];?></span>
+	                            <span><?php echo $usuario_esquerda['Usuario']['data_nascimento'];?></span>
+	                            <span class="bt">ENVIE UMA MENSAGEM</span>
+	                                                        
+	                    </a>
+	                <?php endforeach;?>
 
-                    <a class="box" href="aniversariantes.php">
-
-                        <img width="75" src="/img/img_perfil.jpg"  />	
-                        
-                            <strong>JOÃO PEREIRA </strong>
-                            <span>Comercial</span>
-                            <span>18/08/2010</span>
-                            <span class="bt">ENVIE UMA MENSAGEM</span>
-                                                        
-                    </a>
-
-                    <a class="box" href="aniversariantes.php">
-
-                        <img width="75" src="/img/img_perfil.jpg"  />	
-                        
-                            <strong>JOÃO PEREIRA </strong>
-                            <span>Comercial</span>
-                            <span>18/08/2010</span>
-                            <span class="bt">ENVIE UMA MENSAGEM</span>
-                            
-                    </a>
-
-                    <a class="box" href="aniversariantes.php">
-
-                        <img width="75" src="/img/img_perfil.jpg"  />	
-                        
-                            <strong>JOÃO PEREIRA </strong>
-                            <span>Comercial</span>
-                            <span>18/08/2010</span>
-                            <span class="bt">ENVIE UMA MENSAGEM</span>                            
-                    </a>                                        
-
-                <a href="#" class="bt_padrao">+ ANIVERSÁRIOS</a>                               
+                <a href="/aniversariantes" class="bt_padrao">+ ANIVERSÁRIOS</a>                               
                 
                 </div>
                 <!-- FINAL COLUNA A -->
