@@ -5,6 +5,10 @@ class AppController extends Controller {
 		
 		$this->layout = 'advanced_layout' ;
 		
+		if(!$this->Session->read('Usuario') && $this->params['controller'] != 'login'){
+			$this->redirect('/login');
+		}
+		
 	}
 	
 	function requestActionHTML ( $url ) {
