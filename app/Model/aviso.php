@@ -23,14 +23,14 @@ class Aviso extends AppModel {
 		
 	}
 	
-	function filtraAvisos($tipo_filtro , $valor = null ,$departamento_id = null , $aviso_id = null) {
+	function filtraAvisos($tipo_filtro , $valor = null , $usuario_id=null, $departamento_id=null, $aviso_id=null) {
 		
 		if($tipo_filtro == 1){
 			
 			if($valor != 3){
 				$condição = 'Aviso.status_aviso_id ='.  $valor; 
 			} else {
-				$condição = array ( '1=1' );
+				$condição = array ( '1=1 and Aviso.usuario_id = '.$usuario_id.' or Aviso.departamento_id = '.$departamento_id );
 			}
 			
 		} elseif ( $tipo_filtro == 3 ) {
@@ -42,7 +42,7 @@ class Aviso extends AppModel {
 			$fim = "'". date('Y-m-d')." 23:59:59" ."'";
 			$inicio = "'". date('Y-m-d')." 00:00:00" ."'";
 			
-			$condição = "Aviso.data_criacao >=  $inicio and Aviso.data_criacao <= $fim";
+			$condição = array("Aviso.data_criacao >=  $inicio and Aviso.data_criacao <= $fim", 'Aviso.usuario_id = '.$usuario_id.' or Aviso.departamento_id = '.$departamento_id);
 						
 		}
 		

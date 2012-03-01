@@ -9,6 +9,13 @@
 <?php echo $this->Html->script('jquery-1.4.2.min') ;?>
 <?php //echo $this->Html->script('accordion') ;?>
 <?php echo $this->Html->script('avisos') ;?>
+
+<script>
+	$(document).ready(function(){
+		recuperaRespostas("<?php echo  $aviso[0]['Aviso']['id'];?>");
+	});
+</script>
+
 </head>
 
 <body>
@@ -45,6 +52,9 @@
 <p><?php echo $aviso[0]['Aviso']['mensagem'];?></p>
 
 <div style="height:240px;">
+<div class="comentarios">
+	<h2>Comentários:</h2>
+</div>
 <div class="barra_de_botoes">
 <a href="#"><img src="/img/bt_avisos_arquivar.png" alt="" align="absmiddle" title="" /> Arquivar </a>
 
@@ -58,6 +68,7 @@
 <?php 
 	echo $this->Form->create('AvisoResposta', array( 'id'=>'Resposta', 'onsubmit'=>'return gravaResposta();'));
 	echo $this->Form->input('resposta', array('type'=>'textarea', 'label'=>false, 'div'=>false));
+	echo $this->Form->input('id', array('type'=>'hidden', 'value'=>$aviso[0]['Aviso']['id']));
 	echo $this->Form->submit('Enviar' , array('class' => 'btForm') ) ;               
 	echo $this->Form->end();
 ?>

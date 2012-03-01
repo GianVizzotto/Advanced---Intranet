@@ -1,7 +1,20 @@
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$(".avisoDetalhe").click(function(){
+		alert("Ola");
+	});	
+	
+	
+});
+//
+</script>
+
 <?php if ($avisos) : ?>
 <div>
 	<?php foreach ($avisos as $aviso) :?> 									
-		<a href="/avisos/aviso_detalhe?id=<?php echo  $aviso['Aviso']['id'] ; ?>" id="avisoDetalhe">
+		<a href="/avisos/aviso_detalhe?id=<?php echo  $aviso['Aviso']['id'] ; ?>" rel="prettyPopin">
 			<?php
 				 $data = explode(" ", $aviso['Aviso']['data_criacao'] ) ; 
 				 $data_dia = explode("-", $data[0]);				 

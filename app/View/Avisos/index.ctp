@@ -1,7 +1,9 @@
 <?php echo $this->Html->script('advanced');?>
 <?php echo $this->Html->script('avisos');?>
-<?php echo $this->Session->flash();?>
+<?php //echo $this->Html->script('jquery.fancybox-1.3.4');?>
+<?php echo $this->Html->script('jquery.prettyPopin');?>
 
+<?php echo $this->Session->flash();?>
 <!-- INICIO COLUNA D -->
 <div id="colunaD">
  	<h1>AVISOS</h1>
@@ -12,7 +14,9 @@
 			Exibindo:<strong><span id="exibir"> </span></strong>
 			<?php echo $this->Form->create('FiltroAviso') ;?>
 				Exibir:
-                <?php echo $this->Form->input('status_aviso_id' , array ( 'options' => $status_avisos , 'div' => false , 'label' => false ) ) ;?>                
+                <?php echo $this->Form->input('status_aviso_id' , array ( 'options' => $status_avisos , 'div' => false , 'label' => false ) ) ;?>
+                <?php echo $this->Form->input('departamento_id' , array ( 'type' => 'hidden' , 'value' => $usuario_dados['Usuario']['departamento_id'] ) ) ;?>
+                <?php echo $this->Form->input('usuario_id' , array ( 'type' => 'hidden' , 'value' => $usuario_dados['Usuario']['id'] ) ) ;?>                
 			<?php echo $this->Form->end() ;?>
 		</div>
 		<!-- FINAL BARRA EXIBIR -->
@@ -67,3 +71,9 @@
 		<!-- FINAL FORMULARIO -->
 	</div>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("a[rel^='prettyPopin']").prettyPopin();
+});
+</script>

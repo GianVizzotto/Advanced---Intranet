@@ -1,7 +1,10 @@
 $(document).ready(function(){
 	
+	var departamento_id = $("#FiltroAvisoDepartamentoId").val();
+	var usuario_id = $("#FiltroAvisoUsuarioId").val();
+	
 	if ( $('#FiltroAvisoStatusAvisoId').val() == '') {
-		getAvisos(2);
+		getAvisos(2, '', usuario_id, departamento_id);
 	}
 	
 	$('#FiltroAvisoStatusAvisoId').change(function(){
@@ -9,26 +12,26 @@ $(document).ready(function(){
 		filtro = $('#FiltroAvisoStatusAvisoId').val();
 		
 		if(filtro != 'undefined' && filtro != '' && filtro != 1){
-			getAvisos(1,filtro);			
+			getAvisos(1, filtro, usuario_id, departamento_id);			
 		} else {
 			if(filtro == 1){
-				getAvisos(2);
+				getAvisos(2, '', usuario_id, departamento_id);
 			}
 		}		
 	});
 	
 });
 
-function getAvisos(tipo_filtro , filtro){
+function getAvisos(tipo_filtro, filtro, usuario_id, departamento_id){
 	
 	if(filtro == '') {
 		
-		stringUrl = '/avisos/filtraAvisos/' + tipo_filtro;
+		stringUrl = '/avisos/filtraAvisos/' + tipo_filtro +'/'+ null +'/'+ usuario_id +'/'+ departamento_id;
 		exibir = 'Últimos';
 		
 	} else {
 		
-		stringUrl = '/avisos/filtraAvisos/' + tipo_filtro + '/' + filtro;
+		stringUrl = '/avisos/filtraAvisos/' + tipo_filtro + '/' + filtro +'/'+ usuario_id +'/'+ departamento_id;
 			
 		switch(filtro) {
 			case '1':
@@ -74,19 +77,69 @@ function getAvisos(tipo_filtro , filtro){
 
 function gravaResposta(){
 	
-	data = $("#Resposta").serialize();
+	msg = $("#AvisoRespostaResposta").val();
+	id = $("#AvisoRespostaId").val();
+	
+	if(msg !=''){
+	
+		$.ajax({		
+			url: '/avisos/salvaResposta/' + id + '/1/' + msg,
+			dataType: 'json',
+			success: function(ret){
+				
+				for(i in ret){
+					
+					$(".comentarios").append(
+							"<div class=topico>"
+							+"<p>"+ret[i]['AvisoResposta']['data_criacao']+" - "+ret[i]['Usuario']['nome']+"</p>"
+							+"<p>"+ret[i]['AvisoResposta']['resposta']+"</p>"
+							+"<p>"+ret[i]['AvisoResposta']['id']+"</p>"
+							+"</div><hr>"
+							);
+					
+				}
+					
+			},
+			error: function(err){
+				alert('Impossível salvar resposta.');
+			}
+		});
+		
+	}	
+	
+	return false;
+}
+
+function recuperaRespostas(id){
 	
 	$.ajax({		
-		url: '/avisos/salvaResposta/' + data,
-		dataType: 'html',
+		url: '/avisos/salvaResposta/' + id + '/2',
+		dataType: 'json',
 		success: function(ret){
-			alert(ret);
+		
+			if(ret != ''){
+			
+				for(i in ret){
+					
+					$(".comentarios").append(
+							"<div class=topico>"
+							+"<p>"+ret[i]['AvisoResposta']['data_criacao']+" - "+ret[i]['Usuario']['nome']+"</p>"
+							+"<p>"+ret[i]['AvisoResposta']['resposta']+"</p>"
+							+"<p>"+ret[i]['AvisoResposta']['id']+"</p>"
+							+"</div><hr>"
+							);
+					
+				}
+			
+			} else {
+				
+				$(".comentarios").append("<p>Nenhum comentário até o momento.</p>");
+			}
+			
 		},
 		error: function(err){
 			alert('Impossível salvar resposta.');
 		}
-	});		
-	
-	return false;
+	});			
 	
 }

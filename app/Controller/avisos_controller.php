@@ -2,7 +2,7 @@
 
 class AvisosController extends AppController {
 	
-	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario' , 'Aviso' , 'StatusAviso', 'AvisoDestinatario') ;
+	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario' , 'Aviso' , 'StatusAviso', 'AvisoDestinatario', 'AvisoResposta') ;
 	var $helpers = array('Time') ;
 		
 	function index ( ) {
@@ -17,9 +17,10 @@ class AvisosController extends AppController {
 		
 		$this->set('status_avisos' , $status_avisos);
 		
+		$usuario_dados = $this->Session->read('Usuario');
+		
 		if($this->data){
 			
-			$usuario_dados = $this->Session->read('Usuario');
 			$this->request->data['Aviso']['usuario_id'] = $usuario_dados['Usuario']['id'];
 			
 			$this->Aviso->set($this->data);
@@ -59,7 +60,8 @@ class AvisosController extends AppController {
 			
 		}
 
-		$this->set('usuarios' , $usuarios);		
+		$this->set('usuarios', $usuarios);
+		$this->set('usuario_dados', $usuario_dados);		
 		
 	}
 	
@@ -82,14 +84,14 @@ class AvisosController extends AppController {
 		
 	}
 	
-	function filtraAvisos($tipo_filtro , $valor=null) {
+	function filtraAvisos($tipo_filtro, $valor=null, $usuario_id, $departamento_id) {
 		
 		$this->layout = '' ;
 		
 		if ($valor != null){
-			$avisos = $this->Aviso->filtraAvisos($tipo_filtro , $valor);
+			$avisos = $this->Aviso->filtraAvisos($tipo_filtro, $valor, $usuario_id, $departamento_id);
 		} else {
-			$avisos = $this->Aviso->filtraAvisos($tipo_filtro);
+			$avisos = $this->Aviso->filtraAvisos($tipo_filtro, null, $usuario_id, $departamento_id);
 		}
 		
 		$this->set('avisos' , $avisos) ;
@@ -102,7 +104,7 @@ class AvisosController extends AppController {
 		
 		$id = $this->params['url']['id'] ;
 		
-		$aviso = $this->Aviso->filtraAvisos(3,null,null,$id) ;
+		$aviso = $this->Aviso->filtraAvisos(3,null,null,null,$id) ;
 		$destinatarios = $this->AvisoDestinatario->getDestinatarios($id);
 		
 		if(empty($destinatarios)){
@@ -114,14 +116,33 @@ class AvisosController extends AppController {
 		
 	}
 	
-	function salvaResposta($dados){
+	function salvaResposta($id, $tipo, $msg=false){
 		
 		$this->autoRender = false;
 		
+		$ultimo = false;
 		
+		if($tipo == 1){
+			
+			$usuario = $this->Session->read('Usuario');
+			
+			$dados = array(
+				'aviso_id' => $id,
+				'resposta' => $msg,
+				'usuario_id' => $usuario['Usuario']['id']
+				);
+	
+			$this->AvisoResposta->salvaResposta($dados);
+			$ultimo = $this->AvisoResposta->getLastInsertId();
+			$comentario = $this->AvisoResposta->recuperaComentarios($id, $ultimo);
+			
+		} else {
+			
+			$comentario = $this->AvisoResposta->recuperaComentarios($id, $ultimo);
+			
+		}
 		
-		print_r($dados);	
-		echo "Avá";
+		echo json_encode($comentario);
 	
 	}
 	
