@@ -10,6 +10,12 @@ class NoticiasController extends AppController {
 			);
 	
 	function index(){
+		$validao_perfil = $this->Session->read('Usuario');
+		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+			
 		$Tipos_conteudos = $this->Tipos_conteudo->getTipos();
 		$Tipos_conteudos = array ( '' => 'Selecione' ) + (array)$Tipos_conteudos;
 		$this->set('Tipos_conteudos' , $Tipos_conteudos);
@@ -65,7 +71,12 @@ class NoticiasController extends AppController {
 	}
 	
 	function add($id = null){
+		$validao_perfil = $this->Session->read('Usuario');
 		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
 		$ckeditorClass = 'CKEDITOR';
 		$this->set('ckeditorClass', $ckeditorClass);
 
@@ -109,7 +120,12 @@ class NoticiasController extends AppController {
 	}
 	
 	function remove($id){
+		$validao_perfil = $this->Session->read('Usuario');
 		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
 		$this->layout = '' ;
 		$url_imagem = $this->Noticia->getUrlImagem($id);
 		if ($this->Noticia->deleteNoticia($id)){
