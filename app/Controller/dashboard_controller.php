@@ -1,7 +1,7 @@
 <?php
 class DashboardController extends AppController {
 	
-	var $uses = array ( 'Tipos_conteudo', 'Noticia', 'Aviso' ) ;
+	var $uses = array ( 'Noticia', 'Aviso', 'Usuario', 'Departamento' ) ;
 	var $helpers = array ( 'Paginator', 'Time' ) ;
 	
 	public $paginate = array(
@@ -24,6 +24,29 @@ class DashboardController extends AppController {
 													)
 												);
 		$this->set('noticias_direita' , $noticias_direita);
+		
+		$usuarios_esquerda = $this->Usuario->find('all', array(
+													'fields' => array (
+																'Usuario.id', 
+																'Usuario.nome', 
+																'Usuario.data_nascimento', 
+																'Usuario.foto_url',
+																'Departamentos.nome'
+																),
+																'joins' => array(
+																		array(
+																			'table' => 'departamentos',
+																			'alias' => 'Departamentos',
+																			'type' => 'INNER',
+																			'conditions' => array ( 'Usuario.departamento_id = Departamentos.id',
+																									'MONTH(Usuario.data_nascimento) = MONTH(CURDATE())' )	
+																			)
+																		),
+															'order' => array ( 'Usuario.data_nascimento' => 'DESC' ),
+															'limit' => 3
+													)
+												);
+		$this->set('usuarios_esquerda' , $usuarios_esquerda);		
 		
 	}
 	
