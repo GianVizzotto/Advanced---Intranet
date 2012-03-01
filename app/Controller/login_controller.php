@@ -14,7 +14,8 @@ class LoginController extends AppController {
 							'id',
 							'nome',
 							'perfil_id',
-							'Departamento.nome'
+							'Departamento.nome',
+							'Usuario.departamento_id'
 							),
 						'joins' => array(
 							array(
