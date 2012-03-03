@@ -62,7 +62,7 @@ class EventosController extends AppController {
 			}
 			
 		}
-		$this->paginate['limit'] = 1;
+		$this->paginate['limit'] = 10;
 		$this->paginate['paramType'] = 'querystring';
 		// print_r($this->paginate);
 		// die;

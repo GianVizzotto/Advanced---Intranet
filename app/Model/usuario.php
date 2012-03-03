@@ -101,5 +101,18 @@ class Usuario extends AppModel {
 		return $usuarios ;
 		
 	}
+
+	
+	function getUrlImagem($id){
+		$url_imagem =	$this->find('first' , array ( 
+										'fields' => array ( 
+											'foto_url'
+											),
+										'conditions' => array ( 'id' => $id )
+										)
+									) ;
+							
+		return $url_imagem ;
+	}
 	
 }

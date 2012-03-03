@@ -36,7 +36,7 @@ div#logo, div#logo1, div#logo2, div#logo3	{ background:none; box-shadow:none;  }
 
 #topo_dir img	{ width:100px; margin:2px 5px; }
 
-#usuario	{ width:260px; height:27px; margin-left:50px; text-align:right; color:#333;}
+#usuario	{ width:260px; height:33px; margin-left:50px; text-align:right; color:#333;}
 #menu		{ float:left; width:680px; margin-top:20px; padding:5px !important;}
 
 #menu ul li 			{ display:inline;}
