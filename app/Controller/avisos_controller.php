@@ -3,7 +3,11 @@
 class AvisosController extends AppController {
 	
 	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario' , 'Aviso' , 'StatusAviso', 'AvisoDestinatario', 'AvisoResposta') ;
-	var $helpers = array('Time') ;
+	var $helpers = array('Time', 'Paginator') ;
+	
+	public $paginate = array(
+        		'limit' => 8
+			);
 		
 	function index ( ) {
 		
@@ -19,7 +23,9 @@ class AvisosController extends AppController {
 		
 		$usuario_dados = $this->Session->read('Usuario');
 		
-		if($this->data){
+		
+		//Salva novo aviso
+		if(isset($this->data['Aviso'])){
 			
 			$this->request->data['Aviso']['usuario_id'] = $usuario_dados['Usuario']['id'];
 			
@@ -27,9 +33,19 @@ class AvisosController extends AppController {
 			
 			if ( $this->Aviso->validates() ) {
 				
+				$fileOK = $this->uploadFiles('files/avisos', $this->data['File']);
+				
+					// if file was uploaded ok
+					if($fileOK['urls'][0] != "") {
+					    // save the url in the form data
+					    $this->request->data['Aviso']['anexo'] = $fileOK['urls'][0];
+					    echo $this->data['Aviso']['anexo'];
+				  	}
+				
+				
 				if($this->Aviso->salvaAviso($this->data['Aviso'])) {
 					
-					if(!empty($this->data['AvisoDestinatario']['usuario_id'])){
+					if(!empty($this->data['AvisoDestinatario'])){
 							
 						$this->request->data['AvisoDestinatario']['aviso_id'] = $this->Aviso->getLastInsertID();
 						$this->AvisoDestinatario->save($this->data['AvisoDestinatario']);
@@ -59,7 +75,74 @@ class AvisosController extends AppController {
 			$usuarios = $this->requestActionHTML('/avisos/usuarios/') ;
 			
 		}
+		
+		//Listagem de avisos
+		
+		$conditions = array('(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].') or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].')' );
+		
+		if($this->params['url']['status_aviso_id'] && $this->params['url']['status_aviso_id'] != 1 && $this->params['url']['status_aviso_id'] != 3){
+			
+			$conditions = array(
+				'(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].') 
+				or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'.'
+				or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'
+			);
+		
+		} else {
+			
+			$fim = "'". date('Y-m-d')." 23:59:59" ."'";
+			$inicio = "'". date('Y-m-d')." 00:00:00" ."'";
+			$conditions = array_merge( $conditions, array("Aviso.data_criacao >=  $inicio and Aviso.data_criacao <= $fim"));
+			
+		}
 
+		$this->paginate = array(  
+				'fields' => array(
+					'Aviso.id',
+					'Aviso.usuario_id',
+					'Aviso.assunto',
+					'Aviso.data_criacao',
+					'Usuario.nome',
+					'Destinatario.nome',
+					'Departamento.nome',
+					'AvisoDestinatario.usuario_id',
+					),
+				'joins' => array(
+					array(
+						'table' => 'usuarios',
+						'alias' => 'Usuario',
+						'type' => 'INNER',
+						'conditions' => array ( 'Aviso.usuario_id = Usuario.id' )
+						),
+					array(
+						'table' => 'avisos_destinatarios',
+						'alias' => 'AvisoDestinatario',
+						'type' => 'LEFT',
+						'conditions' => array ( 'Aviso.id = AvisoDestinatario.aviso_id' )
+						),
+					array(
+						'table' => 'departamentos',
+						'alias' => 'Departamento',
+						'type' => 'INNER',
+						'conditions' => array ( 'AvisoDestinatario.departamento_id = Departamento.id' )
+						),
+					array(
+						'table' => 'usuarios',
+						'alias' => 'Destinatario',
+						'type' => 'LEFT',
+						'conditions' => array ( 'AvisoDestinatario.usuario_id = Destinatario.id' )
+						),			
+					),
+					'conditions' => $conditions,
+					'order' => array('Aviso.data_criacao' => 'DESC')
+				);							
+
+		$this->paginate['paramType'] = 'querystring';
+		$this->paginate['limit'] = 2;
+		
+		$dados = $this->paginate('Aviso') ;
+		
+		$this->set('avisos', $dados);	
 		$this->set('usuarios', $usuarios);
 		$this->set('usuario_dados', $usuario_dados);		
 		
@@ -144,6 +227,89 @@ class AvisosController extends AppController {
 		
 		echo json_encode($comentario);
 	
+	}
+	
+	function uploadFiles($folder, $formdata, $itemId = null) {
+		// setup dir names absolute and relative
+		$folder_url = WWW_ROOT.$folder;
+		$rel_url = $folder;
+		
+		// create the folder if it does not exist
+		if(!is_dir($folder_url)) {
+			mkdir($folder_url);
+		}
+			
+		// if itemId is set create an item folder
+		if($itemId) {
+			// set new absolute folder
+			$folder_url = WWW_ROOT.$folder.'/'.$itemId; 
+			// set new relative folder
+			$rel_url = $folder.'/'.$itemId;
+			// create directory
+			if(!is_dir($folder_url)) {
+				mkdir($folder_url);
+			}
+		}
+		
+		// list of permitted file types, this is only images but documents can be added
+		$permitted = array('image/gif','image/jpeg','image/pjpeg','image/png');
+		
+		// loop through and deal with the files
+		foreach($formdata as $file) {
+			// replace spaces with underscores
+			$filename = str_replace(' ', '_', $file['name']);
+			// assume filetype is false
+			$typeOK = true;
+			// check filetype is ok
+			
+			
+			// if file type ok upload the file
+			if($typeOK) {
+				// switch based on error code
+				switch($file['error']) {
+					case 0:
+						// check filename already exists
+						if(!file_exists($folder_url.'/'.$filename)) {
+							// create full filename
+							$full_url = $folder_url.'/'.$filename;
+							$url = $rel_url.'/'.$filename;
+							// upload the file
+							$success = move_uploaded_file($file['tmp_name'], $url);
+						} else {
+							// create unique filename and upload file
+							ini_set('date.timezone', 'Europe/London');
+							$now = date('Y-m-d-His');
+							$full_url = $folder_url.'/'.$now.$filename;
+							$url = $rel_url.'/'.$now.$filename;
+							$success = move_uploaded_file($file['tmp_name'], $url);
+						}
+						// if upload was successful
+						if($success) {
+							// save the url of the file
+							$result['urls'][] = $url;
+							chmod($url, 0777);
+						} else {
+							$result['errors'][] = "Error uploaded $filename. Please try again.";
+						}
+						break;
+					case 3:
+						// an error occured
+						$result['errors'][] = "Error uploading $filename. Please try again.";
+						break;
+					default:
+						// an error occured
+						$result['errors'][] = "System error uploading $filename. Contact webmaster.";
+						break;
+				}
+			} elseif($file['error'] == 4) {
+				// no file was selected for upload
+				$result['nofiles'][] = "No file Selected";
+			} else {
+				// unacceptable file type
+				$result['errors'][] = "$filename cannot be uploaded. Acceptable file types: gif, jpg, png.";
+			}
+		}
+		return $result;
 	}
 	
 }

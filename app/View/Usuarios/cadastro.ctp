@@ -7,9 +7,9 @@
 			
  				<?php echo $this->Form->create('Usuario' , array( 'options' => array ( 'action' => 'cadastro' , 'controller' => 'usuarios' ) ) ); ?>
  						
- 					<?php //if($id):?>
- 						<?php //echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
- 					<?php //endif;?>		
+ 					<?php if($id):?>
+ 						<?php echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
+ 					<?php endif;?>		
  					
  					<?php echo $this->Form->input('status_usuario_id' , array ( 'type' => 'hidden' , 'value' => 1 ) ) ;?>
                                 
