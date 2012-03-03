@@ -5,10 +5,11 @@
 <title>Detalhe Evento</title>
 
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-<link href="../../assets/css/modal.css" type="text/css" rel="stylesheet"  />
+<?php echo $this->Html->css('modal');?>
 
-<script src="../../assets/js/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="assets/js/accordion.js"></script>
+<?php echo $this->Html->script('jquery-1.4.2.min');?>
+
+<?php echo $this->Html->script('accordion');?>
 
 
 
