@@ -27,6 +27,7 @@ class RamaisController extends AppController {
 											'Usuario.id', 
 											'Usuario.nome', 
 											'Usuario.ramal',
+											'Usuario.email',
 											'Departamentos.id',
 											'Departamentos.nome'
 																						),
