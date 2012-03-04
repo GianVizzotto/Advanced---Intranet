@@ -1,16 +1,3 @@
-<script type="text/javascript">
-
-$(document).ready(function(){
-
-	$(".avisoDetalhe").click(function(){
-		alert("Ola");
-	});	
-	
-	
-});
-//
-</script>
-
 <?php if ($avisos) : ?>
 <div>
 	<?php foreach ($avisos as $aviso) :?> 									
