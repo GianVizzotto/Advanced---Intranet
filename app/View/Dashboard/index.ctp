@@ -7,8 +7,12 @@
     <h1>ANIVERSARIANTES DO MÊS</h1>
         <?php foreach ($usuarios_esquerda as $usuario_esquerda):?>
             <a class="box" href="/aniversariantes">
-
-                <img width="75" src="/img/img_perfil.jpg"  />	
+				
+				<?php if ($usuario_esquerda['Usuario']['foto_url'] != ""): ?>
+                	<img width="75" src="/<?php echo $usuario_esquerda['Usuario']['foto_url'];?>"  />
+                <?php else: ?>
+                	<img width="75" src="/img/img_perfil.jpg"  />
+                <? endif; ?>	
                 
                     <strong><?php echo $usuario_esquerda['Usuario']['nome'];?></strong>
                     <span><?php echo $usuario_esquerda['Departamentos']['nome'];?></span>

@@ -36,7 +36,8 @@
                 <?php foreach ($ultimos_usuarios as $ultimos_usuario):?>
 	                <p style="margin-left:20px;">
 	                <?php echo $ultimos_usuario['Usuario']['nome'];?> - <?php echo $ultimos_usuario['Departamentos']['nome'];?> <br />
-	                Ramal: <strong style="font-size:16px;"><?php echo $ultimos_usuario['Usuario']['ramal'];?></strong></p>
+	                Ramal: <strong style="font-size:16px;"><?php echo $ultimos_usuario['Usuario']['ramal'];?></strong> <br />
+	                Email: <strong style="font-size:12px;"><?php echo $ultimos_usuario['Usuario']['email'];?></strong></p>
 	                <a href="#">Envie um aviso para <?php echo $ultimos_usuario['Usuario']['nome'];?>.</a>
 				<?php endforeach; ?>
 

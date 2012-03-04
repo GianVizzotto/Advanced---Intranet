@@ -26,17 +26,17 @@ class AniversariantesController extends AppController {
 														'table' => 'cargos',
 														'alias' => 'Cargos',
 														'type' => 'INNER',
-														'conditions' => array ( 'Usuario.cargo_id = Cargos.id')	
+														'conditions' => array ( 'Usuario.cargo_id = Cargos.id',
+																				'MONTH(Usuario.data_nascimento) = MONTH(CURDATE())')	
 														),
 													array(
 														'table' => 'departamentos',
 														'alias' => 'Departamentos',
 														'type' => 'INNER',
-														'conditions' => array ( 'Usuario.departamento_id = Departamentos.id',
-																				'MONTH(Usuario.data_nascimento) = MONTH(CURDATE())' )	
+														'conditions' => array ( 'Usuario.departamento_id = Departamentos.id' )	
 														)
 													),
-										'order' => array ( 'Usuario.data_nascimento' => 'DESC' )
+										'order' => array ( 'Usuario.data_nascimento' => 'DESC')
 							);
 		$filtros = "";
 		$this->paginate['limit'] = 5;
