@@ -38,8 +38,8 @@
             	
             	<?php foreach ($ultimos_noticias as $ultimos_noticia):?>
             		
-            		<a href="modalbox/<?php echo $ultimos_noticia['Noticia']['id'];?>" rel="prettyPopin">
-                    	<span><?php echo $ultimos_noticia['Noticia']['data_criacao'];?> - <?php echo $ultimos_noticia['Noticia']['nome'];?></span>
+            		<a href="modalbox/<?php echo $ultimos_noticia['Noticia']['id'].'?height=500&width=850';?>" class="thickbox">
+                    	<span><?php echo $this->Time->format( 'd/m/Y - H:i',$ultimos_noticia['Noticia']['data_criacao']);?> - <?php echo $ultimos_noticia['Noticia']['nome'];?></span>
                     	<span class="title"><?php echo substr(strip_tags($ultimos_noticia['Noticia']['conteudo']), 0, 150)."...";?></span>	 
                 	</a>
             		
@@ -65,8 +65,8 @@
     
 		<?php foreach ($eventos_direita as $evento_direita):?>
 			
-        <a href="/eventos/modalbox/<?php echo $evento_direita['Evento']['id'];?>" rel="prettyPopin" class="box">
-        	<b><?php echo $evento_direita['Evento']['data_criacao'];?></b>
+        <a href="/eventos/modalbox/<?php echo $evento_direita['Evento']['id'].'?height=500&width=850';?>" class="box thickbox">
+        	<b><?php echo $this->Time->format( 'd/m/Y - H:i',$evento_direita['Evento']['data_criacao']);?></b>
         	<strong><?php echo $evento_direita['Evento']['nome'];?></strong>
         	<span><?php echo substr(strip_tags($evento_direita['Evento']['conteudo']), 0, 100)."...";?></span>                       	 
         </a>			

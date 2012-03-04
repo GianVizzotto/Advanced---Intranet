@@ -27,7 +27,7 @@
 <p><a href="<?php echo $noticia_unico['Noticia']['fonte'];?>" target="_blank"><?php echo $noticia_unico['Noticia']['fonte'];?></a></p>
 
 <h2>Enviado em:</h2>
-<p> <?php echo $noticia_unico['Noticia']['data_criacao'];?></p>
+<p> <?php echo $this->Time->format( 'd/m/Y - H:i',$noticia_unico['Noticia']['data_criacao']);?></p>
 
 
 
