@@ -86,8 +86,8 @@
     
     	<?php foreach ($noticias_direita as $noticia_direita):?>
 
-	        <a href="/noticias/modalbox/<?php echo $noticia_direita['Noticia']['id'];?>" rel="prettyPopin" class="box">
-	        	<b><?php echo $noticia_direita['Noticia']['data_criacao'];?></b>
+	        <a href="/noticias/modalbox/<?php echo $noticia_direita['Noticia']['id'].'?height=500&width=850';?>" class="box thickbox">
+	        	<b><?php echo $this->Time->format( 'd/m/Y - H:i',$noticia_direita['Noticia']['data_criacao']);?></b>
 	        	<strong><?php echo $noticia_direita['Noticia']['nome'];?></strong>
 	        	<span><?php echo substr(strip_tags($noticia_direita['Noticia']['conteudo']), 0, 100)."...";?></span>                       	 
 	        </a>

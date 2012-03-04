@@ -25,7 +25,7 @@
  
 
 <h2>Enviado em:</h2>
-<p> <?php echo $evento_unico['Evento']['data_criacao'];?></p>
+<p> <?php echo $this->Time->format( 'd/m/Y - H:i', $evento_unico['Evento']['data_criacao'] );?></p>
 
 
 
