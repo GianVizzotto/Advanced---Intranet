@@ -86,22 +86,25 @@ function gravaResposta(){
 			url: '/avisos/salvaResposta/' + id + '/1/' + msg,
 			dataType: 'json',
 			success: function(ret){
+			
+				$("#semComentario").hide();
+				$("#AvisoRespostaResposta").attr('value', '');
 				
 				for(i in ret){
 					
 					$(".comentarios").append(
 							"<div class=topico>"
-							+"<p>"+ret[i]['AvisoResposta']['data_criacao']+" - "+ret[i]['Usuario']['nome']+"</p>"
+							+"<p>"+$.format.date(ret[i]['AvisoResposta']['data_criacao'], "dd/MM/yyyy - HH:mm")+" - "+ret[i]['Usuario']['nome']+"</p>"
 							+"<p>"+ret[i]['AvisoResposta']['resposta']+"</p>"
-							+"<p>"+ret[i]['AvisoResposta']['id']+"</p>"
 							+"</div><hr>"
 							);
 					
 				}
-					
+				$("#data").attr("class", "longDateFormat");
+				$.format.date();
 			},
 			error: function(err){
-				alert('Impossível salvar resposta.');
+				alert('Impossível salvar comentários.');
 			}
 		});
 		
@@ -119,26 +122,27 @@ function recuperaRespostas(id){
 		
 			if(ret != ''){
 			
+				$("#semComentario").hide();
+				
 				for(i in ret){
 					
 					$(".comentarios").append(
 							"<div class=topico>"
-							+"<p>"+ret[i]['AvisoResposta']['data_criacao']+" - "+ret[i]['Usuario']['nome']+"</p>"
+							+"<p>"+$.format.date(ret[i]['AvisoResposta']['data_criacao'], "dd/MM/yyyy - HH:mm")+" - "+ret[i]['Usuario']['nome']+"</p>"
 							+"<p>"+ret[i]['AvisoResposta']['resposta']+"</p>"
-							+"<p>"+ret[i]['AvisoResposta']['id']+"</p>"
 							+"</div><hr>"
 							);
 					
-				}
-			
+				}				
+				
 			} else {
 				
-				$(".comentarios").append("<p>Nenhum comentário até o momento.</p>");
+				$(".comentarios").append("<p id=semComentario>Nenhum comentário até o momento.</p>");
 			}
 			
 		},
 		error: function(err){
-			alert('Impossível salvar resposta.');
+			alert('Impossível recuperar comentários.');
 		}
 	});			
 	

@@ -9,6 +9,7 @@
 <?php echo $this->Html->script('jquery-1.4.2.min') ;?>
 <?php //echo $this->Html->script('accordion') ;?>
 <?php echo $this->Html->script('avisos') ;?>
+<?php echo $this->Html->script('jquery.dateFormat-1.0') ;?>
 
 <script>
 	$(document).ready(function(){
@@ -38,7 +39,7 @@
 <p><?php echo $this->Time->format( 'd/m/Y - H:i', $aviso[0]['Aviso']['data_criacao']) ; ?></p>
 
 <h2>Anexo:</h2>
-<p> <a href="#"><?php echo $aviso[0]['Aviso']['anexo'] ; ?></a></p>
+<p> <a href="<?php echo $aviso[0]['Aviso']['anexo'] ; ?>"><?php echo $aviso[0]['Aviso']['anexo'] ; ?></a></p>
 
 <h2>Destinatários:</h2>
 <p>
@@ -55,14 +56,14 @@
 <div class="comentarios">
 	<h2>Comentários:</h2>
 </div>
-<div class="barra_de_botoes">
+<div class="barra_de_botoes" style="display:none;">
 <a href="#"><img src="/img/bt_avisos_arquivar.png" alt="" align="absmiddle" title="" /> Arquivar </a>
 
 <a href="#"><img src="/img/bt_avisos_excluir.png" alt="" align="absmiddle" title="" /> Excluir </a>
-
 <a href="#" class="accordionButton"><img src="/img/bt_avisos_responder.png" alt="" align="absmiddle" title="" /> Responder </a>
-<div class="accordionContent responder">
+</div>
 
+<div class="accordionContent responder">
 <h2 style="margin-top:0px;">Responder a mensagem</h2>
 
 <?php 
@@ -72,9 +73,7 @@
 	echo $this->Form->submit('Enviar' , array('class' => 'btForm') ) ;               
 	echo $this->Form->end();
 ?>
-
-</div>
-
+<br /><br />
 </div>
 </div>
 

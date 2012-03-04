@@ -88,7 +88,7 @@ class AvisosController extends AppController {
 				or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'
 			);
 		
-		} else {
+		} elseif($this->params['url']['status_aviso_id'] != 3) {
 			
 			$fim = "'". date('Y-m-d')." 23:59:59" ."'";
 			$inicio = "'". date('Y-m-d')." 00:00:00" ."'";
@@ -138,7 +138,7 @@ class AvisosController extends AppController {
 				);							
 
 		$this->paginate['paramType'] = 'querystring';
-		$this->paginate['limit'] = 2;
+		$this->paginate['limit'] = 8;
 		
 		$dados = $this->paginate('Aviso') ;
 		
@@ -187,7 +187,13 @@ class AvisosController extends AppController {
 		
 		$id = $this->params['url']['id'] ;
 		
-		$aviso = $this->Aviso->filtraAvisos(3,null,null,null,$id) ;
+		$aviso = $this->Aviso->filtraAvisos($id) ;
+//		echo "<pre>"; print_r( $aviso); echo "</pre>";
+		if($aviso[0]['Aviso']['status_aviso_id'] == 2){
+			$this->Aviso->atualizaStatus($id, 6);
+		}
+		
+		
 		$destinatarios = $this->AvisoDestinatario->getDestinatarios($id);
 		
 		if(empty($destinatarios)){
@@ -217,15 +223,15 @@ class AvisosController extends AppController {
 	
 			$this->AvisoResposta->salvaResposta($dados);
 			$ultimo = $this->AvisoResposta->getLastInsertId();
-			$comentario = $this->AvisoResposta->recuperaComentarios($id, $ultimo);
+			$comentarios = $this->AvisoResposta->recuperaComentarios($id, $ultimo);
 			
 		} else {
 			
-			$comentario = $this->AvisoResposta->recuperaComentarios($id, $ultimo);
+			$comentarios = $this->AvisoResposta->recuperaComentarios($id, $ultimo);
 			
 		}
 		
-		echo json_encode($comentario);
+		echo json_encode($comentarios);
 	
 	}
 	
