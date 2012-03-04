@@ -1,7 +1,9 @@
+<?php echo $this->Html->css('thick_box');?>
 <?php echo $this->Html->script('advanced');?>
 <?php echo $this->Html->script('avisos');?>
 <?php //echo $this->Html->script('jquery.fancybox-1.3.4');?>
 <?php echo $this->Html->script('jquery.prettyPopin');?>
+<?php echo $this->Html->script('thick_box');?>
 
 <?php echo $this->Session->flash();?>
 
@@ -34,7 +36,7 @@
 				<div>
 					<?php foreach ($avisos as $aviso) :?>
 						<?php if($aviso['AvisoDestinatario']['usuario_id'] == '' || in_array($usuario_dados['Usuario']['id'], $aviso['AvisoDestinatario']) || $usuario_dados['Usuario']['id'] == $aviso['Aviso']['usuario_id']):?>									
-							<a href="/avisos/aviso_detalhe?id=<?php echo  $aviso['Aviso']['id'] ; ?>" rel="prettyPopin">
+							<a href="/avisos/aviso_detalhe?id=<?php echo  $aviso['Aviso']['id'] ; ?>&height=500&width=850" class="thickbox">
 								<?php
 									 $data = explode(" ", $aviso['Aviso']['data_criacao'] ) ; 
 									 $data_dia = explode("-", $data[0]);				 
