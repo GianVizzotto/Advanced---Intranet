@@ -5,7 +5,7 @@
 		<div class="conteudo">
 			<div class="formulario">
 			
- 				<?php echo $this->Form->create('Usuario' , array( 'options' => array ( 'action' => 'cadastro' , 'controller' => 'usuarios' ) ) ); ?>
+ 				<?php echo $this->Form->create('Usuario' , array( 'options' => array ( 'action' => 'cadastro' , 'controller' => 'usuarios' ), 'enctype' => 'multipart/form-data' ) ); ?>
  						
  					<?php if($id):?>
  						<?php echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
@@ -49,9 +49,21 @@
 						<?php echo $this->Form->input('perfil_id' , array ( 'options' => $perfis , 'label' => false) ) ;?> 
 					</label>
 					
-					<label for="Foto">
+					<label for="Telefone">
+						Telefone: <br />                                           
+						<?php echo $this->Form->input('telefone' , array ( 'type' => 'text' , 'label' => false) ) ;?> 
+					</label>
+					                                                             
+					<label for="Celular">
+						Celular: <br />                                           
+						<?php echo $this->Form->input('celular' , array ( 'type' => 'text' , 'label' => false) ) ;?> 
+					</label>
+
+					<label for="Foto_url">
 						Foto: <br />                                           
-						<?php echo $this->Form->input('foto_url' , array ( 'type' => 'text' , 'label' => false) ) ;?> 
+						<input type="file" name="data[File][imagem]" id="FileImage" />
+						<br />
+						<?php if($url_foto){ echo "<a href='/$url_foto' target='_blank' >$url_foto</a>";}?>
 					</label>
 					                                                             
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>
