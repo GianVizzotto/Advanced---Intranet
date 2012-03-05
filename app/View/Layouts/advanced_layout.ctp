@@ -3,20 +3,17 @@
 <head>
 <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
 <?php echo $this->Html->css('estilo');?>
-<?php echo $this->Html->css('jquery.fancybox-1.3.4/jquery.fancybox-1.3.4.css'); ?>
-<?php echo $this->Html->css('prettyPopin');?>
 <?php echo $this->Html->css('thick_box');?>
 
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 <?php echo $this->Html->script('jquery-1.4.2.min');?>
 <?php echo $this->Html->script('jquery.maskedinput-1.2.2.min');?>
-<?php echo $this->Html->script('jquery.jcarousel.min');?>
-<?php echo $this->Html->script('accordion');?>
-<?php echo $this->Html->script('jquery.prettyPopin');?>
+<?php echo $this->Html->script('thick_box');?>
+<?php //echo $this->Html->script('jquery.jcarousel.min');?>
+<?php //echo $this->Html->script('accordion');?>
+<?php //echo $this->Html->script('jquery.prettyPopin');?>
 <?php echo $this->Html->script('jquery.pngFix');?>
-<?php echo $this->Html->script('jquery.fancybox-1.3.4');?>
-<?php echo $this->Html->script('jquery.globals');?>
 <?php echo $this->Html->script('thick_box');?>
 <title>Sistema - Advanced</title>
 </head>

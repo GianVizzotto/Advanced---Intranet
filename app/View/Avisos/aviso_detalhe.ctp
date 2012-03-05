@@ -52,7 +52,7 @@
 
 <p><?php echo $aviso[0]['Aviso']['mensagem'];?></p>
 
-<div style="height:240px;">
+<div>
 <div class="comentarios">
 	<h2>Comentários:</h2>
 </div>

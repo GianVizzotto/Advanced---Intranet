@@ -12,6 +12,8 @@ class DashboardController extends AppController {
 		
 		$this->layout = 'advanced_layout';
 		
+//		Noticias
+		
 		$noticias_direita = $this->Noticia->find('all', array(
 													'fields' => array (
 																'id', 
@@ -25,6 +27,7 @@ class DashboardController extends AppController {
 												);
 		$this->set('noticias_direita' , $noticias_direita);
 		
+//		Aniversarios
 		$usuarios_esquerda = $this->Usuario->find('all', array(
 													'fields' => array (
 																'Usuario.id', 
@@ -46,7 +49,16 @@ class DashboardController extends AppController {
 															'limit' => 3
 													)
 												);
-		$this->set('usuarios_esquerda' , $usuarios_esquerda);		
+														
+		$this->set('usuarios_esquerda' , $usuarios_esquerda);
+
+//		Avisos
+
+		$usuario_dados = $this->Session->read('Usuario');
+		
+		$avisos = $this->Aviso->getAvisos($usuario_dados, 5);
+		
+		$this->set('avisos', $avisos);
 		
 	}
 	
