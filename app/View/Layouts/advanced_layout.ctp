@@ -10,8 +10,8 @@
 <?php echo $this->Html->script('jquery-1.4.2.min');?>
 <?php echo $this->Html->script('jquery.maskedinput-1.2.2.min');?>
 <?php echo $this->Html->script('thick_box');?>
-<?php //echo $this->Html->script('jquery.jcarousel.min');?>
-<?php //echo $this->Html->script('accordion');?>
+<?php echo $this->Html->script('jquery.jcarousel.min');?>
+<?php echo $this->Html->script('accordion');?>
 <?php //echo $this->Html->script('jquery.prettyPopin');?>
 <?php echo $this->Html->script('jquery.pngFix');?>
 <?php echo $this->Html->script('thick_box');?>
