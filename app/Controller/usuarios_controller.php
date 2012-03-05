@@ -6,7 +6,7 @@ class UsuariosController extends AppController {
 	
 	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario', 'Noticia', 'Cargo' ) ;
 	var $components = array ( 'Date' ) ;
-	var $helpers = array ( 'Paginator' ) ;
+	var $helpers = array ( 'Paginator', 'Time' ) ;
 	
 	public $paginate = array(
         	'limit' => 25

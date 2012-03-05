@@ -39,7 +39,7 @@
 <p><?php echo $this->Time->format( 'd/m/Y - H:i', $aviso[0]['Aviso']['data_criacao']) ; ?></p>
 
 <h2>Anexo:</h2>
-<p> <a href="<?php echo $aviso[0]['Aviso']['anexo'] ; ?>"><?php echo $aviso[0]['Aviso']['anexo'] ; ?></a></p>
+<p> <a href="<?php echo $aviso[0]['Aviso']['anexo'] ; ?>" target="_blank"><?php echo $aviso[0]['Aviso']['anexo'] ; ?></a></p>
 
 <h2>Destinatários:</h2>
 <p>

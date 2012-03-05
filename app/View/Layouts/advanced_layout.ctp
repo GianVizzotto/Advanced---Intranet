@@ -14,8 +14,7 @@
 <?php //echo $this->Html->script('accordion');?>
 <?php //echo $this->Html->script('jquery.prettyPopin');?>
 <?php echo $this->Html->script('jquery.pngFix');?>
-<?php //echo $this->Html->script('jquery.fancybox-1.3.4');?>
-<?php //echo $this->Html->script('jquery.globals');?>
+<?php echo $this->Html->script('thick_box');?>
 <title>Sistema - Advanced</title>
 </head>
 
