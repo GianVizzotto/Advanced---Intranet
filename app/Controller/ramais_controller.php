@@ -22,6 +22,32 @@ class RamaisController extends AppController {
 		$select_departamento = array('' => 'Selecione') + (array)$select_departamento ;
 		$this->set( 'select_departamento' , $select_departamento  ) ;
 		
+		if($this->params['url']){
+			$filtros_aviso = $this->params['url'];
+			if (!empty ( $filtros_aviso['dpto_aviso'] )){
+				$dpto_aviso = $filtros_aviso['dpto_aviso'];
+				$this->set( 'dpto_aviso' , $dpto_aviso  ) ;
+			}
+			if (!empty ( $filtros_aviso['func_aviso'] )){
+				$usuarios = $this->Usuario->getUsuarioDpto($filtros_aviso['dpto_aviso'],$filtros_aviso['func_aviso']) ;
+				$this->set( 'func_aviso' , $filtros_aviso['func_aviso']  ) ;
+			}
+		} else {
+			$usuarios = "";
+		}
+		
+		$this->set('usuarios' , $usuarios);
+		
+		$select_departamento_aviso = $this->Departamento->find('list' , array(
+																'fields' => array(
+																	'id',
+																	'nome'
+																	)
+																)
+															) ;
+		$select_departamento_aviso = array('' => 'Selecione') + (array)$select_departamento_aviso ;
+		$this->set( 'select_departamento_aviso' , $select_departamento_aviso  ) ;
+
 		$this->paginate = array(
 							'fields' => array (
 											'Usuario.id', 
@@ -79,11 +105,28 @@ class RamaisController extends AppController {
 		
 		$this->paginate['limit'] = 5;
 		$this->paginate['paramType'] = 'querystring';
-		// print_r($this->paginate);
-		// die;
 		$this->request->data['Usuario'] = $filtros ;
 		$dados = $this->paginate('Usuario') ;
 		$this->set('ultimos_usuarios' , $dados);
+	}
+
+	function usuarios ( $departamento_id = null , $usuario_id = null ) {
+		
+		$this->layout = '' ;
+		
+		if($departamento_id != null){
+		
+			$usuarios = $this->Usuario->getUsuarioDpto($departamento_id , $usuario_id) ;
+			
+			$this->set('usuarios' , $usuarios);
+			
+		} else {
+			
+			$usuarios = array('' => 'Selecione');
+			$this->set('usuarios' , $usuarios);
+			
+		}
+		
 	}
 
 	function nomes($departamento = 0, $usuario_id = null){
