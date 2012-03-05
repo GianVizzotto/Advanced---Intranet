@@ -175,7 +175,7 @@ class AvisosController extends AppController {
 			$avisos = $this->Aviso->filtraAvisos($tipo_filtro, $valor, $usuario_id, $departamento_id);
 		} else {
 			$avisos = $this->Aviso->filtraAvisos($tipo_filtro, null, $usuario_id, $departamento_id);
-		}
+		}		
 		
 		$this->set('avisos' , $avisos) ;
 		

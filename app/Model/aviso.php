@@ -84,7 +84,8 @@ class Aviso extends AppModel {
 //		return $avisos ;			
 //			
 //	}
-	
+
+//	Exibe os detalhes de determinado aviso
 	function filtraAvisos($aviso_id){
 
 		$avisos = $this->find('all', array(
@@ -122,47 +123,6 @@ class Aviso extends AppModel {
 			'conditions'=>'Aviso.id = '.$aviso_id		
 			)
 		);
-		
-//		$avisos =	$this->find('all' , array ( 
-//						'first' => array(
-//							'Aviso.id',
-//							'Aviso.assunto',
-//							'Aviso.mensagem',
-//							'Aviso.data_criacao',
-//							'Aviso.anexo',
-//							'Usuario.nome',
-//							'Departamento.nome',
-//							'Cargo.nome'
-//							),
-//						'joins' => array(
-//							array(
-//								'table' => 'usuarios',
-//								'alias' => 'Usuario',
-//								'type' => 'INNER',
-//								'conditions' => array ( 'Aviso.usuario_id = Usuario.id' )
-//							),
-//							array(
-//								'table' => 'departamentos',
-//								'alias' => 'Departamento',
-//								'type' => 'INNER',
-//								'conditions' => array ( 'Usuario.departamento_id = Departamento.id' )
-//								),
-//							array(
-//								'table' => 'cargos',
-//								'alias' => 'Cargo',
-//								'type' => 'INNER',
-//								'conditions' => array ( 'Usuario.cargo_id = Cargo.id' )
-//								),
-//							array(
-//								'table' => 'avisos_destinatarios',
-//								'alias' => 'AvisoDestinatario',
-//								'type' => 'LEFT',
-//								'conditions' => array ( 'Aviso.id = AvisoDestinatario.aviso_id' )
-//								)		
-//							),
-//						'conditions' => array('Aviso.id = '.$aviso_id)
-//						)							
-//					);
 					
 		return $avisos;					
 		
@@ -173,6 +133,62 @@ class Aviso extends AppModel {
 		$dados['Aviso'] = array('id' => $aviso_id, 'status_aviso_id' => $status);
 		
 		$this->save($dados);
+		
+	}
+	
+	/**
+	 * 
+	 * Lista os avisos para determinada pessoa apenas de o aviso foi direcionado a ela ou ao departamento que pertence
+	 */
+	
+	function getAvisos($usuario_dados, $limit=null){
+		
+		$conditions = array('(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].') or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].')' );
+		
+		$avisos = $this->find('all', array(
+			'fields' => array(
+					'Aviso.id',
+					'Aviso.usuario_id',
+					'Aviso.assunto',
+					'Aviso.data_criacao',
+					'Usuario.nome',
+					'Destinatario.nome',
+					'Departamento.nome',
+					'AvisoDestinatario.usuario_id',
+					),
+				'joins' => array(
+					array(
+						'table' => 'usuarios',
+						'alias' => 'Usuario',
+						'type' => 'INNER',
+						'conditions' => array ( 'Aviso.usuario_id = Usuario.id' )
+						),
+					array(
+						'table' => 'avisos_destinatarios',
+						'alias' => 'AvisoDestinatario',
+						'type' => 'LEFT',
+						'conditions' => array ( 'Aviso.id = AvisoDestinatario.aviso_id' )
+						),
+					array(
+						'table' => 'departamentos',
+						'alias' => 'Departamento',
+						'type' => 'INNER',
+						'conditions' => array ( 'AvisoDestinatario.departamento_id = Departamento.id' )
+						),
+					array(
+						'table' => 'usuarios',
+						'alias' => 'Destinatario',
+						'type' => 'LEFT',
+						'conditions' => array ( 'AvisoDestinatario.usuario_id = Destinatario.id' )
+						),			
+					),
+					'conditions' => $conditions,
+					'order' => array('Aviso.data_criacao' => 'DESC'),
+					'limit' => $limit
+				)
+			);	
+
+		return $avisos;
 		
 	}
 	

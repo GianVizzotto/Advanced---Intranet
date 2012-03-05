@@ -1,4 +1,5 @@
 <?php echo $this->Html->script('cadastro');?>
+<?php echo $this->Html->script('advanced');?>
 <div id="meio">
 	<div id="colunaB">
 		<h1>Novo Usuário</h1> 
@@ -31,8 +32,16 @@
  						
 					<label for="Departamento">
 						Departamento: <br />                                           
-						<?php echo $this->Form->input('departamento_id' , array ( 'options' => $departamentos , 'label' => false) ) ;?> 
-					</label>    
+						<?php echo $this->Form->input('departamento_id' , array ( 'options' => $departamentos, 'onchange' => "mostraUsuarios(this.value,'cargos','usuarios','cargos')", 'label' => false) ) ;?> 
+					</label>
+					
+					<?php if($cargo_id):?>
+						<?php echo $this->Form->input('cargo_id_aux' , array ( 'type' => 'hidden', 'value' => $cargo_id, 'id' => 'cargo_id_aux' ) ) ;?>
+					<?php endif;?>
+						<label for="Cargo">
+							<div class="cargos"></div> 
+						</label>
+				
 				                    
 					<label for="Ramal">
 						Ramal: <br />                                           
@@ -63,7 +72,7 @@
 						Foto: <br />                                           
 						<input type="file" name="data[File][imagem]" id="FileImage" />
 						<br />
-						<?php if($url_foto){ echo "<a href='/$url_foto' target='_blank' >$url_foto</a>";}?>
+						<?php if($url_foto){ echo "<a href='/$url_foto' target='_blank' ><img src=/$url_foto /></a>";}?>
 					</label>
 					                                                             
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>

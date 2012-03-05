@@ -4,7 +4,7 @@
 
 class UsuariosController extends AppController {
 	
-	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario', 'Noticia' ) ;
+	var $uses = array ( 'Departamento' , 'Perfil' , 'Usuario' , 'StatusUsuario', 'Noticia', 'Cargo' ) ;
 	var $components = array ( 'Date' ) ;
 	var $helpers = array ( 'Paginator' ) ;
 	
@@ -27,7 +27,7 @@ class UsuariosController extends AppController {
 		
 		$perfis = $this->Perfil->getPerfis();
 		$perfis = array ( '' => 'Selecione' ) + (array)$perfis;
-		
+				
 		$ultimos_cadastrados = $this->Usuario->lastUsers() ;
 		
 		if( !empty($id) ) {
@@ -80,12 +80,16 @@ class UsuariosController extends AppController {
 			$this->request->data = $this->Usuario->read();
 			$this->request->data['Usuario']['data_nascimento'] = $this->Date->DBToRead($this->data['Usuario']['data_nascimento']);
 			
+			if(isset($this->data['Usuario']['cargo_id'])){
+				$this->set('cargo_id', $this->data['Usuario']['cargo_id']);
+			}
+			
 		}
-	
+		
 		$this->set('departamentos' , $departamentos);
 		$this->set('perfis' , $perfis);
 		$this->set('ultimos_cadastrados' , $ultimos_cadastrados);
-		
+				
 	}
 	
 	function listar() {
@@ -372,6 +376,20 @@ class UsuariosController extends AppController {
 			}
 		}
 		return $result;
+	}
+	
+	function cargos($departamento_id, $cargo_id = null){
+		
+		$this->layout = '';
+		
+		if($cargo_id){
+			$cargos = $this->Cargo->getCargos($departamento_id, $cargo_id);
+		} else {
+			$cargos = $this->Cargo->getCargos($departamento_id);
+		}		
+		
+		$this->set('cargos' , $cargos);
+		
 	}
 	
 }
