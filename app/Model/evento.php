@@ -31,14 +31,6 @@ class Evento extends AppModel {
 						'Evento.nome',
 						'Tipos_conteudos.nome'
 						),
-					'joins' => array(
-						array(
-							'table' => 'tipos_conteudos',
-							'alias' => 'Tipos_conteudos',
-							'type' => 'INNER',
-							'conditions' => array ( 'Evento.tipos_conteudo_id = Tipos_conteudos.id' )
-							)
-						),
 					'order' => array ( 'Evento.id' => 'DESC' ),
 					'limit' => 8	
 				 	)
