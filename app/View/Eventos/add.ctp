@@ -34,11 +34,6 @@
 						<br />
 						<?php if($url_imagem){ echo "<a href='/$url_imagem' target='_blank' >$url_imagem</a>";}?>
 					</label>
-					
-					<label for="Tipos">
-						Tipo de Conte&uacute;do: <br />                                           
-						<?php echo $this->Form->input('tipos_conteudo_id' , array ( 'options' => $Tipos_conteudos , 'label' => false) ) ;?> 
-					</label> 
 					<br />   
 				                    
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>

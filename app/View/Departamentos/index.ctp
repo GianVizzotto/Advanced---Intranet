@@ -47,6 +47,3 @@
 		</div>
 	</div>
 </div>
-<?php
-	debug($this->Paginator->params());
-?>
