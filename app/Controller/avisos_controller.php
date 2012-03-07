@@ -150,20 +150,23 @@ class AvisosController extends AppController {
 	
 	function usuarios ( $departamento_id = null , $usuario_id = null ) {
 		
+		$usuario_dados = $this->Session->read('Usuario');
+		
 		$this->layout = '' ;
 		
-		if($departamento_id != null){
+		if($departamento_id != null && $usuario_id != null){
 		
-			$usuarios = $this->Usuario->getUsuarioDpto($departamento_id , $usuario_id) ;
-			
-			$this->set('usuarios' , $usuarios);
+			$usuarios = $this->Usuario->getUsuarioDpto($departamento_id , $usuario_id, null) ;
 			
 		} else {
 			
-			$usuarios = array('' => 'Selecione');
-			$this->set('usuarios' , $usuarios);
+			$usuarios = $this->Usuario->getUsuarioDpto($departamento_id , $usuario_dados['Usuario']['id'], 1) ;
 			
 		}
+		
+		$usuarios = array('' => 'Selecione') + $usuarios;
+		
+		$this->set('usuarios' , $usuarios);
 		
 	}
 	
@@ -185,6 +188,8 @@ class AvisosController extends AppController {
 		
 		$this->layout = '' ;
 		
+		$usuario_dados = $this->Session->read('Usuario');
+		
 		$id = $this->params['url']['id'] ;
 		
 		$aviso = $this->Aviso->filtraAvisos($id) ;
@@ -202,6 +207,7 @@ class AvisosController extends AppController {
 		
 		$this->set('aviso', $aviso);
 		$this->set('destinatarios', $destinatarios);
+		$this->set('usuario_id', $usuario_dados['Usuario']['id']);
 		
 	}
 	
@@ -318,4 +324,50 @@ class AvisosController extends AppController {
 		return $result;
 	}
 	
+	function salvaAviso(){
+		
+		$this->request->data['AvisoDestinatario']['usuario_id'] = $this->data['Aviso']['usuario_id'];
+		$usuario_dados = $this->Session->read('Usuario');
+		$this->request->data['AvisoDestinatario']['departamento_id'] = $usuario_dados['Usuario']['departamento_id'];
+			
+		$this->request->data['Aviso']['usuario_id'] = $usuario_dados['Usuario']['id'];
+		
+		$this->Aviso->set($this->data);
+		
+		if ( $this->Aviso->validates() ) {
+			
+//			$fileOK = $this->uploadFiles('files/avisos', $this->data['File']);
+//			
+//				// if file was uploaded ok
+//				if($fileOK['urls'][0] != "") {
+//				    // save the url in the form data
+//				    $this->request->data['Aviso']['anexo'] = $fileOK['urls'][0];
+//				    echo $this->data['Aviso']['anexo'];
+//			  	}
+//			
+			if($this->Aviso->salvaAviso($this->data['Aviso'])) {
+				
+				if(!empty($this->data['AvisoDestinatario'])){
+						
+					$this->request->data['AvisoDestinatario']['aviso_id'] = $this->Aviso->getLastInsertID();
+					$this->AvisoDestinatario->save($this->data['AvisoDestinatario']);
+					
+				}
+				
+//				$this->Session->setFlash('Aviso cadastrado com sucesso.', 'flash_confirm');
+//				unset($this->data);
+				//$this->redirect('/avisos');
+				echo 1;
+				
+			} else {
+				
+				//$this->Session->setFlash('Aviso não cadastrado.', 'flash_error');
+				return false;
+				
+			}
+			
+		}
+		
+	}
+		
 }

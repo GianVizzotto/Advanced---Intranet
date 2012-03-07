@@ -62,9 +62,12 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => '187.45.196.160',
-		'login' => 'socciweb88',
-		'password' => 'adv2045',
+		/*'host' => '187.45.196.160',*/
+		'host' => 'localhost',
+//		'login' => 'socciweb88',
+//		'password' => 'adv2045',
+		'login' => 'root',
+		'password' => 'takeiteasy',
 		'database' => 'socciweb88',
 		'prefix' => '',
 		//'encoding' => 'utf8',

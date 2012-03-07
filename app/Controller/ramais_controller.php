@@ -112,20 +112,23 @@ class RamaisController extends AppController {
 
 	function usuarios ( $departamento_id = null , $usuario_id = null ) {
 		
+		$usuario_dados = $this->Session->read('Usuario');
+		
 		$this->layout = '' ;
 		
-		if($departamento_id != null){
+		if($departamento_id != null && $usuario_id != null){
 		
-			$usuarios = $this->Usuario->getUsuarioDpto($departamento_id , $usuario_id) ;
-			
-			$this->set('usuarios' , $usuarios);
+			$usuarios = $this->Usuario->getUsuarioDpto($departamento_id , $usuario_id, null) ;
 			
 		} else {
 			
-			$usuarios = array('' => 'Selecione');
-			$this->set('usuarios' , $usuarios);
+			$usuarios = $this->Usuario->getUsuarioDpto($departamento_id , $usuario_dados['Usuario']['id'], 1) ;
 			
 		}
+		
+		$usuarios = array('' => 'Selecione') + $usuarios;
+		
+		$this->set('usuarios' , $usuarios);
 		
 	}
 

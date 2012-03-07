@@ -75,33 +75,30 @@ class Usuario extends AppModel {
 		
 	}
 	
-	function getUsuarioDpto($departamento_id , $usuario_id) {
+	function getUsuarioDpto($departamento_id , $usuario_id, $tipo = null) {
+		
+		if ($tipo == null) {
+			
+			$condicao = array( 'id = '.$usuario_id, 'departamento_id ='. $departamento_id ) ;
+			
+		} elseif ($tipo == 1) {
+			
+			$condicao = array('departamento_id ='. $departamento_id, 'id != '.$usuario_id ) ;
+
+		}
 		
 		$usuarios =	$this->find('list' , array(
 						'fields' => array(
 							'id',
 							'nome'
 							),
-						'conditions' => array ( 
-							'departamento_id ='. $departamento_id
-						)
+						'conditions' => $condicao
 						)
 					);
-					
-		if ( $usuario_id ) {
-			
-			$this->find['conditions'] = array( 'id = '.$usuario_id ) ;
-			
-		} else {
-			
-			$usuarios = array(''=>'Selecione') + (array)$usuarios ;
-
-		}				
 		
 		return $usuarios ;
 		
 	}
-
 	
 	function getUrlImagem($id){
 		$url_imagem =	$this->find('first' , array ( 

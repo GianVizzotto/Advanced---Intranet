@@ -97,6 +97,7 @@ class Aviso extends AppModel {
 				'Aviso.anexo',
 				'Aviso.status_aviso_id',
 				'Usuario.nome',
+				'Usuario.id',
 				'Departamento.nome',
 				'Cargo.nome'						
 			),
