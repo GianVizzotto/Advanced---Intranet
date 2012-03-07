@@ -14,7 +14,7 @@ function mostraUsuarios(departamento_id, classe, controller, action,id_extra){
 				$('.'+classe).html(result);
 			},
 			error: function(err){
-				alert(id_extra);
+				alert("Erro ao procurar usuários.");
 			}
 		});
 	
@@ -28,11 +28,10 @@ function mostraUsuarios(departamento_id, classe, controller, action,id_extra){
 				$('.'+classe).html('Carregando...');
 			},
 			success: function(result){
-				
 				$('.'+classe).html(result);
 			},
 			error: function(err){
-				alert(id_extra);
+				alert("Erro ao procurar usuários.");
 			}
 		});
 		

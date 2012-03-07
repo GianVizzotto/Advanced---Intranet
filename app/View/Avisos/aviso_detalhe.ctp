@@ -11,11 +11,11 @@
 <?php echo $this->Html->script('avisos') ;?>
 <?php echo $this->Html->script('jquery.dateFormat-1.0') ;?>
 
-<script>
+<!--
 	$(document).ready(function(){
-		recuperaRespostas("<?php echo  $aviso[0]['Aviso']['id'];?>");
+		recuperaRespostas("<?php //echo  $aviso[0]['Aviso']['id'];?>");
 	});
-</script>
+-->
 
 </head>
 
@@ -53,28 +53,27 @@
 <p><?php echo $aviso[0]['Aviso']['mensagem'];?></p>
 
 <div>
-<div class="comentarios">
-	<h2>Comentários:</h2>
-</div>
 <div class="barra_de_botoes" style="display:none;">
 <a href="#"><img src="/img/bt_avisos_arquivar.png" alt="" align="absmiddle" title="" /> Arquivar </a>
-
 <a href="#"><img src="/img/bt_avisos_excluir.png" alt="" align="absmiddle" title="" /> Excluir </a>
 <a href="#" class="accordionButton"><img src="/img/bt_avisos_responder.png" alt="" align="absmiddle" title="" /> Responder </a>
 </div>
 
-<div class="accordionContent responder">
-<h2 style="margin-top:0px;">Responder a mensagem</h2>
-
-<?php 
-	echo $this->Form->create('AvisoResposta', array( 'id'=>'Resposta', 'onsubmit'=>'return gravaResposta();'));
-	echo $this->Form->input('resposta', array('type'=>'textarea', 'label'=>false, 'div'=>false));
-	echo $this->Form->input('id', array('type'=>'hidden', 'value'=>$aviso[0]['Aviso']['id']));
-	echo $this->Form->submit('Enviar' , array('class' => 'btForm') ) ;               
-	echo $this->Form->end();
-?>
-<br /><br />
-</div>
+<?php if($usuario_id != $aviso[0]['Usuario']['id']):?>
+	<div class="accordionContent responder">
+		<h2 style="margin-top:0px;">Responder a mensagem</h2>		
+		<?php 
+			echo $this->Form->create('Aviso', array( 'id'=>'Aviso', 'onsubmit'=>'return salvaAviso();'));
+			echo $this->Form->input('assunto', array('type'=>'hidden', 'value' => 'res:'.$aviso[0]['Aviso']['assunto']));
+			echo $this->Form->input('mensagem', array('type'=>'textarea', 'label'=>false, 'div'=>false));
+			echo $this->Form->input('usuario_id', array('type'=>'hidden', 'value'=>$aviso[0]['Usuario']['id']));
+			echo $this->Form->input('status_aviso_id', array('type'=>'hidden', 'value'=>'6'));
+			echo $this->Form->submit('Enviar' , array('class' => 'btForm') ) ;               
+			echo $this->Form->end();
+		?>
+		<br /><br />
+	</div>
+<?php endif;?>
 </div>
 
 
