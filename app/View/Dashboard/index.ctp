@@ -76,6 +76,10 @@
 			echo '<a href="/usuarios/cadastro" class="bt_padrao"><center>CADASTRO DE USUÁRIOS</center></a>';
 			echo '<a href="/eventos" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE EVENTOS</center></a>';
 			echo '<a href="/noticias" class="bt_padrao"><center>CADASTRO DE NOTÍCIAS</center></a>';
+			echo '<div class="clear">&nbsp;</div>';
+			echo '<a href="/departamentos" class="bt_padrao"><center>CADASTRO DE DEPARTAMENTOS</center></a>';
+			echo '<a href="/avisos" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE AVISOS</center></a>';
+			echo '<a href="/tipos_conteudos" class="bt_padrao"><center>CADASTRO DE TIPOS DE NOTÍCIAS</center></a>';
 		endif;
 	?>
 </div>

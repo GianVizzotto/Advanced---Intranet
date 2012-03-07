@@ -1,14 +1,14 @@
 <div id="meio">
 	<div id="colunaE" style=" width: 950px;">
 		<?php if($id):?>
-			<h1>EDI&Ccedil;&Atilde;O DE DEPARTAMENTO</h1>
+			<h1>EDI&Ccedil;&Atilde;O DE CATEGORIAS</h1>
 		<?php else:?>
-			<h1>NOV0 DEPARTAMENTO</h1>
+			<h1>NOVA CATEGORIA</h1>
 		<?php endif; ?> 
 		<div class="conteudo" style=" width: 910px;">
 			<div class="formulario">
 			
- 				<?php echo $this->Form->create('Departamento' ); ?>
+ 				<?php echo $this->Form->create('Tipos_conteudo', array ('enctype' => 'multipart/form-data') ); ?>
  						
  					<?php if($id):?>
  						<?php echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
@@ -18,12 +18,6 @@
 						Nome: <br />
 						<?php echo $this->Form->input('nome' , array ( 'type' => 'text' , 'label' => false) ) ;?>
 					</label>
-					
-					<label for="Descricao">
-						Descrição: <br />
-						<?php echo $this->Form->input('descricao' , array ( 'type' => 'text' , 'label' => false, 'style' => 'width: 450px;') ) ;?>
-					</label>
-					
 					<br />   
 				                    
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>

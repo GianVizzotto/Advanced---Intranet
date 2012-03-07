@@ -11,10 +11,6 @@
 						Nome:<br />
 						<?php echo $this->Form->input('nome' , array ( 'type' => 'text' , 'label' => false , 'div' => false ) ) ;?>
 					</label>
-					<label for="Tipo">
-						Tipo:<br />
-						<?php echo $this->Form->input('tipos_conteudo_id' , array ( 'options' => $Tipos_conteudos , 'label' => false , 'div' => false ) ) ;?>
-					</label>
 					<?php echo $this->Form->submit('Pesquisar' , array ( 'class' => 'btForm' ) ) ;?>
 				<?php echo $this->Form->end();?>
 			</div>  
@@ -27,14 +23,14 @@
 			<table bordercolor="#B8B5B5" border="1">
 				<tr>
 					<th width="60%">Nome</th>
-					<th width="30%">Tipo</th>
+					<th width="30%">Data Criação</th>
 					<th width="20%">Editar</th>
 					<th width="20%">Excluir</th>
 				</tr>			
 			<?php foreach ($ultimos_eventos as $ultimos_evento):?>
 				<tr>
 					<td align="center"><?php echo $ultimos_evento['Evento']['nome'];?></td>  
-					<td align="center"><?php echo $ultimos_evento['Tipos_conteudos']['nome'];?></td>
+					<td align="center"><?php echo $this->Time->format( 'd/m/Y - H:i', $ultimos_evento['Evento']['data_criacao']);?></td>
 					<td align="center"><a href="/eventos/add/<?php echo $ultimos_evento['Evento']['id'];?>"><img src="/img/edit_icon.png" /></a></td>
 					<td align="center"><a href="/eventos/remove/<?php echo $ultimos_evento['Evento']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
 			<?php endforeach;?>

@@ -2,7 +2,7 @@
 
 class EventosController extends AppController {
 	
-	var $uses = array ( 'Evento' , 'Tipos_conteudo', 'Noticia' ) ;
+	var $uses = array ( 'Evento' , 'Noticia' ) ;
 	var $helpers = array ( 'Paginator', 'Time' ) ;
 	
 	public $paginate = array(
@@ -16,24 +16,11 @@ class EventosController extends AppController {
 			$this->redirect('/dashboard');
 		endif;
 				
-		$Tipos_conteudos = $this->Tipos_conteudo->getTipos();
-		$Tipos_conteudos = array ( '' => 'Selecione' ) + (array)$Tipos_conteudos;
-		$this->set('Tipos_conteudos' , $Tipos_conteudos);
-		
 		$this->paginate = array(
 			'fields' => array(
 				'Evento.id',
 				'Evento.nome',
-				'Evento.data_criacao',
-				'Tipos_conteudos.nome'
-				),
-			'joins' => array(
-				array(
-					'table' => 'tipos_conteudos',
-					'alias' => 'Tipos_conteudos',
-					'type' => 'INNER',
-					'conditions' => array ( 'Evento.tipos_conteudo_id = Tipos_conteudos.id' )	
-					)
+				'Evento.data_criacao'
 				)
 			);
 		$filtros = "";
@@ -46,15 +33,6 @@ class EventosController extends AppController {
 				
 				$this->paginate['conditions'][$x] = array(
 					"lower(Evento.nome) like lower('%".$filtros['nome']."%')" 
-				);
-				
-				$x++ ;
-				
-			}
-			if ( !empty ( $filtros['tipos_conteudo_id'] ) ) {
-				
-				$this->paginate['conditions'][$x] = array(
-					"Tipos_conteudos.id = ".$filtros['tipos_conteudo_id'] 
 				);
 				
 				$x++ ;
@@ -84,9 +62,6 @@ class EventosController extends AppController {
 		$ckfinderPath = 'js/ckfinder/';
    		$this->set('ckfinderPath', $ckfinderPath);
 
-		$Tipos_conteudos = $this->Tipos_conteudo->getTipos();
-		$Tipos_conteudos = array ( '' => 'Selecione' ) + (array)$Tipos_conteudos;
-		
 		if (!empty($id)){
 			$this->Evento->id = $id;
 			$url_imagem = $this->Evento->getUrlImagem($id);
@@ -116,8 +91,6 @@ class EventosController extends AppController {
 			$this->request->data = $this->Evento->read();
 		}
 		
-		$this->set('Tipos_conteudos' , $Tipos_conteudos);
-				
 	}
 	
 	function remove($id){
@@ -140,44 +113,16 @@ class EventosController extends AppController {
 	}
 	
 	function visualizar(){
-		$Tipos_conteudos = $this->Tipos_conteudo->getTipos();
-		$Tipos_conteudos = array ( '' => 'Selecione' ) + (array)$Tipos_conteudos;
-		$this->set('Tipos_conteudos' , $Tipos_conteudos);
-		
+
 		$this->paginate = array(
 			'fields' => array(
 				'Evento.id',
 				'Evento.nome',
 				'Evento.data_criacao',
-				'Evento.conteudo',
-				'Tipos_conteudos.nome'
-				),
-			'joins' => array(
-				array(
-					'table' => 'tipos_conteudos',
-					'alias' => 'Tipos_conteudos',
-					'type' => 'INNER',
-					'conditions' => array ( 'Evento.tipos_conteudo_id = Tipos_conteudos.id' )	
-					)
+				'Evento.conteudo'
 				)
 			);
 		$filtros = "";
-		if( $this->params['url'] ) {
-			
-			$filtros = $this->params['url'];
-			$x = 0 ;
-			
-			if ( !empty ( $filtros['tipos_conteudo_id'] ) ) {
-				
-				$this->paginate['conditions'][$x] = array(
-					"Tipos_conteudos.id = ".$filtros['tipos_conteudo_id'] 
-				);
-				
-				$x++ ;
-				
-			}
-			
-		}
 		$this->paginate['limit'] = 5;
 		$this->paginate['paramType'] = 'querystring';
 		// print_r($this->paginate);

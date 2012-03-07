@@ -41,7 +41,7 @@ class LoginController extends AppController {
 			} else {
 				
 				unset($this->data);
-				echo "Usuario e/ou senha inválido.";
+				$this->set('mensagem_login','<center><strong>Usuario e/ou senha inválido.</strong></center><br />');
 							
 			}
 

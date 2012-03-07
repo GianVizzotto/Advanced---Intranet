@@ -44,7 +44,7 @@ class DepartamentosController extends AppController {
 			}
 			
 		}
-		$this->paginate['limit'] = 1;
+		$this->paginate['limit'] = 10;
 		$this->paginate['paramType'] = 'querystring';
 		
 		$this->request->data['Departamentos'] = $filtros ;

@@ -1,5 +1,5 @@
 <?php
-	$this->Paginator->options(array('url' => array('controller' => 'eventos', 'action' => 'visualizar', '?' => array('tipos_conteudo_id' => $this->params['url'][tipos_conteudo_id]) ) , 'paramType' => 'querystring'));
+	$this->Paginator->options(array('url' => array('controller' => 'eventos', 'action' => 'visualizar' ) , 'paramType' => 'querystring'));
 ?>
 <!-- INICIO MEIO -->
 <div id="meio">
@@ -16,15 +16,6 @@
         	<div id="barra_exibir">
         
         	Exibindo:<strong> Últimos Eventos</strong>
-        
-            
-                <?php echo $this->Form->create('Eventos' , array ( 'type' => 'get' , 'action' => 'visualizar' ) ) ;?>
-                    Categoria:
-                    
-					<?php echo $this->Form->input('tipos_conteudo_id' , array ( 'options' => $Tipos_conteudos , 'label' => false) ) ;?> 
-                    
-					<?php echo $this->Form->submit('OK' , array ( 'class' => 'btForm' ) ) ;?>
-				<?php echo $this->Form->end();?>
 			
             </div>
             <!-- FINAL BARRA EXIBIR -->
