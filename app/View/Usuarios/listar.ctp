@@ -55,7 +55,9 @@ $this->Paginator->options(array('url' => array('controller' => 'usuarios', 'acti
 						<td><?php echo $usuario['Departamento']['nome'];?></td>
 						<td><?php echo $usuario['Status']['nome'];?></td>
 						<td align="center"><a href="/usuarios/cadastro/<?php echo $usuario['Usuario']['id'];?>"><img src="/img/edit_icon.png" /></a></td>
+						<?php if ($usuario['Usuario']['perfil_id'] != 1): ?>
 						<td align="center"><a href="/usuarios/excluir/<?php echo $usuario['Usuario']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
+						<?php endif; ?>
 				<?php endforeach;?>
 				</table><br />
 				<div class="paginacao" style="text-align:center;">

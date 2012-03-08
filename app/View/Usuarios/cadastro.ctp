@@ -53,10 +53,7 @@
 						<?php echo $this->Form->input('data_nascimento' , array ( 'type' => 'text' , 'maxLenght' => '10' , 'label' => false) ) ;?> 
 					</label>
 					
-					<label for="Perfil">
-						Perfil: <br />                                           
-						<?php echo $this->Form->input('perfil_id' , array ( 'options' => $perfis , 'label' => false) ) ;?> 
-					</label>
+					<?php echo $this->Form->input('perfil_id' , array ( 'type' => 'hidden' ) ) ;?> 
 					
 					<label for="Telefone">
 						Telefone: <br />                                           
@@ -97,7 +94,9 @@
 					<td><?php echo $ultimo_cadastrado['Usuario']['nome'];?></td>  
 					<td align="center"><?php echo $ultimo_cadastrado['Departamento']['nome'];?></td>
 					<td align="center"><a href="/usuarios/cadastro/<?php echo $ultimo_cadastrado['Usuario']['id'];?>"><img src="/img/edit_icon.png" /></a>
+					<?php if ($ultimo_cadastrado['Usuario']['perfil_id'] != 1): ?>
 					<a href="/usuarios/excluir/<?php echo $ultimo_cadastrado['Usuario']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
+					<?php endif; ?>
 			<?php endforeach;?>
 			</table>	
 		</div>

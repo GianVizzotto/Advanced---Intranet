@@ -66,14 +66,13 @@
 						<!-- FINAL USUARIO -->  
 						                    
 						<!-- INICIO MENU -->
+						<?php //$menu = $this->Session->read('Menu');?>
 						<div id="menu">
 						    <ul>                    
-							    <li><a href="#">HOME</a></li>
-							    <li><a href="#">LINKS</a></li>
-							    <li><a href="#">DIRETORIA</a></li>
-							    <li><a href="#">ADM/RH</a></li>
-							    <li><a href="#">TI</a></li>
-							    <li><a href="#">INTERAÇÃO</a></li>
+							    <li><a href="/dashboard">HOME</a></li>
+							    <?php foreach ($menudinamico as $lista_menu): ?>
+							    <li><a href="/departamentos/visualizar/<?php echo $lista_menu['Departamento']['id']; ?>"><?php echo strtoupper($lista_menu['Departamento']['nome']); ?></a></li>
+							    <?php endforeach; ?>
 							</ul>               
 						</div>
 						<!-- FINAL MENU -->
