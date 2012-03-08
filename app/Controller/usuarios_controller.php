@@ -22,6 +22,12 @@ class UsuariosController extends AppController {
 	
 	function cadastro( $id = null ) {
 		
+		$validao_perfil = $this->Session->read('Usuario');
+		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
 		$departamentos = $this->Departamento->getDepartamentos();
 		$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
 		
@@ -44,6 +50,10 @@ class UsuariosController extends AppController {
 
 			//Atentar-se que não é mais possivel gravar no $this->data, necessário usar $this->request->data para sobrescrita de valor
 			$this->request->data['Usuario']['data_nascimento'] = $this->Date->ReadToDB($this->data['Usuario']['data_nascimento']);
+
+			if ($this->data['Usuario']['perfil_id'] != 1){
+				$this->request->data['Usuario']['perfil_id'] = 2;
+			}
 
 			$this->Usuario->set($this->data);
 			
@@ -94,6 +104,12 @@ class UsuariosController extends AppController {
 	
 	function listar() {
 
+		$validao_perfil = $this->Session->read('Usuario');
+		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
 		$status = $this->StatusUsuario->getStatus() ;
 		$status = array('' => 'Selecione') + (array)$status;
 		
@@ -108,6 +124,7 @@ class UsuariosController extends AppController {
 				'Usuario.id',
 				'Usuario.nome',
 				'Usuario.email',
+				'Usuario.perfil_id',
 				'Departamento.nome',
 				'Status.nome'
 				),
@@ -223,6 +240,35 @@ class UsuariosController extends AppController {
 			
 			$this->Session->setFlash('Erro ao alterar senha!', 'flash_error');
 			$this->redirect(array('action' => 'perfil'));
+			
+		}		
+		
+	}
+	
+	
+	function excluir($id) {
+	
+		$validao_perfil = $this->Session->read('Usuario');
+		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
+		$this->Usuario->id = $id ;
+		
+	    $dados['Usuario']['status_usuario_id'] = 2;
+
+		$result = $this->Usuario->invalidaLogin($dados) ;
+		
+		if($result){
+			
+			$this->Session->setFlash('Usuário invalidado com sucesso!', 'flash_confirm');
+			$this->redirect(array('action' => 'listar'));
+			
+		} else {
+			
+			$this->Session->setFlash('Erro ao invalidar usuário!', 'flash_error');
+			$this->redirect(array('action' => 'listar'));
 			
 		}		
 		

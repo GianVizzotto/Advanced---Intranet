@@ -49,6 +49,7 @@ class Usuario extends AppModel {
 					'fields' => array (
 						'Usuario.id',
 						'Usuario.nome',
+						'Usuario.perfil_id',
 						'Departamento.nome'
 						),
 					'joins' => array(
