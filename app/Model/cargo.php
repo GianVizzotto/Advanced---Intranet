@@ -29,4 +29,19 @@ class Cargo extends AppModel {
 		
 	}
 	
+	function addCargo($dados) {
+
+		return $this->save($dados) ;
+		
+	}
+	
+	function deleteCargo($dados){
+		if ($this->delete($dados)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	
 }

@@ -60,6 +60,12 @@ class DepartamentosController extends AppController {
 			$this->set('id' , $id);
 		}
 		
+		$ckeditorClass = 'CKEDITOR';
+		$this->set('ckeditorClass', $ckeditorClass);
+		
+		$ckfinderPath = 'js/ckfinder/';
+   		$this->set('ckfinderPath', $ckfinderPath);
+		
 		if (!empty($this->data)){
 			$this->Departamento->set($this->data);
 			if ($this->Departamento->validates()){
@@ -88,6 +94,19 @@ class DepartamentosController extends AppController {
 			$this->Session->setFlash('Erro ao excluir Departamento!', 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
+	}
+	
+	function visualizar($id = null){
+		
+		if (!empty($id)){
+			$this->Departamento->id = $id;
+			$this->set('id' , $id);
+			$departamento = $this->Departamento->read();
+			$this->set('departamento',$departamento);
+		}else{
+			$this->redirect(array('controller' => 'dashboard'));
+		}
+		
 	}
 	
 }
