@@ -1,13 +1,23 @@
 <?php
 class AppController extends Controller {
 	
+	public $uses = array('Departamento');
+	
 	function beforeFilter(){
-		
 		$this->layout = 'advanced_layout' ;
 		
 		if(!$this->Session->read('Usuario') && $this->params['controller'] != 'login'){
 			$this->redirect('/login');
 		}
+		$menu = $this->Departamento->find('all', array(
+									'fields' => array(
+											'id',
+											'nome'
+											),
+									'order' => array ( 'nome' => 'DESC')
+									)
+								);
+		$this->set('menudinamico',$menu);
 		
 	}
 	
