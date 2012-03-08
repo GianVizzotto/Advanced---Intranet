@@ -15,7 +15,8 @@ class Departamento extends AppModel {
 								'fields' => array ( 
 									'id',
 									'nome'
-									)
+									),
+								'conditions' => array('id <> 6')	
 								)
 							) ;
 							

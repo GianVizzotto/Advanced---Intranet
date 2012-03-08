@@ -13,8 +13,7 @@ function salvaAviso(){
 			location.href="/avisos#";
 		},
 		error: function(err){
-			alert('Erro');
-			//location.href="/avisos#";
+			location.href="/avisos#";
 		}
 	});
 	

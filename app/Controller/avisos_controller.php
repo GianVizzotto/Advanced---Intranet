@@ -12,7 +12,7 @@ class AvisosController extends AppController {
 	function index ( ) {
 		
 		$departamentos = $this->Departamento->getDepartamentos();
-		$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		$departamentos = array ( '' => 'Selecione', '0' =>'Todos') + (array)$departamentos;
 		
 		$this->set('departamentos' , $departamentos) ;
 		
@@ -78,14 +78,17 @@ class AvisosController extends AppController {
 		
 		//Listagem de avisos
 		
-		$conditions = array('(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].') or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].')' );
+		$conditions = array('(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].') or
+		 (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].') or (AvisoDestinatario.departamento_id = 0 and AvisoDestinatario.usuario_id = 0)' );
 		
 		if($this->params['url']['status_aviso_id'] && $this->params['url']['status_aviso_id'] != 1 && $this->params['url']['status_aviso_id'] != 3){
 			
 			$conditions = array(
 				'(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].') 
 				or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'.'
-				or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'
+				or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'.
+				'or (AvisoDestinatario.departamento_id = 0 and AvisoDestinatario.usuario_id = 0
+				and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'
 			);
 		
 		} elseif($this->params['url']['status_aviso_id'] != 3) {
@@ -111,7 +114,7 @@ class AvisosController extends AppController {
 					array(
 						'table' => 'usuarios',
 						'alias' => 'Usuario',
-						'type' => 'INNER',
+						'type' => 'LEFT',
 						'conditions' => array ( 'Aviso.usuario_id = Usuario.id' )
 						),
 					array(
@@ -123,7 +126,7 @@ class AvisosController extends AppController {
 					array(
 						'table' => 'departamentos',
 						'alias' => 'Departamento',
-						'type' => 'INNER',
+						'type' => 'LEFT',
 						'conditions' => array ( 'AvisoDestinatario.departamento_id = Departamento.id' )
 						),
 					array(
@@ -335,16 +338,7 @@ class AvisosController extends AppController {
 		$this->Aviso->set($this->data);
 		
 		if ( $this->Aviso->validates() ) {
-			
-//			$fileOK = $this->uploadFiles('files/avisos', $this->data['File']);
-//			
-//				// if file was uploaded ok
-//				if($fileOK['urls'][0] != "") {
-//				    // save the url in the form data
-//				    $this->request->data['Aviso']['anexo'] = $fileOK['urls'][0];
-//				    echo $this->data['Aviso']['anexo'];
-//			  	}
-//			
+
 			if($this->Aviso->salvaAviso($this->data['Aviso'])) {
 				
 				if(!empty($this->data['AvisoDestinatario'])){
@@ -354,14 +348,10 @@ class AvisosController extends AppController {
 					
 				}
 				
-//				$this->Session->setFlash('Aviso cadastrado com sucesso.', 'flash_confirm');
-//				unset($this->data);
-				//$this->redirect('/avisos');
-				echo 1;
+				return true;
 				
 			} else {
 				
-				//$this->Session->setFlash('Aviso não cadastrado.', 'flash_error');
 				return false;
 				
 			}

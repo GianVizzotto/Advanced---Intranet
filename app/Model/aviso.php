@@ -139,12 +139,14 @@ class Aviso extends AppModel {
 	
 	/**
 	 * 
-	 * Lista os avisos para determinada pessoa apenas de o aviso foi direcionado a ela ou ao departamento que pertence
+	 * Lista os avisos para determinada pessoa apenas se aviso foi direcionado a ela ou ao departamento que pertence ou a todos
 	 */
 	
 	function getAvisos($usuario_dados, $limit=null){
 		
-		$conditions = array('(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].') or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].')' );
+		$conditions = array('(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' 
+			and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].')
+		 	or (AvisoDestinatario.departamento_id = 0 and AvisoDestinatario.usuario_id = 0)' );
 		
 		$avisos = $this->find('all', array(
 			'fields' => array(
@@ -161,7 +163,7 @@ class Aviso extends AppModel {
 					array(
 						'table' => 'usuarios',
 						'alias' => 'Usuario',
-						'type' => 'INNER',
+						'type' => 'LEFT',
 						'conditions' => array ( 'Aviso.usuario_id = Usuario.id' )
 						),
 					array(
@@ -173,7 +175,7 @@ class Aviso extends AppModel {
 					array(
 						'table' => 'departamentos',
 						'alias' => 'Departamento',
-						'type' => 'INNER',
+						'type' => 'LEFT',
 						'conditions' => array ( 'AvisoDestinatario.departamento_id = Departamento.id' )
 						),
 					array(

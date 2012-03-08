@@ -30,24 +30,31 @@
 				<div>
 					<?php foreach ($avisos as $aviso) :?>
 						<a href="/avisos/aviso_detalhe?id=<?php echo  $aviso['Aviso']['id'] ; ?>&height=500&width=850" class="thickbox">
-							<span><?php echo $this->Time->format('d/m/Y H:i', $aviso['Aviso']['data_criacao']); ?> - <?php echo $aviso['Usuario']['nome'] ; ?> >> <?php echo !empty($aviso['AvisoDestinatario']['usuario_id'])?$aviso['Destinatario']['nome']:$aviso['Departamento']['nome'];?></span>
+							<span><?php echo $this->Time->format('d/m/Y H:i', $aviso['Aviso']['data_criacao']); ?> - <?php echo $aviso['Usuario']['nome'] ; ?> >>
+							<?php if(!$aviso['AvisoDestinatario']['usuario_id'] && !$aviso['Departamento']['nome']):?>
+								<?php echo 'Todos';?>
+							<?php else:?> 
+								<?php echo !empty($aviso['AvisoDestinatario']['usuario_id'])?$aviso['Destinatario']['nome']:$aviso['Departamento']['nome'];?></span>
+							<?php endif;?>
 							<span class="title"><?php echo $aviso['Aviso']['assunto'] ; ?></span>	 
 						</a>
 					<?php endforeach ;?>
 				</div>
-				<div  style="text-align:center;">
-					<span><?php echo $this->Paginator->first('Primeira'); ?></span>	
-					<span><?php echo $this->Paginator->numbers(); ?></span>
-					<span><?php echo $this->Paginator->last('Última');	?></span>
-				</div>
 				<?php else : ?>
 					<div align="center"><strong>Nenhum aviso encontrado</strong></div>
 			<?php endif; ?>
-		</div>               
+		</div>
+		<div class="clear">&nbsp;</div>
+			<div class="paginacao" style="text-align:center;display:inline">
+				<ul class="pag">
+					<li><?php echo $this->Paginator->first('Primeira', array('class'=>false)); ?></li>	
+					<li><?php echo $this->Paginator->numbers(array('class'=>false)); ?></li>
+					<li><?php echo $this->Paginator->last('Última',array('class'=>false));	?></li>
+				</ul>	
+			</div>
 	</div>
 </div>
-
-<!-- FINAL COLUNA D -->         
+<!-- FINAL COLUNA D -->
 <div id="colunaB" style="margin-right:0px;">
                 
 	<h1>NOVO AVISO</h1>
@@ -58,9 +65,9 @@
 	 
 			<?php echo $this->Form->create('Aviso', array ('enctype' => 'multipart/form-data'));?>
 		  	  <?php echo $this->Form->input( 'status_aviso_id' , array( 'type' => 'hidden' , 'value' => 2 ) ) ;?>
-		                                
+		  		
 				<label for="">
-		        	Departamento do destinatário: <br />
+		        	Departamentos: <br />
 		            <?php echo $this->Form->input( 'AvisoDestinatario.departamento_id', array('options' => $departamentos , 'label' => false , 'div' => false , 'onchange' => "mostraUsuarios(this.value,'usuario','avisos','usuarios')" ) ) ;?>    
 				</label>                                   
 		                                

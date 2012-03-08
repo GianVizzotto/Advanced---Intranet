@@ -35,14 +35,22 @@
     <div id="colunaB">
     
 	<h1>ÚLTIMOS AVISOS</h1>
- 
- 	<?php foreach ($avisos as $aviso):?>
-		<a href="/avisos/aviso_detalhe?id=<?php echo  $aviso['Aviso']['id'] ; ?>&height=500&width=850" class="box thickbox">
-			<span><?php echo $this->Time->format('d/m/Y H:i', $aviso['Aviso']['data_criacao']); ?> >> <?php echo !empty($aviso['AvisoDestinatario']['usuario_id'])?$aviso['Destinatario']['nome']:$aviso['Departamento']['nome'];?></span>
-			<span class="title"><?php echo $aviso['Aviso']['assunto'] ; ?></span>	 
-		</a>
- 	<?php endforeach;?>
- 	
+	 	<?php if($avisos):?>
+			<?php foreach ($avisos as $aviso) :?>
+				<a href="/avisos/aviso_detalhe?id=<?php echo  $aviso['Aviso']['id'] ; ?>&height=500&width=850" class="box thickbox">
+					<span><?php echo $this->Time->format('d/m/Y H:i', $aviso['Aviso']['data_criacao']); ?> - <?php echo $aviso['Usuario']['nome'] ; ?> >>
+					<?php if(!$aviso['AvisoDestinatario']['usuario_id'] && !$aviso['Departamento']['nome']):?>
+						<?php echo 'Todos';?>
+					<?php else:?> 
+						<?php echo !empty($aviso['AvisoDestinatario']['usuario_id'])?$aviso['Destinatario']['nome']:$aviso['Departamento']['nome'];?></span>
+					<?php endif;?>
+					<span class="title"><?php echo $aviso['Aviso']['assunto'] ; ?></span>	 
+				</a>
+			<?php endforeach ;?>
+		<?php else : ?>
+			<p class="box">Nenhum aviso</p>	
+		<?php endif;?>	
+ 	 	
 	<a href="/avisos" class="bt_padrao">+ AVISOS</a> 
     
     </div>
