@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Detalhe Aviso</title>
 
-<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
 <?php echo $this->Html->css('modal');?>
 <?php echo $this->Html->script('jquery-1.4.2.min') ;?>
 <?php //echo $this->Html->script('accordion') ;?>
@@ -38,14 +38,19 @@
 <h2>Enviado em:</h2>
 <p><?php echo $this->Time->format( 'd/m/Y - H:i', $aviso[0]['Aviso']['data_criacao']) ; ?></p>
 
-<h2>Anexo:</h2>
-<p> <a href="<?php echo $aviso[0]['Aviso']['anexo'] ; ?>" target="_blank"><?php echo $aviso[0]['Aviso']['anexo'] ; ?></a></p>
-
+<?php if(!empty($aviso[0]['Aviso']['anexo'])):?>
+	<h2>Anexo:</h2>
+	<p> <a href="<?php echo $aviso[0]['Aviso']['anexo'] ; ?>" target="_blank"><?php echo $aviso[0]['Aviso']['anexo'] ; ?></a></p>
+<?php endif;?>
 <h2>Destinatários:</h2>
 <p>
-<?php foreach ($destinatarios as $destinatario):?>
-	<?php echo $destinatario['Usuario']['nome'];?>
-<?php endforeach;?>	
+	<?php if($destinatarios[0]['AvisoDestinatario']['usuario_id'] == 0 && $destinatarios[0]['AvisoDestinatario']['departamento_id'] == 0): ?>
+		<?php echo 'Todos';?>
+	<?php elseif($destinatarios[0]['AvisoDestinatario']['usuario_id'] == null):?>
+		<?php echo $destinatarios[0]['Departamento']['nome'];?>
+	<?php else:?>
+		<?php echo $destinatarios[0]['Usuario']['nome']; ?>
+	<?php endif;?>			
 </p>
 
 <h2>Corpo da Mensagem:</h2>
@@ -64,6 +69,7 @@
 		<h2 style="margin-top:0px;">Responder a mensagem</h2>		
 		<?php 
 			echo $this->Form->create('Aviso', array( 'id'=>'Aviso', 'onsubmit'=>'return salvaAviso();'));
+			echo $this->Form->input('aviso_id', array('type'=>'hidden', 'value'=>$aviso[0]['Aviso']['id']));
 			echo $this->Form->input('assunto', array('type'=>'hidden', 'value' => 'res:'.$aviso[0]['Aviso']['assunto']));
 			echo $this->Form->input('mensagem', array('type'=>'textarea', 'label'=>false, 'div'=>false));
 			echo $this->Form->input('usuario_id', array('type'=>'hidden', 'value'=>$aviso[0]['Usuario']['id']));

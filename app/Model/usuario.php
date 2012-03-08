@@ -77,26 +77,34 @@ class Usuario extends AppModel {
 	
 	function getUsuarioDpto($departamento_id , $usuario_id, $tipo = null) {
 		
-		if ($tipo == null) {
+		if($departamento_id != 0) {
+		
+			if ($tipo == null) {
+				
+				$condicao = array( 'id = '.$usuario_id, 'departamento_id ='. $departamento_id ) ;
+				
+			} elseif ($tipo == 1) {
+				
+				$condicao = array('departamento_id ='. $departamento_id, 'id != '.$usuario_id ) ;
+	
+			}
 			
-			$condicao = array( 'id = '.$usuario_id, 'departamento_id ='. $departamento_id ) ;
+			$usuarios =	$this->find('list' , array(
+							'fields' => array(
+								'id',
+								'nome'
+								),
+							'conditions' => $condicao
+							)
+						);
 			
-		} elseif ($tipo == 1) {
+			return $usuarios ;
 			
-			$condicao = array('departamento_id ='. $departamento_id, 'id != '.$usuario_id ) ;
-
+		} else {
+			
+			return $usuarios = array('0' => 'Todos');
+			
 		}
-		
-		$usuarios =	$this->find('list' , array(
-						'fields' => array(
-							'id',
-							'nome'
-							),
-						'conditions' => $condicao
-						)
-					);
-		
-		return $usuarios ;
 		
 	}
 	
