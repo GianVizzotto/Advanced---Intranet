@@ -151,6 +151,14 @@ input[type=text], input[type=password], input[type=file], select, .campoTxt	{ bo
 .acerto			{ background:#C9FCB4; color:#090; border:1px solid #090;}
 
 
+/*Estilo para erros de validação de formulário*/
+.error-message { background:#FFB7B7; color:#C00; border:1px solid #c00; width:67%; margin-top: 5px; }
+
+/*Estilo para mensagem de confirmação e erro nos cadastros*/
+.confirm_message { color:green; font-size:1.5em;}
+.error_message { color:red; font-size:1.5em;}
+
+
 /* FIM FORMULARIO */
  
 
