@@ -34,7 +34,7 @@ $this->Paginator->options(array('url' => array('controller' => 'usuarios', 'acti
 	</div><br />
 	
 	<div id="colunaE" style=" width: 950px;">
-		<h1>LISTAGEM DE USUÁRIOS<a style="float: right; text-decoration: none; color: white;" href="/usuarios/cadastro">CRIAR USUÁRIO</a></h1> 
+		<h1>LISTAGEM DE USUÁRIOS<a style="float: right; text-decoration: none; color: white;" href="/usuarios/cadastro">CRIAR USUÁRIO <img src="/img/add_3.png" width="20px" align="Absmiddle" /></a></h1> 
 			
 		<div class="conteudo" style=" width: 910px;">
 			<?php if(!empty($usuarios)):?>	
