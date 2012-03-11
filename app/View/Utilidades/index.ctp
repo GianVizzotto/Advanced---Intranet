@@ -21,7 +21,7 @@
 		</div>
 	</div><br />
 	<div id="colunaE" style=" width: 950px;">
-		<h1>ÚLTIMAS UTILIDADES CADASTRADAS<a style="float: right; text-decoration: none; color: white;" href="/utilidades/add">CRIAR UTILIDADE</a></h1> 
+		<h1>ÚLTIMAS UTILIDADES CADASTRADAS<a style="float: right; text-decoration: none; color: white;" href="/utilidades/add">CRIAR UTILIDADE <img src="/img/add_3.png" width="20px" align="Absmiddle" /></a></h1> 
 			
 		<div class="conteudo" style=" width: 910px;">
 			<table bordercolor="#B8B5B5" border="1">
