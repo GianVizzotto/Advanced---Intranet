@@ -3,6 +3,14 @@ class AvisoDestinatario extends AppModel {
 	
 	public $useTable = 'avisos_destinatarios';
 	
+	public $validate = array(
+		'departamento_id' => array ( 
+			'rule' => 'notEmpty',
+			'message' => 'Este campo não pode ser vazio'
+		),
+	);
+	
+	
 	function getDestinatarios($aviso_id){
 		
 		$destinatarios = $this->find('all', array(

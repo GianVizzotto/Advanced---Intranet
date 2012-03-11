@@ -101,7 +101,7 @@ class Usuario extends AppModel {
 			
 			return $usuarios ;
 			
-		} else {
+		} elseif($departamento_id == 0) {
 			
 			return $usuarios = array('0' => 'Todos');
 			
