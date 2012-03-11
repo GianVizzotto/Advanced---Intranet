@@ -30,8 +30,9 @@ class AvisosController extends AppController {
 			$this->request->data['Aviso']['usuario_id'] = $usuario_dados['Usuario']['id'];
 			
 			$this->Aviso->set($this->data);
+			$this->AvisoDestinatario->set($this->data['AvisoDestinatario']);
 			
-			if ( $this->Aviso->validates() ) {
+			if ( $this->Aviso->validates() &&  $this->AvisoDestinatario->validates()) {
 				
 				$fileOK = $this->uploadFiles('files/avisos', $this->data['File']);
 				
@@ -78,25 +79,35 @@ class AvisosController extends AppController {
 		
 		//Listagem de avisos
 		
-		$conditions = array('(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].') or
-		 (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].') or (AvisoDestinatario.departamento_id = 0 and AvisoDestinatario.usuario_id = 0)' );
+		if($this->params['url']['status_aviso_id']){
 		
-		if($this->params['url']['status_aviso_id'] && $this->params['url']['status_aviso_id'] != 1 && $this->params['url']['status_aviso_id'] != 3){
+//		Filtro todos (exibe todos os avisos enviado e recebidos)
+		$conditions = array(
+			'(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].
+			' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].')
+			 or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].') 
+			 or (AvisoDestinatario.departamento_id = 0 
+			 and AvisoDestinatario.usuario_id = 0)' 
+		);
+//		Exibe os avisos enviados
+		if($this->params['url']['status_aviso_id'] && $this->params['url']['status_aviso_id'] == 2) {
 			
 			$conditions = array(
-				'(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' and AvisoDestinatario.usuario_id is null and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].') 
-				or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'.'
-				or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].' and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'.
-				'or (AvisoDestinatario.departamento_id = 0 and AvisoDestinatario.usuario_id = 0
-				and Aviso.status_aviso_id ='. $this->params['url']['status_aviso_id'].')'
+				'Aviso.usuario_id ='. $usuario_dados['Usuario']['id']
 			);
-		
+//	Exibindo avisos recebidos no dia vigente para o usuário logado		
 		} elseif($this->params['url']['status_aviso_id'] != 3) {
+		
+			$conditions = array(
+			'(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' 
+			and AvisoDestinatario.usuario_id is null 
+			and Aviso.usuario_id !='.$usuario_dados['Usuario']['id'].') 
+			or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].'
+			and Aviso.usuario_id !='.$usuario_dados['Usuario']['id'].')
+		 	or (AvisoDestinatario.departamento_id = 0 and AvisoDestinatario.usuario_id = 0
+		 	and Aviso.usuario_id !='.$usuario_dados['Usuario']['id'].')' );
 			
-			$fim = "'". date('Y-m-d')." 23:59:59" ."'";
-			$inicio = "'". date('Y-m-d')." 00:00:00" ."'";
-			$conditions = array_merge( $conditions, array("Aviso.data_criacao >=  $inicio and Aviso.data_criacao <= $fim"));
-			
+		}
 		}
 
 		$this->paginate = array(  

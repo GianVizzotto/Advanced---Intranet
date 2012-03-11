@@ -14,7 +14,7 @@
 	<div class="conteudo">
 		<!-- INICIO BARRA EXIBIR -->
 		<div id="barra_exibir">
-			Exibindo:<strong><span id="exibir"><?php echo isset($this->params['url']['status_aviso_id'])?" ".$status_avisos[$this->params['url']['status_aviso_id']]:' Últimos';?> </span></strong>
+			Exibindo:<strong><span id="exibir"><?php echo isset($this->params['url']['status_aviso_id'])?" ".$status_avisos[$this->params['url']['status_aviso_id']]:' Todos';?> </span></strong>
 			<?php echo $this->Form->create('FiltroAviso', array('type'=>'get')) ;?>
 				Exibir:
                 <?php echo $this->Form->input('status_aviso_id' , array ( 'options' => $status_avisos , 'div' => false , 'label' => false ) ) ;?>
