@@ -2,8 +2,8 @@
 
 class DepartamentosController extends AppController {
 	
-	var $uses = array ( 'Departamento' ) ;
-	var $helpers = array ( 'Paginator' ) ;
+	var $uses = array ( 'Departamento', 'Noticia', 'Departamentos_conteudo' ) ;
+	var $helpers = array ( 'Paginator', 'Time' ) ;
 	
 	public $paginate = array(
         	'limit' => 1
@@ -101,6 +101,33 @@ class DepartamentosController extends AppController {
 		if (!empty($id)){
 			$this->Departamento->id = $id;
 			$this->set('id' , $id);
+			
+			$noticias_direita = $this->Noticia->find('all', array(
+														'fields' => array (
+																	'id', 
+																	'nome', 
+																	'data_criacao', 
+																	'conteudo'
+																	),
+																'order' => array ( 'id' => 'DESC' ),
+																'limit' => 3
+														)
+													);
+			$this->set('noticias_direita' , $noticias_direita);
+			
+			$conteudo_baixo = $this->Departamentos_conteudo->find('all', array(
+																	'fields' => array (
+																				'id', 
+																				'titulo', 
+																				),
+																			'conditions' => array ('departamentos_id' => $id),
+																			'order' => array ( 'id' => 'DESC' ),
+																	)
+																);
+			$this->set('conteudo_baixo' , $conteudo_baixo);
+			
+			
+			
 			$departamento = $this->Departamento->read();
 			$this->set('departamento',$departamento);
 		}else{

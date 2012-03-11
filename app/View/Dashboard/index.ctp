@@ -1,6 +1,32 @@
 <!-- INICIO MEIO -->
 <div id="meio">
-
+	<?php $usuario = $this->Session->read('Usuario');?>
+	<?php
+		if ($usuario['Usuario']['perfil_id'] == 1):
+//			echo '<div class="clear">&nbsp;</div>';
+			echo '<h1><center>CADASTROS - BÁSICOS</center></h1>';
+			echo '<a href="/usuarios/cadastro" class="bt_padrao"><center>CADASTRO DE USUÁRIOS</center></a>';
+			echo '<a href="/eventos" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE EVENTOS</center></a>';
+			echo '<a href="/noticias" class="bt_padrao"><center>CADASTRO DE NOTÍCIAS</center></a>';
+			echo '<div class="clear">&nbsp;</div>';
+			echo '<a href="/departamentos" class="bt_padrao"><center>CADASTRO DE DEPARTAMENTOS</center></a>';
+			echo '<a href="/cargos" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE CARGOS</center></a>';
+			echo '<a href="/tipos_conteudos" class="bt_padrao"><center>CADASTRO DE TIPOS DE NOTÍCIAS</center></a>';
+			echo '<div class="clear">&nbsp;</div>';
+			echo '<a href="/departamentos_conteudos" class="bt_padrao"><center>CADASTRO DE CONTEÚDOS DE DEPARTAMENTOS</center></a>';
+			echo '<div class="clear">&nbsp;</div>';
+			echo '<h1><center>CADASTROS - INTERAÇÕES</center></h1>';
+			echo '<a href="/manuais" class="bt_padrao"><center>CADASTRO DE MANUAIS/DOCUMENTOS</center></a>';
+			echo '<a href="/utilidades" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE UTILIDADES</center></a>';
+			echo '<a href="/tipos_utilidades" class="bt_padrao"><center>CADASTRO DE CATEGORIAS DE UTILIDADES</center></a>';
+			echo '<div class="clear">&nbsp;</div>';
+			echo '<a href="/usuarios_mes" class="bt_padrao"><center>FUNCIONÁRIO DO MÊS</center></a>';
+			echo '<a href="/usuarios_meritos" class="bt_padrao" style="margin: 0 90px;"><center>MÉRITO DO FUNCIONÁRIO</center></a>';
+		endif;
+	?>
+	
+	<div class="clear">&nbsp;</div>
+	<div class="clear">&nbsp;</div>
 	<!-- INICIO COLUNA A -->
     <div id="colunaA">
     
@@ -76,20 +102,7 @@
                     
     </div>
     <!-- FINAL COLUNA C -->                
-	<?php $usuario = $this->Session->read('Usuario');?>
-	<?php
-		if ($usuario['Usuario']['perfil_id'] == 1):
-			echo '<div class="clear">&nbsp;</div>';
-			echo '<h1><center>CADASTROS</center></h1>';
-			echo '<a href="/usuarios/cadastro" class="bt_padrao"><center>CADASTRO DE USUÁRIOS</center></a>';
-			echo '<a href="/eventos" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE EVENTOS</center></a>';
-			echo '<a href="/noticias" class="bt_padrao"><center>CADASTRO DE NOTÍCIAS</center></a>';
-			echo '<div class="clear">&nbsp;</div>';
-			echo '<a href="/departamentos" class="bt_padrao"><center>CADASTRO DE DEPARTAMENTOS</center></a>';
-			echo '<a href="/avisos" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE AVISOS</center></a>';
-			echo '<a href="/tipos_conteudos" class="bt_padrao"><center>CADASTRO DE TIPOS DE NOTÍCIAS</center></a>';
-		endif;
-	?>
+
 </div>
 <!-- FINAL MEIO -->
 

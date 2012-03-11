@@ -73,6 +73,7 @@
 							    <?php foreach ($menudinamico as $lista_menu): ?>
 							    <li><a href="/departamentos/visualizar/<?php echo $lista_menu['Departamento']['id']; ?>"><?php echo strtoupper($lista_menu['Departamento']['nome']); ?></a></li>
 							    <?php endforeach; ?>
+							    <li><a href="/interacao">INTERAÇÃO</a></li>
 							</ul>               
 						</div>
 						<!-- FINAL MENU -->
