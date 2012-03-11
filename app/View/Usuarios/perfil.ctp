@@ -58,7 +58,7 @@
 				<p><?php echo $usuario_perfil['Usuario']['email'] ?></p>                        
                 
                 <h2>Data de Nascimento:</h2>
-                <p><?php echo $usuario_perfil['Usuario']['data_nascimento'] ?></p>
+                <p><?php echo $this->Time->format('d/m/Y', $usuario_perfil['Usuario']['data_nascimento']); ?></p>
                 
                 <h2>Ramal:</h2>
                 <p><?php echo $usuario_perfil['Usuario']['ramal'] ?></p>                            
