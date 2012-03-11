@@ -5,7 +5,7 @@
 		if ($usuario['Usuario']['perfil_id'] == 1):
 //			echo '<div class="clear">&nbsp;</div>';
 			echo '<h1><center>CADASTROS - BÁSICOS</center></h1>';
-			echo '<a href="/usuarios/cadastro" class="bt_padrao"><center>CADASTRO DE USUÁRIOS</center></a>';
+			echo '<a href="/usuarios/listar" class="bt_padrao"><center>CADASTRO DE USUÁRIOS</center></a>';
 			echo '<a href="/eventos" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE EVENTOS</center></a>';
 			echo '<a href="/noticias" class="bt_padrao"><center>CADASTRO DE NOTÍCIAS</center></a>';
 			echo '<div class="clear">&nbsp;</div>';
@@ -14,6 +14,8 @@
 			echo '<a href="/tipos_conteudos" class="bt_padrao"><center>CADASTRO DE TIPOS DE NOTÍCIAS</center></a>';
 			echo '<div class="clear">&nbsp;</div>';
 			echo '<a href="/departamentos_conteudos" class="bt_padrao"><center>CADASTRO DE CONTEÚDOS DE DEPARTAMENTOS</center></a>';
+			echo '<a href="/ajudas" class="bt_padrao" style="margin: 0 90px;"><center>CADASTRO DE AJUDAS</center></a>';
+			echo '<a href="/tipos_ajudas" class="bt_padrao"><center>CADASTRO DE CATEGORIAS DE AJUDA</center></a>';
 			echo '<div class="clear">&nbsp;</div>';
 			echo '<h1><center>CADASTROS - INTERAÇÕES</center></h1>';
 			echo '<a href="/manuais" class="bt_padrao"><center>CADASTRO DE MANUAIS/DOCUMENTOS</center></a>';
