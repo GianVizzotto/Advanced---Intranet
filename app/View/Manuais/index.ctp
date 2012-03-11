@@ -17,7 +17,7 @@
 		</div>
 	</div><br />
 	<div id="colunaE" style=" width: 950px;">
-		<h1>ÚLTIMOS MANUAIS/DOCUMENTOS CADASTRADOS<a style="float: right; text-decoration: none; color: white;" href="/manuais/add">CRIAR MANUAIS/DOCUMENTOS</a></h1> 
+		<h1>ÚLTIMOS MANUAIS/DOCUMENTOS CADASTRADOS<a style="float: right; text-decoration: none; color: white;" href="/manuais/add">CRIAR MANUAIS/DOCUMENTOS <img src="/img/add_3.png" width="20px" align="Absmiddle" /></a></h1> 
 			
 		<div class="conteudo" style=" width: 910px;">
 			<table bordercolor="#B8B5B5" border="1">

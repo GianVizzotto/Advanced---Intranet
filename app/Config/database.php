@@ -68,7 +68,7 @@ class DATABASE_CONFIG {
 //		'password' => 'adv2045',
 		'login' => 'root',
 		'password' => 'takeiteasy',
-		'database' => 'socciweb88',
+		'database' => 'advanced',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

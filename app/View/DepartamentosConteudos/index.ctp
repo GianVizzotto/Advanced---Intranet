@@ -21,7 +21,7 @@
 		</div>
 	</div><br />
 	<div id="colunaE" style=" width: 950px;">
-		<h1>ÚLTIMOS CONTEÚDOS DE DPTOS. CADASTRADOS<a style="float: right; text-decoration: none; color: white;" href="/departamentos_conteudos/add">CRIAR CONTEÚDO</a></h1> 
+		<h1>ÚLTIMOS CONTEÚDOS DE DPTOS. CADASTRADOS<a style="float: right; text-decoration: none; color: white;" href="/departamentos_conteudos/add">CRIAR CONTEÚDO <img src="/img/add_3.png" width="20px" align="Absmiddle" /></a></h1> 
 			
 		<div class="conteudo" style=" width: 910px;">
 			<table bordercolor="#B8B5B5" border="1">
