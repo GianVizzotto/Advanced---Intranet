@@ -2,7 +2,7 @@
 
 class AjudasController extends AppController {
 	
-	var $uses = array ( 'Ajuda' , 'Tipos_ajuda' ) ;
+	var $uses = array ( 'Ajuda' , 'Tipos_ajuda', 'Aviso', 'AvisoDestinatario' ) ;
 	var $helpers = array ( 'Paginator', 'Time' ) ;
 	
 	public $paginate = array(
@@ -297,6 +297,47 @@ class AjudasController extends AppController {
 		}
 		return $result;
 	}
+	
+	function salvaAviso(){
+		
+		$this->autoRender = false;
+		
+		if(isset($this->data['Aviso'])){
+			
+			$usuario_dados = $this->Session->read('Usuario');
+				
+				$this->request->data['Aviso']['usuario_id'] = $usuario_dados['Usuario']['id'];
+				
+				$this->Aviso->set($this->data);
+				$this->AvisoDestinatario->set($this->data['AvisoDestinatario']);
+				
+				if ( $this->Aviso->validates() &&  $this->AvisoDestinatario->validates()) {
+					
+					if($this->Aviso->salvaAviso($this->data['Aviso'])) {
+						
+						if(!empty($this->data['AvisoDestinatario'])){
+								
+							$this->request->data['AvisoDestinatario']['aviso_id'] = $this->Aviso->getLastInsertID();
+							$this->AvisoDestinatario->save($this->data['AvisoDestinatario']);
+							
+						}
+						
+						$this->Session->setFlash('Aviso cadastrado com sucesso.', 'flash_confirm');
+						unset($this->data);
+						$this->redirect('/interacao');
+						
+					} else {
+						
+						$this->Session->setFlash('Aviso não cadastrado.', 'flash_error');
+						$this->redirect('/interacao');
+						
+					}
+					
+				}
+				
+			}
+		
+		}	
 	
 }
 

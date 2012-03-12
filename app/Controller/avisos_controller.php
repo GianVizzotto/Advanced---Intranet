@@ -60,6 +60,7 @@ class AvisosController extends AppController {
 				} else {
 					
 					$this->Session->setFlash('Aviso não cadastrado.', 'flash_error');
+					$this->redirect('/avisos');
 					
 				}
 				
@@ -77,27 +78,26 @@ class AvisosController extends AppController {
 			
 		}
 		
-		//Listagem de avisos
+//		Listagem de avisos
 		
-		if($this->params['url']['status_aviso_id']){
-		
-//		Filtro todos (exibe todos os avisos enviado e recebidos)
+//	Filtro todos (exibe todos os avisos enviados e recebidos)
 		$conditions = array(
 			'(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].
 			' and AvisoDestinatario.usuario_id is null) or (AvisoDestinatario.usuario_id ='.$usuario_dados['Usuario']['id'].')
 			 or (Aviso.usuario_id ='.$usuario_dados['Usuario']['id'].') 
-			 or (AvisoDestinatario.departamento_id = 0 
-			 and AvisoDestinatario.usuario_id = 0)' 
+			 or (AvisoDestinatario.departamento_id = 0 and AvisoDestinatario.usuario_id = 0)' 
 		);
+		
 //		Exibe os avisos enviados
-		if($this->params['url']['status_aviso_id'] && $this->params['url']['status_aviso_id'] == 2) {
-			
+		if($this->params['url']['status_aviso_id'] && $this->params['url']['status_aviso_id'] == 2){		
+
 			$conditions = array(
 				'Aviso.usuario_id ='. $usuario_dados['Usuario']['id']
 			);
-//	Exibindo avisos recebidos no dia vigente para o usuário logado		
-		} elseif($this->params['url']['status_aviso_id'] != 3) {
-		
+				
+//		Exibindo avisos recebidos no dia vigente para o usuário logado		
+		} elseif($this->params['url']['status_aviso_id'] != 3 && !empty($this->params['url']['status_aviso_id'])) {
+			
 			$conditions = array(
 			'(AvisoDestinatario.departamento_id ='.$usuario_dados['Usuario']['departamento_id'].' 
 			and AvisoDestinatario.usuario_id is null 
@@ -108,8 +108,7 @@ class AvisosController extends AppController {
 		 	and Aviso.usuario_id !='.$usuario_dados['Usuario']['id'].')' );
 			
 		}
-		}
-
+	
 		$this->paginate = array(  
 				'fields' => array(
 					'Aviso.id',

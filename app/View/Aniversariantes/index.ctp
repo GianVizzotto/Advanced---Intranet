@@ -15,7 +15,7 @@
 			
 			<?php foreach ($ultimos_usuarios as $ultimos_usuario):?>
 	            <a href="/aniversariantes<?php echo '?dpto_aviso='.$ultimos_usuario['Departamentos']['id'].'&func_aviso='.$ultimos_usuario['Usuario']['id'] ?>">
-	                <span><?php echo $ultimos_usuario['Usuario']['data_nascimento'];?> - <?php echo $ultimos_usuario['Usuario']['nome'];?> </span>
+	                <span><?php echo $this->Time->format('d/m/Y', $ultimos_usuario['Usuario']['data_nascimento']);?> - <?php echo $ultimos_usuario['Usuario']['nome'];?> </span>
 	                <SPAN><?php echo $ultimos_usuario['Cargos']['nome'];?> - <?php echo $ultimos_usuario['Departamentos']['nome'];?></SPAN>
 	            </a>
             <?php endforeach;?>
