@@ -14,12 +14,12 @@
 	<div class="conteudo">
 		<!-- INICIO BARRA EXIBIR -->
 		<div id="barra_exibir">
-			Exibindo:<strong><span id="exibir"><?php echo isset($this->params['url']['status_aviso_id'])?" ".$status_avisos[$this->params['url']['status_aviso_id']]:' Todos';?> </span></strong>
+			Exibindo:<strong><span id="exibir"><?php echo isset($this->params['url']['status_aviso_id'])&&!empty($this->params['url']['status_aviso_id'])?" ".$status_avisos[$this->params['url']['status_aviso_id']]:' Todos';?> </span></strong>
 			<?php echo $this->Form->create('FiltroAviso', array('type'=>'get')) ;?>
 				Exibir:
-                <?php echo $this->Form->input('status_aviso_id' , array ( 'options' => $status_avisos , 'div' => false , 'label' => false ) ) ;?>
-                <?php echo $this->Form->input('departamento_id' , array ( 'type' => 'hidden' , 'value' => $usuario_dados['Usuario']['departamento_id'] ) ) ;?>
-                <?php echo $this->Form->input('usuario_id' , array ( 'type' => 'hidden' , 'value' => $usuario_dados['Usuario']['id'] ) ) ;?>                
+                <?php echo $this->Form->input('status_aviso_id' , array ( 'options' => $status_avisos, 'div' => false, 'selected' => $this->params['url']['status_aviso_id'], 'label' => false ) ) ;?>
+                <?php echo $this->Form->input('departamento_id' , array ( 'type' => 'hidden', 'value' => $usuario_dados['Usuario']['departamento_id'] ) ) ;?>
+                <?php echo $this->Form->input('usuario_id' , array ( 'type' => 'hidden', 'value' => $usuario_dados['Usuario']['id'] ) ) ;?>                
 			<?php echo $this->Form->end('OK') ;?>
 		</div>
 		<!-- FINAL BARRA EXIBIR -->

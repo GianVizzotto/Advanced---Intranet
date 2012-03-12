@@ -38,7 +38,7 @@ function mostraUsuarios(departamento_id, classe, controller, action,id_extra){
 			});
 		
 		} else {
-			$('.'+classe).html('Usuários<br /><select><option value=>Selecione</option></select>');
+			$('.'+classe).html('Usu&aacute;rios<br /><select><option value=>Selecione</option></select>');
 		}
 		
 	}

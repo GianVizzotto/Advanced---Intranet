@@ -79,22 +79,24 @@
 	    	<!-- INICIO FORM -->
 	        <div class="formulario">
  
-                <form action="" method="">
-                
+			<?php echo $this->Form->create('Aviso', array ('url' => array('controller' => 'ajudas', 'action' => 'salvaAviso')));?>
+			
+				<?php echo $this->Form->input( 'status_aviso_id' , array( 'type' => 'hidden' , 'value' => 2 ) ) ;?>
+				<?php echo $this->Form->input( 'AvisoDestinatario.departamento_id', array('type' => 'hidden', 'default' => '1') );?>
+				<?php echo $this->Form->input( 'AvisoDestinatario.usuario_id' , array('type' => 'hidden' , 'default' => '1') ) ;?>
+				<?php echo $this->Form->input( 'assunto' , array('type' => 'hidden' , 'default' => 'Aviso para TI') ) ;?>
+	            
 					<h2>Se estiver com algum problema em seu computador, utilize o espaço abaixo para enviar para o setor TI.</h2>
                     
                      <br /> <br />
                     	
                         Mensagem: <br />
                     
-                    <label for="">
-                            <textarea class="campoTxt" name=""></textarea>
-                    </label> 
+                   	<?php echo $this->Form->input( 'mensagem' , array('type' => 'textarea' , 'label' => false , 'div' => false , 'class' => 'campoTxt' ) ) ;?> 
                     
-                    
-                    <input type="submit" value="Enviar Aviso" class="btForm" />                                                             
+                    <?php echo $this->Form->submit('Enviar Aviso', array('class'=>'btForm'));?>
                 
-                </form>
+                <?php echo $this->Form->end();?>
                                 
 			</div>
             <!-- FINAL FORMULARIO -->    
