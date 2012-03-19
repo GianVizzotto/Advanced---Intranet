@@ -34,6 +34,28 @@
 	                        
 			<div class="clear">&nbsp;</div>
             <?php endif; ?>
+            
+            <?php if ( !empty($usuarios_baixo) ): ?>
+			<h2 style="clear:both;">Veja os funcionários desse setor</h2>
+			
+			<style type="text/css">
+			.lista		{ margin-right:30px;}
+			.lista li a	{    color: #4D4D4F;
+			    display: block;
+			    margin: 5px 10px;
+			    padding: 10px;}
+			.lista li a:hover	{ background:#eee;}	
+			
+			</style>  
+	        
+	        <ul class="lista">
+	        	<?php foreach ($usuarios_baixo as $usuario_baixo):?>
+	        		<?php echo '<li><a href="/usuarios/perfil/'.$usuario_baixo['Usuario']['id'].'">'.$usuario_baixo['Usuario']['nome'].'</a></li>'; ?>
+	        	<?php endforeach;?>
+			</ul>                        
+	                        
+			<div class="clear">&nbsp;</div>
+            <?php endif; ?>
 		</div>
         <!-- FINAL CONTEUDO -->
  

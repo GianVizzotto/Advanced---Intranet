@@ -22,6 +22,22 @@ class Departamento extends AppModel {
 		return $departamentos ;
 								
 	}
+
+	
+	function getDepartamentosFiltro($filtro) {
+		
+		$departamentos =	$this->find('list' , array ( 
+								'fields' => array ( 
+									'id',
+									'nome'
+									),
+								'conditions' => array ('id' => $filtro)
+								)
+							) ;
+							
+		return $departamentos ;
+								
+	}
 	
 	function lastDptos() {
 		

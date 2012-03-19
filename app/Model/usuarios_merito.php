@@ -10,4 +10,12 @@ class Usuarios_merito extends AppModel {
 		
 	}
 	
+	function deleteMerito($dados){
+		if ($this->delete($dados)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
 }

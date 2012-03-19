@@ -33,6 +33,12 @@ class UsuariosController extends AppController {
 		
 		$perfis = $this->Perfil->getPerfis();
 		$perfis = array ( '' => 'Selecione' ) + (array)$perfis;
+		
+		$ckeditorClass = 'CKEDITOR';
+		$this->set('ckeditorClass', $ckeditorClass);
+
+		$ckfinderPath = 'js/ckfinder/';
+   		$this->set('ckfinderPath', $ckfinderPath);
 				
 		$ultimos_cadastrados = $this->Usuario->lastUsers() ;
 		
@@ -47,15 +53,20 @@ class UsuariosController extends AppController {
 		} 
 		
 		if ( !empty($this->data) ) {
-
+			
+			
 			//Atentar-se que não é mais possivel gravar no $this->data, necessário usar $this->request->data para sobrescrita de valor
 			$this->request->data['Usuario']['data_nascimento'] = $this->Date->ReadToDB($this->data['Usuario']['data_nascimento']);
 
-			if ($this->data['Usuario']['perfil_id'] != 1){
-				$this->request->data['Usuario']['perfil_id'] = 2;
-			}
+			// if ($this->data['Usuario']['perfil_id'] != 1){
+				// $this->request->data['Usuario']['perfil_id'] = 2;
+			// }
 
 			$this->Usuario->set($this->data);
+			// echo "<pre>";
+			// print_r($this->data);
+			// echo "</pre>";
+			// die;
 			
 			if ( $this->Usuario->validates() ) {
 					
@@ -274,7 +285,7 @@ class UsuariosController extends AppController {
 		
 	}
 	
-	function perfil(){
+	function perfil($id){
 		
 		$this->layout = 'advanced_layout';
 		
@@ -293,6 +304,14 @@ class UsuariosController extends AppController {
 		
 		$usuario_sessao = $this->Session->read('Usuario');
 		
+		if ( !empty($id) ){
+			$id_query = $id;
+			$this->set('id_flag', $id_query);
+		}else{
+			$id_query = $usuario_sessao['Usuario']['id'];
+			$this->set('id_flag', 0);
+		}
+		
 		$usuario_perfil = $this->Usuario->find('first', array(
 													'fields' => array(
 																'Usuario.id',
@@ -303,6 +322,7 @@ class UsuariosController extends AppController {
 																'Usuario.telefone',
 																'Usuario.celular',
 																'Usuario.foto_url',
+																'Usuario.descricao',
 																'Departamento.nome',
 																'Cargo.nome'
 																),
@@ -312,7 +332,7 @@ class UsuariosController extends AppController {
 																	'alias' => 'Departamento',
 																	'type' => 'INNER',
 																	'conditions' => array ( 'Usuario.departamento_id = Departamento.id',
-																							'Usuario.id' =>  $usuario_sessao['Usuario']['id'])	
+																							'Usuario.id' => $id_query )	
 																),
 																array(
 																	'table' => 'cargos',

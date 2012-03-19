@@ -44,7 +44,12 @@
 
             </div>
             <!-- FINAL CONTEUDO -->
-
+	        <div class="clear">&nbsp;</div>
+	    	<div class="paginacao" style="text-align:left;">
+				<span><?php echo $this->Paginator->first('Primeira'); ?></span>	
+				<span><?php echo $this->Paginator->numbers(); ?></span>
+				<span><?php echo $this->Paginator->last('Última');	?></span>
+			</div>
   		</div>
         <!-- FINAL COLUNA D -->                
 
@@ -103,12 +108,7 @@
 			</div>
 		</div>
         <!-- FINAL COLUNA B -->                    
-        <div class="clear">&nbsp;</div>
-    	<div class="paginacao" style="text-align:left;">
-			<span><?php echo $this->Paginator->first('Primeira'); ?></span>	
-			<span><?php echo $this->Paginator->numbers(); ?></span>
-			<span><?php echo $this->Paginator->last('Última');	?></span>
-		</div>
+
 </div>
 <!-- FINAL MEIO -->
 <script language="JavaScript">
