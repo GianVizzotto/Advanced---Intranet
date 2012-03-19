@@ -24,11 +24,19 @@
 			echo '<div class="clear">&nbsp;</div>';
 			echo '<a href="/usuarios_mes" class="bt_padrao"><center>FUNCIONÁRIO DO MÊS</center></a>';
 			echo '<a href="/usuarios_meritos" class="bt_padrao" style="margin: 0 90px;"><center>MÉRITO DO FUNCIONÁRIO</center></a>';
+			echo '<div class="clear">&nbsp;</div>';
+			echo '<div class="clear">&nbsp;</div>';
 		endif;
 	?>
-	
-	<div class="clear">&nbsp;</div>
-	<div class="clear">&nbsp;</div>
+	<?php
+		if ($usuario['Usuario']['perfil_id'] == 2):
+//			echo '<div class="clear">&nbsp;</div>';
+			echo '<h1><center>CADASTROS - BÁSICOS</center></h1>';
+			echo '<a href="/departamentos_conteudos" class="bt_padrao"><center>CADASTRO DE CONTEÚDOS DE DEPARTAMENTOS</center></a>';
+			echo '<div class="clear">&nbsp;</div>';
+			echo '<div class="clear">&nbsp;</div>';
+		endif;
+	?>	
 	<!-- INICIO COLUNA A -->
     <div id="colunaA">
     

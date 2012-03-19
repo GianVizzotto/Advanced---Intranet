@@ -68,13 +68,16 @@ class UsuariosMeritosController extends AppController {
 		$Usuarios = array ( '' => 'Selecione' ) + (array)$Usuarios;
 		
 		
+		// if (!empty($id)){
+			// $this->Usuarios_merito->id = $id;
+			// $this->set('id' , $id);
+		// }else{
+			// $this->redirect(array('action' => 'index'));
+		// }
 		if (!empty($id)){
 			$this->Usuarios_merito->id = $id;
 			$this->set('id' , $id);
-		}else{
-			$this->redirect(array('action' => 'index'));
 		}
-		
 		
 		if (!empty($this->data)){
 			$this->Usuarios_merito->set($this->data);
@@ -93,6 +96,23 @@ class UsuariosMeritosController extends AppController {
 		
 		$this->set('Usuarios' , $Usuarios);
 		
+	}
+
+	function remove($id){
+		$validao_perfil = $this->Session->read('Usuario');
+		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
+		$this->layout = '' ;
+		if ($this->Usuarios_merito->deleteMerito($id)){
+			$this->Session->setFlash('Mérito exclu&iacute;do com sucesso!', 'flash_confirm');
+			$this->redirect(array('action' => 'index'));
+		}else{
+			$this->Session->setFlash('Erro ao excluir Mérito!', 'flash_error');
+			$this->redirect(array('action' => 'index'));
+		}
 	}
 
 }
