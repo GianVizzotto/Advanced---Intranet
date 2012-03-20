@@ -9,6 +9,10 @@ class Departamentos_conteudo extends AppModel {
 			'rule' => 'notEmpty',
 			'message' => 'Este campo não pode ser vazio'
 			 ),
+		'departamentos_id' => array ( 
+			'rule' => 'notEmpty',
+			'message' => 'Este campo não pode ser vazio'
+			 ),
 		'conteudo' => array ( 
 			'rule' => 'notEmpty',
 			'message' => 'Este campo não pode ser vazio'

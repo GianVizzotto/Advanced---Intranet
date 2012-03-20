@@ -11,29 +11,53 @@ class DepartamentosConteudosController extends AppController {
 	
 	function index(){
 		$validao_perfil = $this->Session->read('Usuario');
-		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+		if ($validao_perfil['Usuario']['perfil_id'] != 1 && $validao_perfil['Usuario']['perfil_id'] != 2):
 			$this->redirect('/dashboard');
 		endif;
 		
-		$departamentos = $this->Departamento->getDepartamentos();
-		$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		if ($validao_perfil['Usuario']['perfil_id'] == 1){
+			$departamentos = $this->Departamento->getDepartamentos();
+			$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		}else{
+			$departamentos = $this->Departamento->getDepartamentosFiltro($validao_perfil['Usuario']['departamento_id']);
+			$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		}
 		$this->set('departamentos' , $departamentos);
 		
-		$this->paginate = array(
-							'fields' => array(
-								'Departamentos_conteudo.id',
-								'Departamentos_conteudo.titulo',
-								'Departamentos.nome'
-								),
-							'joins' => array(
-								array(
-									'table' => 'departamentos',
-									'alias' => 'Departamentos',
-									'type' => 'INNER',
-									'conditions' => array ( 'Departamentos_conteudo.departamentos_id = Departamentos.id' )	
+		if ($validao_perfil['Usuario']['perfil_id'] == 1){
+			$this->paginate = array(
+								'fields' => array(
+									'Departamentos_conteudo.id',
+									'Departamentos_conteudo.titulo',
+									'Departamentos.nome'
+									),
+								'joins' => array(
+									array(
+										'table' => 'departamentos',
+										'alias' => 'Departamentos',
+										'type' => 'INNER',
+										'conditions' => array ( 'Departamentos_conteudo.departamentos_id = Departamentos.id' )	
+										)
 									)
-								)
-							);
+								);
+		}else{
+			$this->paginate = array(
+								'fields' => array(
+									'Departamentos_conteudo.id',
+									'Departamentos_conteudo.titulo',
+									'Departamentos.nome'
+									),
+								'joins' => array(
+									array(
+										'table' => 'departamentos',
+										'alias' => 'Departamentos',
+										'type' => 'INNER',
+										'conditions' => array ( 'Departamentos_conteudo.departamentos_id = Departamentos.id' )	
+										)
+									),
+								'conditions' => array ('Departamentos_conteudo.departamentos_id' => $validao_perfil['Usuario']['departamento_id'])
+								);
+		}
 		$filtros = "";
 		if( $this->params['url'] ) {
 			
@@ -74,8 +98,7 @@ class DepartamentosConteudosController extends AppController {
 	
 	function add($id = null){
 		$validao_perfil = $this->Session->read('Usuario');
-		
-		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+		if ($validao_perfil['Usuario']['perfil_id'] != 1 && $validao_perfil['Usuario']['perfil_id'] != 2):
 			$this->redirect('/dashboard');
 		endif;
 		
@@ -90,8 +113,14 @@ class DepartamentosConteudosController extends AppController {
 			$this->set('id' , $id);
 		}
 		
-		$departamentos = $this->Departamento->getDepartamentos();
-		$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		if ($validao_perfil['Usuario']['perfil_id'] == 1){
+			$departamentos = $this->Departamento->getDepartamentos();
+			$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		}else{
+			$departamentos = $this->Departamento->getDepartamentosFiltro($validao_perfil['Usuario']['departamento_id']);
+			$departamentos = array ( '' => 'Selecione' ) + (array)$departamentos;
+		}
+		
 		
 		if (!empty($this->data)){
 			$this->Departamentos_conteudo->set($this->data);
@@ -113,8 +142,7 @@ class DepartamentosConteudosController extends AppController {
 	
 	function remove($id){
 		$validao_perfil = $this->Session->read('Usuario');
-		
-		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+		if ($validao_perfil['Usuario']['perfil_id'] != 1 && $validao_perfil['Usuario']['perfil_id'] != 2):
 			$this->redirect('/dashboard');
 		endif;
 				

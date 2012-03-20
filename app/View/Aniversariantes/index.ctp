@@ -19,7 +19,12 @@
 	                <SPAN><?php echo $ultimos_usuario['Cargos']['nome'];?> - <?php echo $ultimos_usuario['Departamentos']['nome'];?></SPAN>
 	            </a>
             <?php endforeach;?>
-
+			<div class="clear">&nbsp;</div>
+	    	<div class="paginacao" style="text-align:center;">
+				<span><?php echo $this->Paginator->first('Primeira'); ?></span>	
+				<span><?php echo $this->Paginator->numbers(); ?></span>
+				<span><?php echo $this->Paginator->last('Última');	?></span>
+			</div>
 		</div>
         <!-- FINAL CONTEUDO -->
 	</div>
@@ -80,11 +85,6 @@
 			</div>
 		</div>
     <!-- FINAL COLUNA B -->                    
-		<div class="clear">&nbsp;</div>
-    	<div class="paginacao" style="text-align:left;">
-			<span><?php echo $this->Paginator->first('Primeira'); ?></span>	
-			<span><?php echo $this->Paginator->numbers(); ?></span>
-			<span><?php echo $this->Paginator->last('Última');	?></span>
-		</div>
+
 </div>
 <!-- FINAL MEIO -->

@@ -3,18 +3,20 @@
 ?>
 <div id="meio">
 	<div id="colunaE" style=" width: 950px;">
-		<h1>MÉRITOS DO FUNCIONÁRIO</h1> 
+		<h1>MÉRITOS DO FUNCIONÁRIO<a style="float: right; text-decoration: none; color: white;" href="/usuarios_meritos/add">CRIAR MÉRITO <img src="/img/add_3.png" width="20px" align="Absmiddle" /></h1> 
 			
 		<div class="conteudo" style=" width: 910px;">
 			<table bordercolor="#B8B5B5" border="1">
 				<tr>
 					<th width="100%">Nome</th>
 					<th width="20%">Editar</th>
+					<th width="20%">Excluir</th>
 				</tr>			
 			<?php foreach ($ultimos_usuarios as $ultimos_usuario):?>
 				<tr>
 					<td align="center"><?php echo $ultimos_usuario['Usuarios']['nome'];?></td>  
 					<td align="center"><a href="/usuarios_meritos/add/<?php echo $ultimos_usuario['Usuarios_merito']['id'];?>"><img src="/img/edit_icon.png" /></a></td>
+					<td align="center"><a href="/usuarios_meritos/remove/<?php echo $ultimos_usuario['Usuarios_merito']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
 				</tr>
 			<?php endforeach;?>
 			</table>

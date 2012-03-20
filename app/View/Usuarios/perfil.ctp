@@ -18,6 +18,8 @@
                 	<img width="200" src="/img/img_perfil.jpg"  />
                 <? endif; ?>	
            		
+           		<?php if ( $id_flag < 1 ): ?>
+           		
 				<p class="accordionButton bt_perfil">Alterar Foto</p>
                          
 				<div class="accordionContent">Selecionar nova foto: <br />
@@ -37,37 +39,40 @@
 					<br />
 					<p style="font-size: 10px; color: #CD0000;">A alteração entra em vigor no próximo login.</p>
 					
-				</div>                       
-        
+				</div>    
+        		
+        		<?php endif; ?>
         	</div>
             <!-- FINAL COL 1 -->
             
             <!-- FINAL COL 2 -->
             <div id="col2">
-            
-            	<h2>Nome:</h2>
-                <p><?php echo $usuario_perfil['Usuario']['nome'] ?></p>
-                
-                <h2>Cargo:</h2>
-                <p><?php echo $usuario_perfil['Cargo']['nome'] ?></p>
-                
-                <h2>Setor:</h2>
-                <p><?php echo $usuario_perfil['Departamento']['nome'] ?></p>
-                
-                <h2>E-mail:</h2>
-				<p><?php echo $usuario_perfil['Usuario']['email'] ?></p>                        
-                
-                <h2>Data de Nascimento:</h2>
-                <p><?php echo $this->Time->format('d/m/Y', $usuario_perfil['Usuario']['data_nascimento']); ?></p>
-                
-                <h2>Ramal:</h2>
-                <p><?php echo $usuario_perfil['Usuario']['ramal'] ?></p>                            
-                
-                <h2>Telefone:</h2>
-                <p><?php echo $usuario_perfil['Usuario']['telefone'] ?></p>                            
-                
-                <h2>Celular:</h2>
-                <p><?php echo $usuario_perfil['Usuario']['celular'] ?></p>                            
+            	<div style="float: left;">
+	            	<h2>Nome:</h2>
+	                <p><?php echo $usuario_perfil['Usuario']['nome'] ?></p>
+	                
+	                <h2>Cargo:</h2>
+	                <p><?php echo $usuario_perfil['Cargo']['nome'] ?></p>
+	                
+	                <h2>Setor:</h2>
+	                <p><?php echo $usuario_perfil['Departamento']['nome'] ?></p>
+	                
+	                <h2>E-mail:</h2>
+					<p><?php echo $usuario_perfil['Usuario']['email'] ?></p>                        
+	                
+	                <h2>Data de Nascimento:</h2>
+	                <p><?php echo $this->Time->format('d/m/Y', $usuario_perfil['Usuario']['data_nascimento']); ?></p>
+	                
+	                <h2>Ramal:</h2>
+	                <p><?php echo $usuario_perfil['Usuario']['ramal'] ?></p>                            
+	                
+	                <h2>Telefone:</h2>
+	                <p><?php echo $usuario_perfil['Usuario']['telefone'] ?></p>                            
+	                
+	                <h2>Celular:</h2>
+	                <p><?php echo $usuario_perfil['Usuario']['celular'] ?></p>    
+                </div>
+                <div style="float: right; width: 250px;"><?php  if ($usuario_perfil['Usuario']['descricao'] != ""): echo '<h2>Qualificações Pessoais</h2><br />' ; echo $usuario_perfil['Usuario']['descricao']; endif; ?></div>
                 
             </div>
             <!-- FINAL COL 2 -->

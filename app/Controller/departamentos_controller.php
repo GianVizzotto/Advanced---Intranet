@@ -2,7 +2,7 @@
 
 class DepartamentosController extends AppController {
 	
-	var $uses = array ( 'Departamento', 'Noticia', 'Departamentos_conteudo' ) ;
+	var $uses = array ( 'Departamento', 'Noticia', 'Departamentos_conteudo', 'Usuario' ) ;
 	var $helpers = array ( 'Paginator', 'Time' ) ;
 	
 	public $paginate = array(
@@ -127,6 +127,25 @@ class DepartamentosController extends AppController {
 			$this->set('conteudo_baixo' , $conteudo_baixo);
 			
 			
+			$usuarios_baixo = $this->Usuario->find('all', array(
+														'fields' => array (
+																	'Usuario.id', 
+																	'Usuario.nome', 
+																	'Cargo.nome' 
+																	),
+																'joins' => array(
+																	array(
+																		'table' => 'cargos',
+																		'alias' => 'Cargo',
+																		'type' => 'INNER',
+																		'conditions' => array ( 'Usuario.cargo_id = Cargo.id' )	
+																	)
+																),
+																'conditions' => array ('Usuario.departamento_id' => $id),
+																'order' => array ( 'Usuario.id' => 'DESC' ),
+														)
+													);
+			$this->set('usuarios_baixo' , $usuarios_baixo);
 			
 			$departamento = $this->Departamento->read();
 			$this->set('departamento',$departamento);

@@ -19,7 +19,7 @@ class RamaisController extends AppController {
 															)
 														)
 													) ;
-		$select_departamento = array('' => 'Selecione') + (array)$select_departamento ;
+		$select_departamento = array('' => 'Todos') + (array)$select_departamento ;
 		$this->set( 'select_departamento' , $select_departamento  ) ;
 		
 		if($this->params['url']){
@@ -144,7 +144,7 @@ class RamaisController extends AppController {
 														'conditions' => array('departamento_id = '.$departamento)	
 														)
 													) ;
-		$select_nomes = array('' => 'Selecione') + (array)$select_nomes ;
+		$select_nomes = array('' => 'Todos') + (array)$select_nomes ;
 		$this->set( 'select_nomes' , $select_nomes ) ;
 		$this->set( 'usuario_id' , $usuario_id ) ;
 		

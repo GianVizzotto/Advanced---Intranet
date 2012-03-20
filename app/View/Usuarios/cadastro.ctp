@@ -1,9 +1,13 @@
 <?php echo $this->Html->script('cadastro');?>
 <?php echo $this->Html->script('advanced');?>
+<?php
+	echo $this->Html->script('ckeditor/ckeditor.js');
+	echo $this->Html->script('ckfinder/ckfinder.js');
+?> 
 <div id="meio">
-	<div id="colunaB">
+	<div id="colunaE" style=" width: 950px;">
 		<h1>Novo Usuário</h1> 
-		<div class="conteudo">
+		<div class="conteudo"  style=" width: 910px;">
 			<div class="formulario">
 			
  				<?php echo $this->Form->create('Usuario' , array( 'options' => array ( 'action' => 'cadastro' , 'controller' => 'usuarios' ), 'enctype' => 'multipart/form-data' ) ); ?>
@@ -42,6 +46,10 @@
 							<div class="cargos"></div> 
 						</label>
 				
+					<label for="Perfil">
+						Perfil: <br />                                           
+						<?php echo $this->Form->input('perfil_id' , array ( 'options' => $perfis, 'label' => false) ) ;?> 
+					</label>
 				                    
 					<label for="Ramal">
 						Ramal: <br />                                           
@@ -52,8 +60,6 @@
 						Data de Nascimento: <br />                                           
 						<?php echo $this->Form->input('data_nascimento' , array ( 'type' => 'text' , 'maxLenght' => '10' , 'label' => false) ) ;?> 
 					</label>
-					
-					<?php echo $this->Form->input('perfil_id' , array ( 'type' => 'hidden' ) ) ;?> 
 					
 					<label for="Telefone">
 						Telefone: <br />                                           
@@ -71,6 +77,11 @@
 						<br />
 						<?php if($url_foto){ echo "<a href='/$url_foto' target='_blank' ><img src=/$url_foto /></a>";}?>
 					</label>
+					
+					<label for="Descricao">
+						Mini currículo: <br />                                           
+						<?php echo $this->Form->input('descricao' , array ( 'type' => 'textarea' , 'label' => false, 'class' => $ckeditorClass) ) ;?> 
+					</label>
 					                                                             
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>
 				
@@ -79,26 +90,20 @@
 		</div>
 	</div>
 	
-	<div id="colunaB">
-		<h1>Últimos Usuários Cadastrados</h1> 
-			
-		<div class="conteudo">
-			<table>
-				<tr>
-					<th>Nome</th>
-					<th width="30%">Departamento</th>
-					<th width="20%">Editar</th>
-				</tr>			
-			<?php foreach ($ultimos_cadastrados as $ultimo_cadastrado):?>
-				<tr>
-					<td><?php echo $ultimo_cadastrado['Usuario']['nome'];?></td>  
-					<td align="center"><?php echo $ultimo_cadastrado['Departamento']['nome'];?></td>
-					<td align="center"><a href="/usuarios/cadastro/<?php echo $ultimo_cadastrado['Usuario']['id'];?>"><img src="/img/edit_icon.png" /></a>
-					<?php if ($ultimo_cadastrado['Usuario']['perfil_id'] != 1): ?>
-					<a href="/usuarios/excluir/<?php echo $ultimo_cadastrado['Usuario']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
-					<?php endif; ?>
-			<?php endforeach;?>
-			</table>	
-		</div>
-	</div>
+
 </div>
+<script type="text/javascript">
+  var ck_newsContent = CKEDITOR.replace( 'data[Usuario][descricao]', {toolbar : [
+			[ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ],
+			['Link', 'Unlink', '-', 'Maximize'],
+			'/',
+			['FontSize', 'Bold', 'Italic','Underline','StrikeThrough','Subscript','Superscript','RemoveFormat'],
+			[ 'NumberedList','BulletedList','-','Outdent','Indent','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ]
+		],
+		filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
+        filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?Type=Images',
+        filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?Type=Flash',
+        filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+        filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+        filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash' });
+</script>
