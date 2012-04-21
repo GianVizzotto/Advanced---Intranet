@@ -24,6 +24,7 @@ class NoticiasController extends AppController {
 			'fields' => array(
 				'Noticia.id',
 				'Noticia.nome',
+				'Noticia.status',
 				'Tipos_conteudos.nome'
 				),
 			'joins' => array(
@@ -54,6 +55,15 @@ class NoticiasController extends AppController {
 				
 				$this->paginate['conditions'][$x] = array(
 					"Tipos_conteudos.id = ".$filtros['tipos_conteudo_id'] 
+				);
+				
+				$x++ ;
+				
+			}
+			if ( !empty ( $filtros['status'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					"Noticia.status = ".$filtros['status'] 
 				);
 				
 				$x++ ;
@@ -118,7 +128,52 @@ class NoticiasController extends AppController {
 		$this->set('Tipos_conteudos' , $Tipos_conteudos);
 				
 	}
-	
+
+	function suggest($id = null){
+				
+		$ckeditorClass = 'CKEDITOR';
+		$this->set('ckeditorClass', $ckeditorClass);
+
+		$ckfinderPath = 'js/ckfinder/';
+   		$this->set('ckfinderPath', $ckfinderPath);
+		
+		$Tipos_conteudos = $this->Tipos_conteudo->getTipos();
+		$Tipos_conteudos = array ( '' => 'Selecione' ) + (array)$Tipos_conteudos;
+		
+		if (!empty($id)){
+			$this->Noticia->id = $id;
+			$url_imagem = $this->Noticia->getUrlImagem($id);
+			$this->set('id' , $id);
+			$this->set('url_imagem' , $url_imagem['Noticia']['imagem']);
+		}
+		
+		if (!empty($this->data)){
+			$this->Noticia->set($this->data);
+			if ($this->Noticia->validates()){
+				$fileOK = $this->uploadFiles('files/noticias', $this->data['File']);
+				// if file was uploaded ok
+				if($fileOK['urls'][0] != "") {
+				    // save the url in the form data
+				    $this->request->data['Noticia']['imagem'] = $fileOK['urls'][0];
+				    
+				}
+				$this->request->data['Noticia']['status'] = 2;
+				if ($this->Noticia->addNoticia($this->data)){
+					$this->Session->setFlash('Noticia indicada com sucesso!', 'flash_confirm');
+					$this->redirect(array('action' => 'visualizar'));
+				}else{
+					$this->Session->setFlash('Erro ao indicar Noticia!', 'flash_error');
+					$this->redirect(array('action' => 'visualizar'));
+				}
+			}
+		}else{
+			$this->request->data = $this->Noticia->read();
+		}
+		
+		$this->set('Tipos_conteudos' , $Tipos_conteudos);
+				
+	}
+
 	function remove($id){
 		$validao_perfil = $this->Session->read('Usuario');
 		
@@ -156,7 +211,7 @@ class NoticiasController extends AppController {
 					'table' => 'tipos_conteudos',
 					'alias' => 'Tipos_conteudos',
 					'type' => 'INNER',
-					'conditions' => array ( 'Noticia.tipos_conteudos_id = Tipos_conteudos.id' )	
+					'conditions' => array ( 'Noticia.tipos_conteudos_id = Tipos_conteudos.id', "Noticia.status = 1" )	
 					)
 				)
 			);

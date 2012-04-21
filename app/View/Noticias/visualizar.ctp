@@ -52,9 +52,10 @@
 				<span><?php echo $this->Paginator->numbers(); ?></span>
 				<span><?php echo $this->Paginator->last('Última');	?></span>
 			</div>
+			
         </div>
         <!-- FINAL CONTEUDO -->
-                
+		<a href="/noticias/suggest" class="bt_padrao" style="text-align: left; margin-top: 15px;">INDIQUE UMA NOTÍCIA</a>
 	</div>
     <!-- FINAL COLUNA E -->                
 

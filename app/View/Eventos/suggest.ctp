@@ -5,14 +5,14 @@
 <div id="meio">
 	<div id="colunaE" style=" width: 950px;">
 		<?php if($id):?>
-			<h1>EDI&Ccedil;&Atilde;O DE NOTÍCIA</h1>
+			<h1>EDI&Ccedil;&Atilde;O DE EVENTO</h1>
 		<?php else:?>
-			<h1>NOVA NOTÍCIA</h1>
+			<h1>NOVO EVENTO</h1>
 		<?php endif; ?> 
 		<div class="conteudo" style=" width: 910px;">
 			<div class="formulario">
 			
- 				<?php echo $this->Form->create('Noticia', array ('enctype' => 'multipart/form-data') ); ?>
+ 				<?php echo $this->Form->create('Evento', array ('enctype' => 'multipart/form-data') ); ?>
  						
  					<?php if($id):?>
  						<?php echo $this->Form->input('id' , array ( 'type' => 'hidden' , 'value' => $id ) ) ;?>
@@ -23,14 +23,9 @@
 						<?php echo $this->Form->input('nome' , array ( 'type' => 'text' , 'label' => false) ) ;?>
 					</label>
 					
-					<label for="Fonte">
-						Fonte: <br />
-						<?php echo $this->Form->input('fonte' , array ( 'type' => 'text' , 'label' => false) ) ;?>
-					</label>
-					
 					<label for="Conteudo">
 						Conte&uacute;do: <br />                                           
-						<?php echo $this->Form->input('conteudo' , array ( 'type' => 'textarea' , 'label' => false, 'class' => $ckeditorClass) ) ;?> 
+						<?php echo $this->Form->input('conteudo' , array ( 'type' => 'textarea' , 'label' => false, 'class' => $ckeditorClass )) ;?> 
 					</label>
 					
 					<label for="Imagem">
@@ -40,15 +35,6 @@
 						<?php if($url_imagem){ echo "<a href='/$url_imagem' target='_blank' >$url_imagem</a>";}?>
 					</label>
 					
-					<label for="Tipos">
-						Tipo de Conte&uacute;do: <br />                                           
-						<?php echo $this->Form->input('tipos_conteudos_id' , array ( 'options' => $Tipos_conteudos , 'label' => false) ) ;?> 
-					</label> 
-
-					<label for="Status">
-						Status da notícia: <br />                                           
-						<?php echo $this->Form->input('status' , array ( 'options' => array( 1 => "Publicada", 2 => "Aguardando aprovação" ) , 'label' => false) ) ;?> 
-					</label> 
 					<br />   
 				                    
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>
@@ -60,7 +46,7 @@
 	</div>
 </div>
 <script type="text/javascript">
-  var ck_newsContent = CKEDITOR.replace( 'data[Noticia][conteudo]', {toolbar : [
+  var ck_newsContent = CKEDITOR.replace( 'data[Evento][conteudo]', {toolbar : [
 			[ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ],
 			[ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ],
 			['Link', 'Unlink', '-', 'Maximize'],

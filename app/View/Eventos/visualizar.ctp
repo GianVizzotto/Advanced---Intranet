@@ -45,7 +45,7 @@
 			</div>
         </div>
         <!-- FINAL CONTEUDO -->
-                
+        <a href="/eventos/suggest" class="bt_padrao" style="text-align: left; margin-top: 15px;">INDIQUE UM EVENTO</a>
 	</div>
     <!-- FINAL COLUNA E -->                
 
