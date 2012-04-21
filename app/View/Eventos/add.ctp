@@ -34,6 +34,12 @@
 						<br />
 						<?php if($url_imagem){ echo "<a href='/$url_imagem' target='_blank' >$url_imagem</a>";}?>
 					</label>
+					
+					<label for="Status">
+						Status do Evento: <br />                                           
+						<?php echo $this->Form->input('status' , array ( 'options' => array( 1 => "Publicado", 2 => "Aguardando aprovação" ) , 'label' => false) ) ;?> 
+					</label> 
+					
 					<br />   
 				                    
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>

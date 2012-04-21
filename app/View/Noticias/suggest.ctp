@@ -45,10 +45,6 @@
 						<?php echo $this->Form->input('tipos_conteudos_id' , array ( 'options' => $Tipos_conteudos , 'label' => false) ) ;?> 
 					</label> 
 
-					<label for="Status">
-						Status da notícia: <br />                                           
-						<?php echo $this->Form->input('status' , array ( 'options' => array( 1 => "Publicada", 2 => "Aguardando aprovação" ) , 'label' => false) ) ;?> 
-					</label> 
 					<br />   
 				                    
 					<?php echo $this->Form->submit('Enviar' , array ( 'class' => 'btForm' ) ) ;?>
