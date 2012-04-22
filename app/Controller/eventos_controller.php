@@ -20,6 +20,7 @@ class EventosController extends AppController {
 			'fields' => array(
 				'Evento.id',
 				'Evento.nome',
+				'Evento.status',
 				'Evento.data_criacao'
 				)
 			);
@@ -33,6 +34,15 @@ class EventosController extends AppController {
 				
 				$this->paginate['conditions'][$x] = array(
 					"lower(Evento.nome) like lower('%".$filtros['nome']."%')" 
+				);
+				
+				$x++ ;
+				
+			}
+			if ( !empty ( $filtros['status'] ) ) {
+				
+				$this->paginate['conditions'][$x] = array(
+					"lower(Evento.status) like lower('%".$filtros['status']."%')" 
 				);
 				
 				$x++ ;
@@ -92,6 +102,46 @@ class EventosController extends AppController {
 		}
 		
 	}
+
+	function suggest($id = null){
+				
+		$ckeditorClass = 'CKEDITOR';
+		$this->set('ckeditorClass', $ckeditorClass);
+		
+		$ckfinderPath = 'js/ckfinder/';
+   		$this->set('ckfinderPath', $ckfinderPath);
+
+		if (!empty($id)){
+			$this->Evento->id = $id;
+			$url_imagem = $this->Evento->getUrlImagem($id);
+			$this->set('id' , $id);
+			$this->set('url_imagem' , $url_imagem['Evento']['imagem']);
+		}
+		
+		if (!empty($this->data)){
+			$this->Evento->set($this->data);
+			if ($this->Evento->validates()){
+				$fileOK = $this->uploadFiles('files/eventos', $this->data['File']);
+				// if file was uploaded ok
+				if($fileOK['urls'][0] != "") {
+				    // save the url in the form data
+				    $this->request->data['Evento']['imagem'] = $fileOK['urls'][0];
+				    
+				}
+				$this->request->data['Evento']['status'] = 2;
+				if ($this->Evento->addEvento($this->data)){
+					$this->Session->setFlash('Evento indicado com sucesso!', 'flash_confirm');
+					$this->redirect(array('action' => 'visualizar'));
+				}else{
+					$this->Session->setFlash('Erro ao indicar Evento!', 'flash_error');
+					$this->redirect(array('action' => 'visualizar'));
+				}
+			}
+		}else{
+			$this->request->data = $this->Evento->read();
+		}
+		
+	}
 	
 	function remove($id){
 		$validao_perfil = $this->Session->read('Usuario');
@@ -120,7 +170,8 @@ class EventosController extends AppController {
 				'Evento.nome',
 				'Evento.data_criacao',
 				'Evento.conteudo'
-				)
+				),
+			'conditions' => array ( "Evento.status = 1" )
 			);
 		$filtros = "";
 		$this->paginate['limit'] = 5;
