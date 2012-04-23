@@ -53,58 +53,60 @@
   		</div>
         <!-- FINAL COLUNA D -->                
 
-    	<!-- INICIO COLUNA B -->
-		<div id="colunaB" style="margin-right:0px;">
-                
-			<h1>NOVO AVISO</h1>
-			<div class="conteudo">
-		                    
-				<!-- INICIO FORM -->
-				<div class="formulario">
-			 
-					<?php echo $this->Form->create('Aviso', array ('enctype' => 'multipart/form-data', 'action' => 'index'));?>
-				  	  <?php echo $this->Form->input( 'status_aviso_id' , array( 'type' => 'hidden' , 'value' => 2 ) ) ;?>
+		<?php if($this->Session->read('Usuario')): ?>
+	    	<!-- INICIO COLUNA B -->
+			<div id="colunaB" style="margin-right:0px;">
+	                
+				<h1>NOVO AVISO</h1>
+				<div class="conteudo">
+			                    
+					<!-- INICIO FORM -->
+					<div class="formulario">
+				 
+						<?php echo $this->Form->create('Aviso', array ('enctype' => 'multipart/form-data', 'action' => 'index'));?>
+					  	  <?php echo $this->Form->input( 'status_aviso_id' , array( 'type' => 'hidden' , 'value' => 2 ) ) ;?>
+					                                
+							<label for="">
+					        	Departamento do destinatário: <br />
+					            <?php echo $this->Form->input( 'AvisoDestinatario.departamento_id', array('options' => $select_departamento_aviso , 'selected' => $dpto_aviso, 'label' => false , 'div' => false , 'onchange' => "mostraUsuarios(this.value,'usuario','ramais','usuarios')" ) ) ;?>    
+							</label>                                   
+					                                
+							<label for="usuarios">
+								<span class="usuario">
+									<?php
+										if (!empty ($func_aviso)){
+											echo "Usuários <br/>";
+											echo $this->Form->input('AvisoDestinatario.usuario_id' , array ( 'options' => $usuarios, 'selected' => $func_aviso , 'div' => false , 'label' => false ) ) ;
+										}else{
+											echo $usuarios ;
+										} 
+										 
+									?>
+								</span>                                       
+							</label>    
+					                                    
+							<label for="">
+								Anexo: <br />
+								<input type="file" name="data[File][anexo]" id="FileImage" />
+								<?php //echo $this->Form->input( 'anexo' , array('type' => 'text' , 'label' => false , 'div' => false ) ) ;?>
+							</label>
+					                                    
+							<label for="">
+								Assunto: <br />
+								<?php echo $this->Form->input( 'assunto' , array('type' => 'text' , 'label' => false , 'div' => false ) ) ;?>
+							</label>
+					                                    
+							<label for="">
+								Mensagem: <br />
+								<?php echo $this->Form->input( 'mensagem' , array('type' => 'textarea' , 'label' => false , 'div' => false , 'class' => 'campoTxt' ) ) ;?>
+							</label> 
+					                                    
+							<?php echo $this->Form->submit('Enviar' , array('class' => 'btForm') ) ;?>               
+						<?php echo $this->Form->end();?>
 				                                
-						<label for="">
-				        	Departamento do destinatário: <br />
-				            <?php echo $this->Form->input( 'AvisoDestinatario.departamento_id', array('options' => $select_departamento_aviso , 'selected' => $dpto_aviso, 'label' => false , 'div' => false , 'onchange' => "mostraUsuarios(this.value,'usuario','ramais','usuarios')" ) ) ;?>    
-						</label>                                   
-				                                
-						<label for="usuarios">
-							<span class="usuario">
-								<?php
-									if (!empty ($func_aviso)){
-										echo "Usuários <br/>";
-										echo $this->Form->input('AvisoDestinatario.usuario_id' , array ( 'options' => $usuarios, 'selected' => $func_aviso , 'div' => false , 'label' => false ) ) ;
-									}else{
-										echo $usuarios ;
-									} 
-									 
-								?>
-							</span>                                       
-						</label>    
-				                                    
-						<label for="">
-							Anexo: <br />
-							<input type="file" name="data[File][anexo]" id="FileImage" />
-							<?php //echo $this->Form->input( 'anexo' , array('type' => 'text' , 'label' => false , 'div' => false ) ) ;?>
-						</label>
-				                                    
-						<label for="">
-							Assunto: <br />
-							<?php echo $this->Form->input( 'assunto' , array('type' => 'text' , 'label' => false , 'div' => false ) ) ;?>
-						</label>
-				                                    
-						<label for="">
-							Mensagem: <br />
-							<?php echo $this->Form->input( 'mensagem' , array('type' => 'textarea' , 'label' => false , 'div' => false , 'class' => 'campoTxt' ) ) ;?>
-						</label> 
-				                                    
-						<?php echo $this->Form->submit('Enviar' , array('class' => 'btForm') ) ;?>               
-					<?php echo $this->Form->end();?>
-			                                
-				</div>
-				<!-- FINAL FORMULARIO -->
+					</div>
+					<!-- FINAL FORMULARIO -->
+			<?php endif;?>		
 			</div>
 		</div>
         <!-- FINAL COLUNA B -->                    

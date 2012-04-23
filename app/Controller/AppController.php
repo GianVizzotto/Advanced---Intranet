@@ -6,7 +6,7 @@ class AppController extends Controller {
 	function beforeFilter(){
 		$this->layout = 'advanced_layout' ;
 		
-		if(!$this->Session->read('Usuario') && $this->params['controller'] != 'login'){
+		if($this->params['controller'] == 'avisos' && !$this->Session->read('Usuario')){
 			$this->redirect('/login');
 		}
 		$menu = $this->Departamento->find('all', array(

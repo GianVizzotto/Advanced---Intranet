@@ -56,7 +56,9 @@ class DashboardController extends AppController {
 
 		$usuario_dados = $this->Session->read('Usuario');
 		
-		$avisos = $this->Aviso->getAvisos($usuario_dados, 5);
+		if($usuario_dados) {
+			$avisos = $this->Aviso->getAvisos($usuario_dados, 5);
+		}
 		
 		$this->set('avisos', $avisos);
 		
