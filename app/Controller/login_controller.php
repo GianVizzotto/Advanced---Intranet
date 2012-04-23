@@ -51,7 +51,7 @@ class LoginController extends AppController {
 	
 	function logoff(){
 		
-		$this->Session->destroy();
+		$this->Session->delete('Usuario');
 		$this->redirect('/login');
 		
 	}

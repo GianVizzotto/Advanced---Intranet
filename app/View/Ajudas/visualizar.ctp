@@ -67,46 +67,46 @@
                 
 	</div>
     <!-- FINAL COLUNA E -->                
-
-	<!-- INICIO COLUNA B -->
-    <div id="colunaB" style="margin-right:0px;">
-    
-		<h1>REPORTE SEU PROBLEMA AO TI</h1>
-                
-    	<!-- INICIO CONTEUDO -->
-        <div class="conteudo">
-                    
-	    	<!-- INICIO FORM -->
-	        <div class="formulario">
- 
-			<?php echo $this->Form->create('Aviso', array ('url' => array('controller' => 'ajudas', 'action' => 'salvaAviso')));?>
-			
-				<?php echo $this->Form->input( 'status_aviso_id' , array( 'type' => 'hidden' , 'value' => 2 ) ) ;?>
-				<?php echo $this->Form->input( 'AvisoDestinatario.departamento_id', array('type' => 'hidden', 'default' => '1') );?>
-				<?php echo $this->Form->input( 'AvisoDestinatario.usuario_id' , array('type' => 'hidden' , 'default' => '1') ) ;?>
-				<?php echo $this->Form->input( 'assunto' , array('type' => 'hidden' , 'default' => 'Aviso para TI') ) ;?>
-	            
-					<h2>Se estiver com algum problema em seu computador, utilize o espaço abaixo para enviar para o setor TI.</h2>
-                    
-                     <br /> <br />
-                    	
-                        Mensagem: <br />
-                    
-                   	<?php echo $this->Form->input( 'mensagem' , array('type' => 'textarea' , 'label' => false , 'div' => false , 'class' => 'campoTxt' ) ) ;?> 
-                    
-                    <?php echo $this->Form->submit('Enviar Aviso', array('class'=>'btForm'));?>
-                
-                <?php echo $this->Form->end();?>
-                                
-			</div>
-            <!-- FINAL FORMULARIO -->    
-                    
+	<?php if($this->Session->read('Usuario')): ?>
+		<!-- INICIO COLUNA B -->
+	    <div id="colunaB" style="margin-right:0px;">
+	    
+			<h1>REPORTE SEU PROBLEMA AO TI</h1>
+	                
+	    	<!-- INICIO CONTEUDO -->
+	        <div class="conteudo">
+	                    
+		    	<!-- INICIO FORM -->
+		        <div class="formulario">
+	 
+				<?php echo $this->Form->create('Aviso', array ('url' => array('controller' => 'ajudas', 'action' => 'salvaAviso')));?>
+				
+					<?php echo $this->Form->input( 'status_aviso_id' , array( 'type' => 'hidden' , 'value' => 2 ) ) ;?>
+					<?php echo $this->Form->input( 'AvisoDestinatario.departamento_id', array('type' => 'hidden', 'default' => '1') );?>
+					<?php echo $this->Form->input( 'AvisoDestinatario.usuario_id' , array('type' => 'hidden' , 'default' => '1') ) ;?>
+					<?php echo $this->Form->input( 'assunto' , array('type' => 'hidden' , 'default' => 'Aviso para TI') ) ;?>
+		            
+						<h2>Se estiver com algum problema em seu computador, utilize o espaço abaixo para enviar para o setor TI.</h2>
+	                    
+	                     <br /> <br />
+	                    	
+	                        Mensagem: <br />
+	                    
+	                   	<?php echo $this->Form->input( 'mensagem' , array('type' => 'textarea' , 'label' => false , 'div' => false , 'class' => 'campoTxt' ) ) ;?> 
+	                    
+	                    <?php echo $this->Form->submit('Enviar Aviso', array('class'=>'btForm'));?>
+	                
+	                <?php echo $this->Form->end();?>
+	                                
+				</div>
+	            <!-- FINAL FORMULARIO -->    
+	                    
+		    </div>
+		    <!-- FINAL CONTEUDO -->                   
+	
 	    </div>
-	    <!-- FINAL CONTEUDO -->                   
-
-    </div>
-    <!-- FINAL COLUNA B -->                   
-
+	    <!-- FINAL COLUNA B -->                   
+	<?php endif;?>
 </div>
 <!-- FINAL MEIO -->
 

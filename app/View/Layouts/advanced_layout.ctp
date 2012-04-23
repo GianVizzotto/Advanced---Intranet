@@ -59,9 +59,13 @@
 						<div id="usuario">
 						
 						<?php $usuario = $this->Session->read('Usuario');?>
+						<?php if($usuario):?>
 							Bem-vindo <strong> <?php echo $usuario['Usuario']['nome'];?> </strong><br />
 							Setor: <strong><?php echo $usuario['Departamento']['nome'];?></strong><br />
 							<strong><a href="/login/logoff">Sair</a></strong>
+						<?php else : ?>
+							<a href="/login"><b>Fazer login</b></a>
+						<?php endif;?>		
 						</div>
 						<!-- FINAL USUARIO -->  
 						                    
