@@ -37,20 +37,19 @@ div#logo, div#logo1, div#logo2, div#logo3	{ background:none; box-shadow:none;  }
 #topo_dir img	{ width:100px; margin:2px 5px; }
 
 #usuario	{ width:260px; height:33px; margin-left:50px; text-align:right; color:#333;}
-#usuario a	{ color:#C00;}
 #menu		{ float:left; width:680px; margin-top:20px; padding:5px !important;}
-#menu ul	{ width:670px; float:left;}
+
 #menu ul li 			{ display:inline;}
-#menu ul li a 			{ color:#000; float:left; padding:5px 13px; margin:0px 3px; font-size:10px;}
+#menu ul li a 			{ color:#000; float:left; padding:5px 15px; margin:0px 5px; font-size:10px;}
 #menu ul li a:hover		{ background:#ccc;}
 
 
-#botoes		{ background:none !important; box-shadow: none !important; padding:0px !important; float:left; width:990px; _width:1020px; padding-top:40px !important; }
+#botoes		{ background:none !important; box-shadow: none !important; padding:0px !important; float:left; width:990px; padding-top:40px !important; }
 
-#botoes	img	{ margin:4px; margin:2px; float:left; margin-top:8px;}
+#botoes	img	{ margin:4px; float:left; margin-top:8px;}
 
 
-#meio			{ float:left; width:960px; _width:980px; padding:15px; }
+#meio			{ float:left; width:960px; padding:15px; }
 #colunaA		{ float:left; width:260px;  }
 #colunaB		{ float:left; width:410px; margin:0 15px;}
 #colunaD		{ float:left; width:535px;  }
@@ -133,29 +132,8 @@ h2	{ color:#333; font-size:13px;}
 .btForm		{ background:#ddd; border:0px; color:#666; font-size:10px; padding:2px 5px; margin-top:2px;}
 
  
-.paginacao		{
-  
-	background:#fff;
-	color:#fff;
-	text-align:center;
-	width:515px;
-	float:left;
-	padding:10px;
-	
-	}
-
-.paginacao a	{float:left!important; padding:0px !important; margin:0px!important;}
-.paginacao a:hover	{ background:none!important; color:#000 !important;}
-.current		{ background:#eee; color:#333;}	
-.paginacao span	{
-	float:left!important;
-	padding:5px 10px;
-	}
 
 
-table		{ border:0px !important;}
-table th	{ background:#eee; color:#666; font-weight:normal; padding:5px 10px; -moz-border-radius:5px; -webkit-border-radius:5px;font-size:13px;}	
-table td	{ border:0px; border-bottom:1px dotted #ccc; padding:7px 10px; font-size:12px; color:#333;  }
 
 
  
