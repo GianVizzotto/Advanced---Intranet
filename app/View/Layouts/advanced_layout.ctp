@@ -43,19 +43,19 @@
 					                
 						<!-- INICIO LOGO 1 -->
 						<div id="logo1">
-							<img src="/img/logo_amarelo.png" />
+							<a href="http://casapaulista.socciweb.com.br" target="_self"><img src="/img/logo_amarelo.png" /></a>
 						</div>
 						<!-- FINAL LOGO 1 -->
 						                    
 						<!-- INICIO LOGO 2 -->
 						<div id="logo2">
-							<img src="/img//logo_verde.png" />
+							<a href="http://security.socciweb.com.br" target="_self"><img src="/img//logo_verde.png" /></a>
 						</div>
 						<!-- FINAL LOGO 2 -->
 						
 						<!-- INICIO LOGO 3 -->
 						<div id="logo3">
-							<img src="/img/logo_vermelho.png" />
+							<a href="http://cambio.socciweb.com.br" target="_self"><img src="/img/logo_vermelho.png" /></a>
 						</div>
 						<!-- FINAL LOGO 3 -->    
 						                    
@@ -92,14 +92,14 @@
 						                
 						                <!--INICIO BOTOES -->
 					<div id="botoes">
-						<a href="/dashboard"><img src="/img/bt_inicio.jpg" /></a>
-						<a href="/usuarios/perfil"><img src="/img/bt_perfil.jpg" /></a>
-						<a href="/avisos"><img src="/img/bt_avisos.jpg" /></a>
-						<a href="/eventos/visualizar"><img src="/img/bt_eventos.jpg" /></a>
-						<a href="/aniversariantes"><img src="/img/bt_aniversariantes.jpg" /></a>
-						<a href="/ramais"><img src="/img/bt_ramais.jpg" /></a>
-						<a href="/ajudas/visualizar"><img src="/img/bt_ajuda.jpg" /></a>
-						<a href="/noticias/visualizar"><img src="/img/bt_noticias.jpg" /></a>
+						<a href="/dashboard"><img src="/img/bt_inicio.png" /></a>
+						<a href="/usuarios/perfil"><img src="/img/bt_perfil.png" /></a>
+						<a href="/avisos"><img src="/img/bt_avisos.png" /></a>
+						<a href="/eventos/visualizar"><img src="/img/bt_eventos.png" /></a>
+						<a href="/aniversariantes"><img src="/img/bt_aniversariantes.png" /></a>
+						<a href="/ramais"><img src="/img/bt_ramais.png" /></a>
+						<a href="/ajudas/visualizar"><img src="/img/bt_ajuda.png" /></a>
+						<a href="/noticias/visualizar"><img src="/img/bt_noticias.png" /></a>
 					</div>
 					<!-- FINAL BOTOES -->
 				
