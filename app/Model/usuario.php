@@ -76,6 +76,15 @@ class Usuario extends AppModel {
 		
 	}
 	
+		
+	function deleteUsuario($dados){
+		if ($this->delete($dados)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
 	function getUsuarioDpto($departamento_id , $usuario_id, $tipo = null) {
 		
 		if($departamento_id != 0) {

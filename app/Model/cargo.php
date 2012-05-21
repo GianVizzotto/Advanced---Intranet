@@ -4,6 +4,21 @@ class Cargo extends AppModel {
 	
 	var $useTable = 'cargos' ;
 	
+	var $validate = array (
+	'nome' => array ( 
+		'rule' => 'notEmpty',
+		'message' => 'Este campo não pode ser vazio'
+		 ),
+	'departamento_id' => array (
+		 'rule' => 'notEmpty',
+		 'message' => 'Escolha um departamento'
+		 ),
+	'descricao' => array ( 
+		'rule' => 'notEmpty',
+		'message' => 'Este campo não pode ser vazio'
+		)	
+	);
+	
 	function getCargos($departamento_id, $cargo_id = null) {
 		
 		if($cargo_id){

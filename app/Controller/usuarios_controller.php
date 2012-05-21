@@ -256,7 +256,24 @@ class UsuariosController extends AppController {
 		
 	}
 	
+	function excluir_real($id) {
 	
+		$validao_perfil = $this->Session->read('Usuario');
+		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
+		if($this->Usuario->deleteUsuario($id)){
+			$this->Session->setFlash('Usuário excluido com sucesso!', 'flash_confirm');
+			$this->redirect(array('action' => 'listar'));
+		} else {
+			$this->Session->setFlash('Erro ao excluir usuário!', 'flash_error');
+			$this->redirect(array('action' => 'listar'));
+		}		
+		
+	}
+		
 	function excluir($id) {
 	
 		$validao_perfil = $this->Session->read('Usuario');

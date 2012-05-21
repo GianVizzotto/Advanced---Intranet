@@ -45,7 +45,8 @@ $this->Paginator->options(array('url' => array('controller' => 'usuarios', 'acti
 						<th width="15%" style="text-align:left;">Dpto.</th>
 						<th width="10%" style="text-align:left;">Status</th>
 						<th width="10%">Editar</th>
-						<th width="10%">Excluir</th>
+						<th width="10%">Inativar</th>
+						<th width="10%">Excluir!</th>
 					</tr>		
 					
 				<?php foreach ($usuarios as $usuario):?>
@@ -57,6 +58,9 @@ $this->Paginator->options(array('url' => array('controller' => 'usuarios', 'acti
 						<td align="center"><a href="/usuarios/cadastro/<?php echo $usuario['Usuario']['id'];?>"><img src="/img/edit_icon.png" /></a></td>
 						<?php if ($usuario['Usuario']['perfil_id'] != 1): ?>
 						<td align="center"><a href="/usuarios/excluir/<?php echo $usuario['Usuario']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
+						<?php endif; ?>
+						<?php if ($usuario['Usuario']['perfil_id'] != 1): ?>
+						<td align="center"><a href="/usuarios/excluir_real/<?php echo $usuario['Usuario']['id'];?>"><img src="/img/delete_icon.png" /></a></td>
 						<?php endif; ?>
 				<?php endforeach;?>
 				</table><br />
