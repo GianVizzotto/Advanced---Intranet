@@ -9,5 +9,13 @@ class Usuarios_me extends AppModel {
 		return $this->save($dados) ;
 		
 	}
+		
+	function deleteMerito($dados){
+		if ($this->delete($dados)){
+			return true;
+		}else{
+			return false;
+		}
+	}
 	
 }

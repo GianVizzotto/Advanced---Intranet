@@ -104,9 +104,17 @@ class UsuariosController extends AppController {
 			if(isset($this->data['Usuario']['cargo_id'])){
 				$this->set('cargo_id', $this->data['Usuario']['cargo_id']);
 			}
+
+			if(isset($this->data['Usuario']['departamento_id'])){
+				$lista_cargos = $this->Cargo->getCargos($this->data['Usuario']['departamento_id']);
+				$lista_cargos = array ( '' => 'Selecione' ) + (array)$lista_cargos;
+			}			
+			// echo $this->data['Usuario']['departamento_id'];
+			// echo "-".$cargo_aux;			
 			
 		}
 		
+		$this->set('lista_cargos' , $lista_cargos);
 		$this->set('departamentos' , $departamentos);
 		$this->set('perfis' , $perfis);
 		$this->set('ultimos_cadastrados' , $ultimos_cadastrados);

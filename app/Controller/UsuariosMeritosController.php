@@ -106,7 +106,7 @@ class UsuariosMeritosController extends AppController {
 		endif;
 				
 		$this->layout = '' ;
-		if ($this->Usuarios_merito->deleteMerito($id)){
+		if ($this->Usuarios_me->deleteMe($id)){
 			$this->Session->setFlash('Mérito exclu&iacute;do com sucesso!', 'flash_confirm');
 			$this->redirect(array('action' => 'index'));
 		}else{

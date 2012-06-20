@@ -12,12 +12,8 @@ class Usuario extends AppModel {
 			 'message' => 'Digite um e-mail válido'
 			 ),
 		'senha' => array (
-			 'rule' => array ( 
-			 	'notEmpty',
-			 	'maxLenght',
-			 	'10'
-			 	),
-			 'message' => 'Digite uma senha de até 10 caracteres'	
+		 	'rule' => array('between', 3, 10),
+			 'message' => 'Digite uma senha de 3 a 10 caracteres'	
 			 ),
 		'departamento_id' => array (
 			 'rule' => 'notEmpty',

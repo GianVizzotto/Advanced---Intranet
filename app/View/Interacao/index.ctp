@@ -28,25 +28,31 @@
 				</ul>
 
 				<br />
-    
+				
+				<?php foreach($mes as $mess): ?>
+					    
 				<p style="border-bottom:1px solid #ccc; clear:both;"></p>
 
 				<div class="funcionario_do_mes">
 				
 					<h2>Funcionário do mês</h2>
-					<?php if ( $mes[0]['Usuarios']['foto_url'] != ""): ?>
-						<img src="/<?php echo $mes[0]['Usuarios']['foto_url'] ?>"  />
+					<?php if ( $mess['Usuarios']['foto_url'] != ""): ?>
+						<img width="200" src="/<?php echo $mess['Usuarios']['foto_url'] ?>"  />
 				    <?php else: ?>
 				    	<img src="/img/img_perfil.jpg" />	
 				    <?php endif; ?>
-				    <h2><?php echo $mes[0]['Usuarios']['nome']; ?></h2>
+				    <h2><?php echo $mess['Usuarios']['nome']; ?></h2>
 				    <p>
-					<?php echo $mes[0]['Usuarios_me']['conteudo']; ?>
+					<?php echo $mess['Usuarios_me']['conteudo']; ?>
 				    </p>
-					<a class="bt_padrao" href="<?php echo '/ramais?dpto_aviso='.$mes[0]['Departamentos']['id'].'&func_aviso='.$mes[0]['Usuarios']['id'] ?>">Envie uma Mensagem</a>
+					<a class="bt_padrao" href="<?php echo '/ramais?dpto_aviso='.$mess['Departamentos']['id'].'&func_aviso='.$mess['Usuarios']['id'] ?>">Envie uma Mensagem</a>
 				
 				</div>
-
+				
+				<p style="border-bottom:1px solid #ccc; clear:both;"></p>
+				
+				<?php endforeach; ?>
+				
 				<?php foreach($merito as $meritos): ?>
 
 				<p style="border-bottom:1px solid #ccc; clear:both;"></p> 
@@ -55,7 +61,7 @@
 				
 					<h2>Mérito do funcionário</h2>
 					<?php if ( $meritos['Usuarios']['foto_url'] != ""): ?>
-						<img src="/<?php echo $meritos['Usuarios']['foto_url'] ?>"  />
+						<img width="200" src="/<?php echo $meritos['Usuarios']['foto_url'] ?>"  />
 				    <?php else: ?>
 				    	<img src="/img/img_perfil.jpg" />	
 				    <?php endif; ?>
