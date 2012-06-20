@@ -171,6 +171,7 @@ class EventosController extends AppController {
 				'Evento.data_criacao',
 				'Evento.conteudo'
 				),
+			'order' => array ( 'id' => 'DESC' ),
 			'conditions' => array ( "Evento.status = 1" )
 			);
 		$filtros = "";

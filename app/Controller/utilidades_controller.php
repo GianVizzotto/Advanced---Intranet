@@ -150,6 +150,7 @@ class UtilidadesController extends AppController {
 				'Utilidade.conteudo',
 				'Tipos_utilidades.nome'
 				),
+			'order' => array ( 'Utilidade.id' => 'DESC' ),
 			'joins' => array(
 				array(
 					'table' => 'tipos_utilidades',

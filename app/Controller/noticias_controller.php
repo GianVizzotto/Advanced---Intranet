@@ -206,6 +206,7 @@ class NoticiasController extends AppController {
 				'Noticia.conteudo',
 				'Tipos_conteudos.nome'
 				),
+			'order' => array ( 'Noticia.id' => 'DESC' ),
 			'joins' => array(
 				array(
 					'table' => 'tipos_conteudos',
