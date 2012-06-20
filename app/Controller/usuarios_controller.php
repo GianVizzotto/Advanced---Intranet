@@ -104,9 +104,17 @@ class UsuariosController extends AppController {
 			if(isset($this->data['Usuario']['cargo_id'])){
 				$this->set('cargo_id', $this->data['Usuario']['cargo_id']);
 			}
+
+			if(isset($this->data['Usuario']['departamento_id'])){
+				$lista_cargos = $this->Cargo->getCargos($this->data['Usuario']['departamento_id']);
+				$lista_cargos = array ( '' => 'Selecione' ) + (array)$lista_cargos;
+			}			
+			// echo $this->data['Usuario']['departamento_id'];
+			// echo "-".$cargo_aux;			
 			
 		}
 		
+		$this->set('lista_cargos' , $lista_cargos);
 		$this->set('departamentos' , $departamentos);
 		$this->set('perfis' , $perfis);
 		$this->set('ultimos_cadastrados' , $ultimos_cadastrados);
@@ -256,7 +264,24 @@ class UsuariosController extends AppController {
 		
 	}
 	
+	function excluir_real($id) {
 	
+		$validao_perfil = $this->Session->read('Usuario');
+		
+		if ($validao_perfil['Usuario']['perfil_id'] != 1):
+			$this->redirect('/dashboard');
+		endif;
+				
+		if($this->Usuario->deleteUsuario($id)){
+			$this->Session->setFlash('Usuário excluido com sucesso!', 'flash_confirm');
+			$this->redirect(array('action' => 'listar'));
+		} else {
+			$this->Session->setFlash('Erro ao excluir usuário!', 'flash_error');
+			$this->redirect(array('action' => 'listar'));
+		}		
+		
+	}
+		
 	function excluir($id) {
 	
 		$validao_perfil = $this->Session->read('Usuario');

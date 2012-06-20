@@ -106,10 +106,10 @@
 				                                
 					</div>
 					<!-- FINAL FORMULARIO -->
-			<?php endif;?>		
 			</div>
 		</div>
         <!-- FINAL COLUNA B -->                    
+		<?php endif;?>		
 
 </div>
 <!-- FINAL MEIO -->

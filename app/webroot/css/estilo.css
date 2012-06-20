@@ -27,9 +27,9 @@ li		{list-style:none;}
  
  
 #topo	{ width:990px; height:290px; float:left; margin-top:20px;}
-#topo div	{ background:#eaeced; box-shadow:1px 1px 15px #333; float:left; padding:10px; }
+#topo div	{ float:left; padding:10px; }
 div#logo, div#logo1, div#logo2, div#logo3	{ background:none; box-shadow:none;  }
-#logo		{ float:left; margin:10px; width:230px; height:100px; padding:0px !important;}
+#logo		{ float:left; margin:10px; margin-top:-10px; width:230px; height:100px; padding:0px !important;}
 #topo_dir	{ background:none !important; box-shadow: none !important; padding:0px; float:left; width:690px; padding-left:40px !important; }
 #logo1, #logo2, #logo3		{ padding:0px !important;}
 #logo2, #logo3		{ margin-left:15px;}
@@ -37,15 +37,16 @@ div#logo, div#logo1, div#logo2, div#logo3	{ background:none; box-shadow:none;  }
 #topo_dir img	{ width:100px; margin:2px 5px; }
 
 #usuario	{ width:260px; height:33px; margin-left:50px; text-align:right; color:#333;}
-#usuario a	{ color:#C00;}
-#menu		{ float:left; width:680px; margin-top:20px; padding:5px !important;}
+#usuario a	{ float:left; color:#fff; width:165px; height:45px; font-size:12px; margin-top:-10px; background:url(/img/bg_login.png) no-repeat; padding-top:22px; padding-right:30px;}
+#usuario a:hover	{   background:url(/img/bg_login_hover.png);}
+#menu		{ float:left; width:680px; margin-top:33px; padding:5px !important;}
 #menu ul	{ width:670px; float:left;}
 #menu ul li 			{ display:inline;}
-#menu ul li a 			{ color:#000; float:left; padding:5px 13px; margin:0px 3px; font-size:10px;}
-#menu ul li a:hover		{ background:#ccc;}
+#menu ul li a 			{ float:left; padding:18px 10px; margin:0px 3px; font-size:11px; font-weight:bold; color:#fff;}
+#menu ul li a:hover		{ background:#000;}
 
 
-#botoes		{ background:none !important; box-shadow: none !important; padding:0px !important; float:left; width:990px; _width:1020px; padding-top:40px !important; }
+#botoes		{ background:none !important; box-shadow: none !important; padding:0px !important; float:left; width:990px; _width:1020px; padding-top:0px !important; }
 
 #botoes	img	{ margin:4px; margin:2px; float:left; margin-top:8px;}
 

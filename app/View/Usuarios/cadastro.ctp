@@ -29,7 +29,7 @@
 					</label>
 					
 					<label for="Senha">
-						Senha: <br />                                           
+						Senha (De 3 a 10 caracteres): <br />                                           
 						<?php echo $this->Form->input('senha' , array ( 'type' => 'password' , 'label' => false) ) ;?> 
 					</label>
 						
@@ -43,7 +43,12 @@
 						<?php echo $this->Form->input('cargo_id_aux' , array ( 'type' => 'hidden', 'value' => $cargo_id, 'id' => 'cargo_id_aux' ) ) ;?>
 					<?php endif;?>
 						<label for="Cargo">
-							<div class="cargos"></div> 
+							<div class="cargos">
+								<?php if ($lista_cargos): ?>
+									Cargo<br/>
+									<?php echo $this->Form->input('cargo_id' , array ( 'options' => $lista_cargos, 'selected' => $cargo_id , 'div' => false , 'label' => false ) ) ;?>
+								<?php endif; ?>
+							</div> 
 						</label>
 				
 					<label for="Perfil">
@@ -75,7 +80,7 @@
 						Foto: <br />                                           
 						<input type="file" name="data[File][imagem]" id="FileImage" />
 						<br />
-						<?php if($url_foto){ echo "<a href='/$url_foto' target='_blank' ><img src=/$url_foto /></a>";}?>
+						<?php if($url_foto){ echo "<a href='/$url_foto' target='_blank' ><img width='200' src=/$url_foto /></a>";}?>
 					</label>
 					
 					<label for="Descricao">
